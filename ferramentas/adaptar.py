@@ -218,7 +218,7 @@ Precisa do Blender 4.2 ou mais novo. Rode `python <skill>/scripts/verificar.py` 
 
 
 # ---------------------------------------------------------------- main
-def aplicar(arq, pares):
+def aplicar(arq, pares, destino):
     txt = arq.read_text(encoding="utf-8")
     for velho, novo in pares:
         if isinstance(velho, re.Pattern):
@@ -226,42 +226,42 @@ def aplicar(arq, pares):
         else:
             txt2 = txt.replace(velho, novo)
         if txt2 == txt:
-            print(f"  AVISO: trecho não encontrado em {arq.relative_to(OUT)}: {str(velho)[:70]}")
+            print(f"  AVISO: trecho não encontrado em {arq.relative_to(destino)}: {str(velho)[:70]}")
         txt = txt2
     arq.write_text(txt, encoding="utf-8")
 
 
-def main():
-    c = carregar_config()
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    shutil.copytree(ORIG, OUT, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+def gerar(c, destino, incluir_aprendizados=True):
+    shutil.copytree(ORIG, destino, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
     for nome in SFX_SKILLS:
-        shutil.copytree(KIT / "sfx", OUT / nome / "assets" / "sfx-kit")
+        shutil.copytree(KIT / "sfx", destino / nome / "assets" / "sfx-kit")
     for rel, pares in trocas(c).items():
-        aplicar(OUT / rel, pares)
+        aplicar(destino / rel, pares, destino)
     n = 0
-    for py in OUT.rglob("*.py"):
+    for py in destino.rglob("*.py"):
         t = py.read_text(encoding="utf-8")
         # a tuedoido foi escrita pro chat (Linux): lê/grava texto sem encoding -> força UTF-8
         t2 = windows_py(t, utf8=("motionia-tuedoido" in py.parts and "open(" in t and "encoding=" not in t))
         if t2 != t:
             py.write_text(t2, encoding="utf-8"); n += 1
-    for sk in sorted(p for p in OUT.iterdir() if (p / "SKILL.md").exists()):
+    for sk in sorted(p for p in destino.iterdir() if (p / "SKILL.md").exists()):
         f = sk / "SKILL.md"
         f.write_text(f.read_text(encoding="utf-8").rstrip() + "\n" + secao_kit(sk.name, c), encoding="utf-8")
         ajustes = KIT / "aprendizados" / sk.name
-        if ajustes.is_dir():
+        if incluir_aprendizados and ajustes.is_dir():
             shutil.copytree(ajustes, sk, dirs_exist_ok=True)
         print(f"ok {sk.name}")
     # impressão digital de cada arquivo: o trazer_aprendizados.py usa pra saber o que a skill aprendeu depois de instalada
-    for sk in sorted(p for p in OUT.iterdir() if (p / "SKILL.md").exists()):
+    for sk in sorted(p for p in destino.iterdir() if (p / "SKILL.md").exists()):
         man = {f.relative_to(sk).as_posix(): hashlib.sha256(f.read_bytes()).hexdigest()
                for f in sorted(sk.rglob("*")) if f.is_file() and f.name != ".kit-manifest.json"}
         (sk / ".kit-manifest.json").write_text(json.dumps(man, indent=0), encoding="utf-8")
     print(f"scripts ajustados para Windows: {n}")
-    print(f"pronto: {OUT}")
+    print(f"pronto: {destino}")
 
 
 if __name__ == "__main__":
-    main()
+    config = carregar_config()
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    gerar(config, OUT)

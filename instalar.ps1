@@ -3,7 +3,8 @@
 # Opções:  -Sim            não faz perguntas (usa o config.json / padrões)
 #          -SoSkills       só reaplica o config e copia as skills (não mexe em programas)
 #          -ComBlender     também instala o Blender (só a skill do comercial 3D de lata usa)
-param([switch]$Sim, [switch]$SoSkills, [switch]$ComBlender)
+param([switch]$Sim, [switch]$SoSkills, [switch]$ComBlender, [switch]$SoFerramentas)
+if ($SoSkills -and $SoFerramentas) { throw 'Escolha apenas um dos modos de instalação.' }
 
 $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch {}
@@ -61,9 +62,10 @@ if (-not $SoSkills) {
     # -------------------------------------------------------------- 2. python
     Titulo "2/6 Bibliotecas Python + navegador do Playwright"
     python -m pip install --upgrade --quiet faster-whisper librosa soundfile scipy pillow playwright numpy opencv-python psutil pyloudnorm
-    if ($LASTEXITCODE -ne 0) { Aviso 'O pip deu erro (veja acima).' } else { Ok 'bibliotecas Python' }
+    if ($LASTEXITCODE -ne 0) { throw 'Falha ao instalar as bibliotecas Python. Confira a mensagem do pip.' } else { Ok 'bibliotecas Python' }
     python -m playwright install chromium
-    if ($LASTEXITCODE -eq 0) { Ok 'Chromium do Playwright' }
+    if ($LASTEXITCODE -ne 0) { throw 'Falha ao instalar o Chromium do Playwright.' }
+    Ok 'Chromium do Playwright'
 
     # -------------------------------------------------------------- 3. hyperframes
     Titulo "3/6 HyperFrames (prévia e render das skills)"
@@ -74,6 +76,11 @@ if (-not $SoSkills) {
     }
     Write-Host "  conferência (só importam Node, FFmpeg, FFprobe e Chrome; o resto é opcional e o curso não usa):"
     npx.cmd -y hyperframes doctor
+}
+
+if ($SoFerramentas) {
+    Write-Host 'Crie o projeto com python ferramentas/novo_projeto.py CAMINHO_DA_NOVA_PASTA.'
+    exit 0
 }
 
 # ------------------------------------------------------------------ 4. config
