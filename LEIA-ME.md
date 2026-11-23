@@ -2,7 +2,9 @@
 
 As 6 skills do curso **Motion IA** organizadas num repositório só, com instalador de 1 clique, versões prontas pro chat do Claude.ai e um tutorial passo a passo.
 
-> **Uso pessoal.** Este kit junta o material de um curso comprado. Não publique o repositório (GitHub público, drive aberto etc.) nem distribua as skills.
+> O kit reúne materiais do curso e ferramentas para Windows. Os seis originais ficam em `originais/`. Consulte os créditos e as condições de uso dos anexos para cada produção.
+
+Para criar um projeto no **Codex ou Claude Code**, siga [Do download ao primeiro vídeo](docs/06-projeto-novo.md).
 
 ## Instalar (3 passos)
 
@@ -12,7 +14,7 @@ As 6 skills do curso **Motion IA** organizadas num repositório só, com instala
    - Vai usar o comercial 3D de lata? Rode `INSTALAR.cmd -ComBlender` (instala o Blender).
 3. **Feche e abra o Claude Code** uma vez. Digite `/` e as skills aparecem.
 
-Pra usar no **chat do Claude.ai** (inclusive no celular): use os pacotes incluídos no ZIP de distribuição ou gerados pelo instalador. Envie os zips da pasta `chat/` em Personalizar > Habilidades.
+Pra usar no **chat do Claude.ai** (inclusive no celular): use os [pacotes prontos](pacotes-chat/) ou as cópias geradas pelo instalador em `chat/`. Envie o ZIP da skill em Personalizar > Habilidades.
 
 ## As 6 skills
 
