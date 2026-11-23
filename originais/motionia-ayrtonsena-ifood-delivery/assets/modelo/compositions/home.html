@@ -1,0 +1,275 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      color: #3e3e3e;
+    }
+    #ho-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #ho-end {
+      position: absolute;
+      left: 130px;
+      top: 58px;
+      font-size: 44px;
+      font-weight: 700;
+    }
+    #ho-end b {
+      color: #ea1d2c;
+    }
+    #ho-abas {
+      position: absolute;
+      left: 130px;
+      top: 150px;
+      display: flex;
+      gap: 64px;
+      font-size: 46px;
+      font-weight: 600;
+      color: #a6a6a6;
+    }
+    #ho-abas span {
+      position: relative;
+    }
+    #ho-abas .ativa {
+      color: #ea1d2c;
+      font-weight: 700;
+    }
+    #ho-abas .ativa::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -14px;
+      height: 5px;
+      border-radius: 3px;
+      background: #ea1d2c;
+    }
+    .ho-chip {
+      position: absolute;
+      top: 262px;
+      height: 70px;
+      border: 2px solid #e4e4e4;
+      border-radius: 35px;
+      font-size: 30px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #3e3e3e;
+    }
+    .ho-cat {
+      position: absolute;
+      top: 380px;
+      width: 300px;
+      height: 300px;
+    }
+    .ho-bloco {
+      position: absolute;
+      left: 0;
+      top: 80px;
+      width: 300px;
+      height: 150px;
+      border-radius: 28px;
+    }
+    .ho-foto {
+      position: absolute;
+      left: 50%;
+      bottom: 90px;
+      transform-origin: 50% 100%;
+    }
+    .ho-rotulo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 248px;
+      text-align: center;
+      font-size: 34px;
+      font-weight: 500;
+      color: #5a5a5a;
+    }
+    #ho-banners {
+      position: absolute;
+      left: 130px;
+      top: 720px;
+      width: 2500px;
+      height: 300px;
+    }
+    .ho-banner {
+      position: absolute;
+      top: 0;
+      width: 1180px;
+      height: 300px;
+      border-radius: 34px;
+      overflow: hidden;
+    }
+    .ho-banner h3 {
+      position: absolute;
+      left: 60px;
+      top: 62px;
+      font-size: 72px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .ho-banner p {
+      position: absolute;
+      left: 60px;
+      top: 160px;
+      font-size: 36px;
+      font-weight: 600;
+    }
+    .ho-banner img {
+      position: absolute;
+      right: 40px;
+      bottom: -30px;
+    }
+    #ho-cursor {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 96px;
+      height: 112px;
+    }
+    #ho-vermelho {
+      position: absolute;
+      inset: 0;
+      background: #ea1d2c;
+    }
+    #ho-voa {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 300px;
+    }
+  </style>
+  <div id="root" data-composition-id="home" data-width="1920" data-height="1080">
+    <div id="ho-cam">
+      <div id="ho-end">Rua da Madrugada, 247 <b>⌄</b></div>
+      <div id="ho-abas"><span class="ativa">Início</span><span>Restaurantes</span><span>Mercados</span><span>Bebidas</span><span>Farmácia</span></div>
+      <div class="ho-chip" style="left: 130px; width: 230px">Ordenar ⌄</div>
+      <div id="ho-chip-aberto" class="ho-chip" style="left: 380px; width: 290px">Aberto agora</div>
+      <div class="ho-chip" style="left: 690px; width: 300px">Entrega grátis</div>
+      <div class="ho-chip" style="left: 1010px; width: 260px">Pra retirar</div>
+      <div class="ho-chip" style="left: 1290px; width: 200px">Cupons</div>
+
+      <!-- categorias: a foto sai de cima de um bloco colorido, como no app -->
+      <div id="ho-cat-pizza" class="ho-cat" style="left: 130px">
+        <div class="ho-bloco" style="background: #9b59d0"></div>
+        <img id="ho-foto-pizza" class="ho-foto" src="assets/img/comidas/pizza.png" style="width: 300px; margin-left: -150px" alt="" />
+        <div class="ho-rotulo">Pizza</div>
+      </div>
+      <div class="ho-cat" style="left: 470px">
+        <div class="ho-bloco" style="background: #8bc34a"></div>
+        <img class="ho-foto" src="assets/img/comidas/burger.png" style="width: 250px; margin-left: -125px" alt="" />
+        <div class="ho-rotulo">Lanches</div>
+      </div>
+      <div class="ho-cat" style="left: 810px">
+        <div class="ho-bloco" style="background: #e091c9"></div>
+        <img class="ho-foto" src="assets/img/comidas/acai.png" style="width: 270px; margin-left: -135px" alt="" />
+        <div class="ho-rotulo">Açaí</div>
+      </div>
+      <div class="ho-cat" style="left: 1150px">
+        <div class="ho-bloco" style="background: #f28c28"></div>
+        <img class="ho-foto" src="assets/img/comidas/pastel.png" style="width: 280px; margin-left: -140px" alt="" />
+        <div class="ho-rotulo">Pastel</div>
+      </div>
+      <div class="ho-cat" style="left: 1490px">
+        <div class="ho-bloco" style="background: #ea1d2c"></div>
+        <svg class="ho-foto" viewBox="-115 -115 230 230" style="width: 190px; height: 190px; margin-left: -95px">
+          <path d="M0 -110 Q 20 -105 30 -92 Q 50 -100 64 -89 Q 70 -70 85 -64 Q 100 -50 92 -30 Q 105 -20 110 0 Q 105 20 92 30 Q 100 50 85 64 Q 70 70 64 89 Q 50 100 30 92 Q 20 105 0 110 Q -20 105 -30 92 Q -50 100 -64 89 Q -70 70 -85 64 Q -100 50 -92 30 Q -105 20 -110 0 Q -105 -20 -92 -30 Q -100 -50 -85 -64 Q -70 -70 -64 -89 Q -50 -100 -30 -92 Q -20 -105 0 -110 Z" fill="#ffffff" />
+          <path d="M -40 44 L 40 -44" stroke="#ea1d2c" stroke-width="14" stroke-linecap="round" />
+          <circle cx="-30" cy="-30" r="16" fill="none" stroke="#ea1d2c" stroke-width="12" />
+          <circle cx="30" cy="30" r="16" fill="none" stroke="#ea1d2c" stroke-width="12" />
+        </svg>
+        <div class="ho-rotulo">Promoções</div>
+      </div>
+
+      <!-- banners em carrossel -->
+      <div id="ho-banners">
+        <div class="ho-banner" style="left: 0; background: #f5b21b; color: #8c1a2e">
+          <h3>Fome de madrugada?</h3>
+          <p>Restaurantes abertos até as 5h</p>
+          <img src="assets/img/comidas/burger.png" style="width: 330px" alt="" />
+        </div>
+        <div class="ho-banner" style="left: 1220px; background: #8c1a2e; color: #f8f1e7">
+          <h3>Entrega grátis</h3>
+          <p>no primeiro pedido da noite</p>
+          <img src="assets/img/comidas/pizza.png" style="width: 400px" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- o clique na Pizza: o vermelho abre da categoria e a pizza voa pra próxima cena -->
+    <div id="ho-vermelho"></div>
+    <img id="ho-voa" src="assets/img/comidas/pizza.png" alt="" />
+
+    <svg id="ho-cursor" viewBox="0 0 48 56">
+      <path d="M 4 3 L 4 44 L 14.5 34.5 L 21.5 51 L 29 47.5 L 22 31.5 L 36.5 31.5 Z" fill="#3e3e3e" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+      // posições (ponta do cursor) — 0 = 14,62 abs · batidas: chip 16,28 · banner 16,84 · Pizza no "agora" 18,46
+      var CHIP = { x: 525, y: 300 }, BANNER = { x: 860, y: 900 }, PIZZA = { x: 285, y: 520 };
+      var PIZZA_CENTRO = { x: 280, y: 491 }; // centro da foto da pizza na categoria
+      var ALVO = { x: 1290, y: 560, w: 820 }; // onde a pizza fica na cena das comidas
+
+      gsap.set("#ho-cursor", { x: 2050, y: 1150, transformOrigin: "8% 5%" });
+      tl.fromTo("#ho-vermelho", { clipPath: "circle(0px at 280px 491px)" }, { clipPath: "circle(0px at 280px 491px)", duration: 0.01 }, 0);
+      tl.fromTo("#ho-voa", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+
+      // entra pela tela do celular: câmera assenta
+      tl.fromTo("#ho-cam", { scale: 1.08 }, { scale: 1, duration: 0.6, ease: "expo.out" }, 0);
+      // fotos saltam dos blocos, uma a uma
+      gsap.utils.toArray(".ho-foto").forEach(function (f, i) {
+        tl.fromTo(f, { y: 90, scale: 0.6 }, { y: 0, scale: 1, duration: 0.45, ease: "back.out(2)" }, 0.1 + i * 0.08);
+      });
+      tl.fromTo("#ho-banners", { x: 300, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "expo.out" }, 0.35);
+
+      // cursor entra e ativa o chip "Aberto agora" (20,5 abs)
+      tl.to("#ho-cursor", { x: CHIP.x, duration: 0.5, ease: "power3.out" }, 1.12);
+      tl.to("#ho-cursor", { y: CHIP.y, duration: 0.5, ease: "power2.out" }, 1.12);
+      tl.to("#ho-cursor", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 1.66);
+      tl.to("#ho-cursor", { scale: 1, duration: 0.25, ease: "back.out(3)" }, 1.72);
+      tl.to("#ho-chip-aberto", { scale: 0.9, duration: 0.06, ease: "power2.out" }, 1.66);
+      tl.to("#ho-chip-aberto", { scale: 1, backgroundColor: "#EA1D2C", borderColor: "#EA1D2C", color: "#FFFFFF", duration: 0.35, ease: "back.out(2.5)" }, 1.72);
+
+      // câmera desce um pouco; cursor arrasta o banner (21,15 abs)
+      tl.to("#ho-cam", { y: -60, duration: 0.8, ease: "power2.inOut" }, 1.85);
+      tl.to("#ho-cursor", { x: BANNER.x, y: BANNER.y - 60, duration: 0.33, ease: "power2.inOut" }, 1.85);
+      tl.to("#ho-cursor", { scale: 0.85, duration: 0.06 }, 2.18);
+      tl.to("#ho-cursor", { x: BANNER.x - 520, duration: 0.32, ease: "power3.inOut" }, 2.22);
+      tl.to("#ho-banners", { x: -1220, duration: 0.42, ease: "power3.inOut" }, 2.2);
+      tl.to("#ho-cursor", { scale: 1, duration: 0.2, ease: "back.out(3)" }, 2.54);
+      tl.to("#ho-cam", { y: 0, duration: 0.6, ease: "power2.inOut" }, 2.76);
+
+      // vai até a Pizza com antecipação e clica no "agora" (22,42 abs = 3,17)
+      tl.to("#ho-cursor", { x: PIZZA.x + 40, y: PIZZA.y + 30, duration: 0.7, ease: "power3.inOut" }, 2.9);
+      tl.to("#ho-cursor", { x: PIZZA.x, y: PIZZA.y, duration: 0.15, ease: "power2.out" }, 3.62);
+      tl.to("#ho-cat-pizza", { scale: 1.05, duration: 0.15, ease: "power2.out" }, 3.58);
+      tl.to("#ho-cursor", { scale: 0.82, duration: 0.06, ease: "power2.out" }, 3.84);
+      tl.to("#ho-cursor", { scale: 1, duration: 0.25, ease: "back.out(3)" }, 3.9);
+      tl.to("#ho-cat-pizza", { scale: 0.93, duration: 0.06, ease: "power2.out" }, 3.84);
+      tl.to("#ho-cat-pizza", { scale: 1, duration: 0.35, ease: "elastic.out(1, 0.4)" }, 3.9);
+
+      // a pizza salta do bloco (antecipação → pulo) e voa pro lugar dela na próxima cena
+      var w0 = 300, s = ALVO.w / w0;
+      tl.set("#ho-foto-pizza", { opacity: 0 }, 3.87);
+      tl.set("#ho-voa", { opacity: 1, x: PIZZA_CENTRO.x - w0 / 2, y: PIZZA_CENTRO.y - 99, transformOrigin: "50% 50%" }, 3.87);
+      tl.fromTo("#ho-voa", { scaleY: 1, scaleX: 1 }, { scaleY: 0.85, scaleX: 1.1, y: PIZZA_CENTRO.y - 99 + 16, duration: 0.07, ease: "power2.out", immediateRender: false }, 3.87);
+      tl.to("#ho-voa", { scaleY: 1.15, scaleX: 0.92, y: PIZZA_CENTRO.y - 99 - 150, rotation: -14, duration: 0.2, ease: "power2.out" }, 3.94);
+      tl.to("#ho-voa", { x: ALVO.x - w0 / 2, y: ALVO.y - 99, scaleX: s, scaleY: s, rotation: 0, duration: 0.55, ease: "power3.inOut" }, 4.14);
+      tl.to("#ho-cursor", { opacity: 0, duration: 0.2 }, 4.17);
+      tl.to("#ho-vermelho", { clipPath: "circle(2300px at 280px 491px)", duration: 0.5, ease: "power2.in" }, 4.12);
+
+      window.__timelines["home"] = tl;
+    })();
+  </script>
+</template>

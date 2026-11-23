@@ -1,0 +1,537 @@
+# 4.1 - Seu primeiro motion
+
+[00:00] Nessa aula, a gente vai aprender a fazer esse vídeo aqui.
+[00:31] Isso é o que o Ready Feels Like.
+[01:03] O vídeo que eu vi de referência foi esse aqui.
+[01:27] Esse aqui foi o que eu gostei.
+[01:55] O que eu gostei, o que me interessou bastante foi essa parte aqui, onde ele escreve.
+[02:01] Esse efeito aqui, ele beira e ele fala que, ó, Chris eu saio em segundos, literalmente.
+[02:11] Ele fala isso?
+[02:13] Então, Chris eu saio em segundos com ele.
+[02:19] O que eu pensei?
+[02:21] Dá para fazer com o X, né?
+[02:23] É, Chris eu saio em segundos com o X.
+[02:25] Então, a gente vai pegar essa ideia e fazer o da gente com o X.
+[02:31] Então, o que a gente vai fazer?
+[02:33] A gente vai pegar o site, a gente vai ver aqui no site da o X.
+[02:39] Está vendo que a gente tem muita referência de design, ftscores, que eles utilizam, etc.
+[02:45] Pronto, eu vou usar exatamente isso aqui.
+[02:49] Inclusive, até o jeito que eles se comuniquem, o jeito que a Marcos com o X.
+[02:55] Pronto, aí você cola aqui e fala, analise todo o design desse site.
+[03:03] Analise também a copy, roteiro, etc.
+[03:07] Porque a gente vai fazer um vídeo baseado nisso.
+[03:13] Então, você vai pegar todas as referências de design que você precisar desse site aí.
+[03:17] Inter.
+[03:19] Lembra de deixar sempre o opo 5.5 ativado.
+[03:23] Ele vai fazer a analise aqui do design, do site, etc.
+[03:29] Aí você vai mandar outra referência aqui para ele.
+[03:31] Você vai mandar a referência agora do vídeo.
+[03:35] Você vai pegar a referência daquele vídeo lá que a gente viu e vai falar para ele assim, ó.
+[03:39] Essa daqui é a referência da animação.
+[03:41] Eu gostei muito da parte que você viu do início, onde tem o efeito, onde vem o site assim primeiro.
+[03:49] Ele faz uma pesquisa, clica em enter e vem um site top.
+[03:57] Eu quero que a gente faça desse jeito, só que com o site do X.
+[03:59] Então, analise tudo que você precisa analisar, do ritmo, do vídeo, efeito, etc.
+[04:07] Analisar tudo isso daí.
+[04:09] Aí o que a gente precisa fazer agora? A gente precisa de uma narração, ou sem narração.
+[04:15] Mas eu vou te mostrar aqui com a narração que fica.
+[04:17] Qual foi a ideia que eu pensei aqui? A gente utilizar a IA do X.
+[04:23] Lembra lá no site? Aí nessa parte aqui, vocês.
+[04:27] E essa daí é a parte que me interessou, né? Voltando.
+[04:31] Então, ela cria os sites automaticamente.
+[04:35] Então, a ideia do roteiro que eu quero é essa.
+[04:37] Tipo, crie seus sites com o X literalmente.
+[04:41] Aí vai desenvolvendo ali um roteiro, faz com 30 segundos esse roteiro aí.
+[04:47] E já manda pra mim que eu vou mandar a narração de volta pra você.
+[04:53] Aí agora, só esperar ele analisar as cores, fontes, etc. do site.
+[04:58] E depois ele vai analisar o vídeo.
+[05:00] E depois ele vai me mandar o roteiro.
+[05:03] Aí é só a gente aguardar aqui e esperar ele trabalhar.
+[05:07] Pronto, maravilha. Agora ele já analisou tudo aqui que a gente mandou.
+[05:28] E ele mandou esse roteiro aqui.
+[05:30] Rapaz, eu não gostei muito desse aqui que ele falou.
+[05:33] Bora então ativar. Pronto, motion graphics.
+[05:36] Você só ativa aqui, apertando essa barrinha.
+[05:39] Aí a própria skill, ela vai fazendo umas perguntas aqui pra tu.
+[05:43] Pode fazer, você é horizontal, alberto.
+[05:45] Eu recomendo você fazer o vertical, horizontal primeiro, caso você faça os dois, né?
+[05:50] Ou vertical, horizontal primeiro.
+[05:53] E depois que tiver tudo pronto, você já pediu todos os ajustes, etc.
+[05:57] Aí sim, porque senão ele vai ficar gerando dois ao mesmo tempo e vai gastar mais token.
+[06:03] Então, escolhe só um, depois que tiver tudo pronto, é você perder o outro, vou fazer os dois.
+[06:08] Eu vou querer fazer na horizontal. Então, bora fazendo a horizontal aqui.
+[06:12] Sobra música, como é que vai ser?
+[06:14] Pode pedir pra ele fazer uma música.
+[06:17] Ou você mesmo manda uma trilha, vou pedir já pra ele fazer uma música.
+[06:21] Onde é que esse pronto vai rodar? Cloud Code ou Chat? Cloud Code.
+[06:24] Ele já mandou aqui aquele pronto sofisticado que eu tinha falado com você.
+[06:35] Aqui é a entrada, o direcção. Bem extensa aqui o pronto.
+[06:38] O roteiro aqui eu não gostei.
+[06:40] Eu não gostei daquele roteiro que tu me mandou pra mandar pra narração.
+[06:44] Então, eu preciso que você siga melhor a minha ideia.
+[06:47] Deu uma revisada nesse roteiro e faço uma ideia melhor.
+[06:52] Eu quero que seja tipo assim.
+[06:54] Aí, agora tu vai falar a ideia que tu tem pra ele.
+[06:57] Vou falar aqui pra ele a ideia que eu já tive.
+[06:59] Se você gostou daquela razão, você pode utilizar.
+[07:02] Se você não gostou, tiver outra ideia, você vai passar aqui pra ele, como você quer.
+[07:06] Então, eu quero que ela seja tipo assim.
+[07:09] Crie seu site com o Wix em segundos, literalmente.
+[07:15] Com o Wix, o jeito que você quiser.
+[07:19] Consegue arrastar, trocar pontos, ok.
+[07:22] Aí a sua assistente vai te ajudar no seu cliente, se você quiser.
+[07:26] Mas eu não sei quantos sites já nasceram aqui.
+[07:29] Crie seu site com o Wix.
+[07:31] Não, o final não quero que você saça com o Wix não.
+[07:33] Eu quero só tipo o Wix e o esgloga deles.
+[07:38] Essa ideia é que eu quero.
+[07:41] Aí, 30 segundos, né?
+[07:43] Vai mandar essa narração pra mim.
+[07:45] Agora ele vai reescrever o roteiro e vai mandar pra ver se eu gostei mais do roteiro agora.
+[08:02] Eu vou mandar esse roteiro lá pra o Eleven Labs.
+[08:07] Copiar esse roteiro e colar lá dentro do Eleven Labs.
+[08:10] O site, ele tá aqui na descrição também.
+[08:12] Aqui no Eleven Labs, eu já tô na minha conta aqui.
+[08:17] Mas aí você poderia criar uma nova conta.
+[08:19] Quando você cria uma nova conta, ele já dá um crédito pra você.
+[08:23] Se eu não me enganei, eles dão uns 10 mil créditos, alguma coisa assim.
+[08:26] Mas isso daqui eu tô falando até a data de hoje, 14, 11, 226.
+[08:30] Então, essa você criar uma nova conta que você já consegue utilizar gratuitamente.
+[08:34] Porque já dá esses créditos aí pra você.
+[08:36] Aí quando você cria uma nova conta, já tiver com créditos lá.
+[08:41] Você só vinha aqui, teste, tu expite e escolha sua voz.
+[08:45] Eu gosto de utilizar essa análise aqui, português brasileiro.
+[08:49] Porque eu acho a voz dela é só tu escolher, colocar, apertar aqui um Z.
+[08:53] Você for gerar aqui agora.
+[08:59] Cri seu site com o X em segredos.
+[09:02] Literalmente.
+[09:04] É só dizer o que você quer.
+[09:06] E aí, ato o X monta pra você.
+[09:08] Ficou bom.
+[09:09] Porém, dá pra ficar melhor ainda.
+[09:11] Você pode, ou, adicionar essas tags aqui.
+[09:15] Automaticamente, elas vão deixar o seu...
+[09:20] A sua narração mais dinâmica.
+[09:24] Ou você pode pedir pro próprio cloud fazer isso daqui.
+[09:27] Que é o que eu vou fazer agora.
+[09:28] Aí eu vou pedir pro cloud.
+[09:30] Ó, adiciona tags pra usar lá no 11 Labs.
+[09:35] Aí já criou aqui as tags, tá vendo?
+[09:41] A gente só copiar.
+[09:42] Dá um control aqui pra selecionar tudo.
+[09:45] Ele tá vacinho.
+[09:47] Cri seu site com o X em segredos.
+[09:50] Literalmente.
+[09:51] É só dizer o que você quer.
+[09:53] E aí, ato o X monta pra você.
+[09:56] Aí agora, com essas tags.
+[09:58] Cri seu site com o X em segredos.
+[10:03] É só dizer o que você quer.
+[10:06] E aí, ato o X monta pra você.
+[10:09] Tá vendo que com fica mais dinâmico, mais natural?
+[10:13] Pra isso que serve essas tags aqui.
+[10:15] Por isso que eu gosto de usar o 11 Labs pra fazer essa coisa.
+[10:18] Ele manda dois tipos de narração aqui.
+[10:20] Cri seu site com...
+[10:22] Algumas pequenas diferenças de as duas.
+[10:24] Eu normalmente sempre escolho a primeira.
+[10:26] Você pode ouvir cada um e escolher o que você quiser.
+[10:28] Volto lá pro cloud e jogo a narração.
+[10:31] E joga a narração aqui.
+[10:33] Vou botar uma avisa pra ele não ficar duplicando os arquivos.
+[10:36] Ó, ele baixou isso daqui.
+[10:39] E colocou lá na pasta de downloads.
+[10:41] Aí pra não ficar duplicando os arquivos,
+[10:43] como eu pedi lá no começo pra você centralizar tudo em uma pasta,
+[10:47] você vai mover lá dos downloads pra essa pasta que a gente tá utilizando.
+[10:53] Aí o que vai acontecer?
+[10:55] Ele não vai ficar duplicando os arquivos.
+[10:57] Porque beleza, esse daqui é um mulch, não só.
+[11:00] Mas imagina 10.
+[11:01] Então pra ele não ficar duplicando as coisas,
+[11:03] você centraliza tudo em uma pasta
+[11:05] e sempre manda ele mover as coisas pra essa pasta.
+[11:09] Porque aí não vai ficar mais organizado.
+[11:12] E cuidado com o que você for pedir aqui,
+[11:15] porque como você tá dando autorização pra ele mexer nas pastas,
+[11:19] você pedir pra escolher alguma coisa vai excluir também.
+[11:22] Então cuidado com o que você for pedir pra ele,
+[11:24] só peça algumas coisas específicas.
+[11:34] Bom, então ele mandou aqui um resumo de como é que vai ser.
+[11:38] Ó, você sai.
+[11:42] Ok, ok, ok.
+[11:43] Pronto, aprovado.
+[11:45] Pode voltar.
+[11:46] Se cada você quisesse e ele fizer-se algum ajuste nisso daqui,
+[11:49] você poderia pedir também os ajustes daqui agora.
+[11:51] Eu vou pedir só pra ele montar que ele vai montar aquele render lá
+[11:54] pelo Hyper Frames agora.
+[11:55] E agora ele vai montar tudo lá pelo Hyper Frames.
+[11:58] Isso daqui vai ajudar a economizar Tolkien.
+[12:00] Por quê?
+[12:01] Porque se a gente for pedir lá pelo chat,
+[12:03] ele ia fazer o vídeo lá do zero, já renderizar e etc.
+[12:07] Ele até vai conseguir entregar mais rápido pedindo por aqui.
+[12:10] Aí ele vai abrir uma tela de Hyper Frames,
+[12:14] como se fosse uma timeline de um editor de vídeo
+[12:17] e você vai conseguir ver as coisas ali na hora.
+[12:20] Então agora o trabalho da gente é só esperar.
+[12:23] Enquanto ele vai fazendo as coisas daqui,
+[12:25] eu vou pegar um cafezinho ali pra mim.
+[12:27] Maravilha, já voltei, já peguei aqui o Energetico,
+[12:30] já tomei também.
+[12:32] Porque demoro por que esse negócio.
+[12:34] Mas aqui é assim, ó.
+[12:36] Ele vai liberar aqui pra tu agora o render do Hyper Frames.
+[12:40] Normalmente ele já vai abrir no teu navegador,
+[12:44] esse render aqui com esse link, tá vendo?
+[12:46] Às vezes ele vai abrir na sua janela o navegador.
+[12:49] Nesse caso que ele abre no navegador,
+[12:51] eu só tô clicando aqui, ele já vai abrir no teu navegador.
+[12:54] Ele vai aparecer assim pra tua tela do Hyper Frames.
+[12:57] Ele já abriu aqui no navegador clicando naquele botão.
+[13:00] É só ainda entrar aqui pra ver como é que ficou.
+[13:03] Show, maravilha.
+[13:31] Essa daqui foi o jeito que ele já gerou.
+[13:34] Tá vendo aqui que já foi um negócio top, né?
+[13:37] Não dá um olhado novo.
+[13:38] Criança os sites com bakes em segundos.
+[13:40] Isso é a dizer que você quer.
+[13:44] E a liado mesmo monta pra...
+[13:46] Ó, normalmente ele vai dar umas travadinhas também,
+[13:49] ele vai gerar também um pouco mais baixa a qualidade,
+[13:52] porque aqui é só o preview.
+[13:54] Pra ele não te ver antes de renderizar.
+[13:56] Certo, depois.
+[13:58] Maravilha, ó.
+[14:00] Eu consegui deixar o negócio mais massa ainda,
+[14:02] que é você pedindo ajustes.
+[14:04] Por exemplo, eu assistindo aqui o vídeo,
+[14:06] eu já vi, ó, que essa parte inicial que eu ia querer mudar,
+[14:10] essa parte aqui, talvez eu manteria,
+[14:13] mas eu acho que eu vou pedir pra mudar também.
+[14:16] Essa partezinha aqui eu quero um 3Dzinho.
+[14:18] Isso daqui eu fui vendo,
+[14:20] que o assistinho já foi pensando no jeito que eu quero mudar, né?
+[14:22] Aí, como é que a gente faz agora
+[14:24] pra conseguir fazer essas mudanças?
+[14:26] Pensar qual é a mudança que você quer, né?
+[14:29] Eu já tenho aqui na minha cabeça que já peguei o jeito aqui.
+[14:33] Dá uma pensada melhor, eu vou assistindo algumas vezes,
+[14:35] ver o que você quer mudar,
+[14:37] e você já vai falando pro Cloud.
+[14:39] Abre o Hyper-Fremes aqui dentro do Cloud mesmo,
+[14:42] e nos próximos também já abre dentro do Cloud,
+[14:45] que eu não quero ficar abrindo navegador não.
+[14:47] Eu já vou abrir aqui.
+[14:49] Essa parte inicial, lá pelos 0 segundos,
+[14:52] eu não quero que comece em tela branca.
+[14:54] Eu quero que o chat, ele venha centralizado,
+[14:59] assim, e já vai me inscrevendo ali.
+[15:03] Vamos pensar aqui no vídeo de referência, tá vendo?
+[15:07] Ó, deixar aqui de lado.
+[15:09] Eu quero ele um pouco mais com os efeitos
+[15:12] do vídeo de referência que eu te mandei.
+[15:15] No vídeo de referência, lá pelos 18 segundos,
+[15:19] ele clica no botãozinho,
+[15:22] e o botãozinho tá em glow,
+[15:24] eu quero esse detalhezinho aí também.
+[15:26] Eu tô falando sobre esse detalhe aqui.
+[15:28] Esse botãozinho aqui em glow, ele não fez.
+[15:30] 3DLight com Bakes em segundos.
+[15:33] Tá vendo?
+[15:34] Eu não gostei muito desse efeito aqui também.
+[15:37] Eu achei ele muito...
+[15:40] Vou explicar aqui pro Cloud pra ver se ele me entende.
+[15:43] Esse efeito aqui, lá pelos 4 segundos,
+[15:45] que eu te mandei uma imagem de referência,
+[15:48] eu não gostei.
+[15:49] Eu quero que esse efeito seja mais parecido
+[15:52] com o da referência,
+[15:54] que ele vai meio que...
+[15:56] com os brilhinhos pixelados e etc.
+[15:59] E depois ele vai formando o site.
+[16:03] Agora, essa parte aqui, também não gostei.
+[16:06] Vou mandar pra esse aqui pra ele.
+[16:08] Vou falar assim.
+[16:09] Lá pelos 7 segundos,
+[16:11] eu não gostei desse exemplo aqui
+[16:13] que você colocou de site.
+[16:15] Eu achei ele muito básico.
+[16:17] Eu quero um site que seja mais parecido
+[16:20] com aquele da referência,
+[16:22] onde tem pelo menos uma pessoa ali, etc.
+[16:25] Porque a ideia é até fazer uma brincadeira
+[16:28] de paraláxia, câmera 3D,
+[16:31] alguma coisa do tipo.
+[16:32] Então precisa ser um site que tenha profundidade.
+[16:35] Você pode me mandar alguns exemplos
+[16:37] lá daquela referência do site que me mandou
+[16:39] pra eu escolher qual site que você vai colocar aqui.
+[16:43] Aí, é do mesmo jeito que eu dou pra um ano aqui pra ele.
+[16:46] Ele vai ver lá um site da Wakes,
+[16:48] vai escolher alguns lá pra mim modelos
+[16:50] e vai colocar por aqui.
+[16:52] Aí, vamos lá, outra coisa.
+[16:54] Esse moco que você faz,
+[16:56] que passa pra cor,
+[16:58] que você pode ser lindo.
+[17:02] Essa parte aqui,
+[17:04] onde o site make desencaixa,
+[17:07] encaixa nos outros,
+[17:09] eu queria colocar com um mock-up
+[17:12] de notebook.
+[17:14] Aí você pode utilizar esse mock-up
+[17:16] que tem anexo.
+[17:18] Esse mock-up,
+[17:20] esse mock-up, eu já separei
+[17:22] pra essa aula aqui em específico.
+[17:24] Mas aí você pode baixar
+[17:26] em qualquer outro moco climático,
+[17:28] inclusive eu vou deixar esse mesmo mock-up
+[17:30] que eu tô pedindo pra utilizar aqui,
+[17:32] aqui embaixo nos materiais,
+[17:34] pra você conseguir baixar.
+[17:36] Como é que é bom que esse aqui que tá nessa parte?
+[17:38] Tá lembrando que tá aqui embaixo pra você poder baixar.
+[17:40] Outra coisa aqui também.
+[17:42] Essa área, que é interjetificial lá do Wakes,
+[17:45] eu quero que tu faça ela em 3D,
+[17:47] e utilize os princípios da animação
+[17:50] com ela também, pra ela ficar mais dinâmica,
+[17:53] mais carismática também.
+[17:56] Então, utilize os princípios da animação
+[17:58] nela em 3D,
+[18:00] assim como tá no site deles lá também.
+[18:03] E aí ele vai pegar,
+[18:05] vai criar uma forma 3D,
+[18:07] e vai utilizar os princípios da animação,
+[18:09] que é arrastar, soltar, enfim.
+[18:11] Então, os princípios da animação.
+[18:13] Essa parte aqui também,
+[18:15] eu queria que ela fosse mais dinâmica.
+[18:17] Então, como é que eu falo aqui pra ele?
+[18:19] Esses nomes de efeitos que eu tô falando,
+[18:22] se você não souber,
+[18:24] você pode catar um efeito de algum outro vídeo específico
+[18:27] e colocar aqui e falar,
+[18:29] ó, quero um efeito parecido com esse.
+[18:31] Em algumas outras aulas,
+[18:33] mas por fim, ele dá pra fazer isso no mesmo processo também.
+[18:36] Mas calma,
+[18:38] eu quero que você faça isso,
+[18:40] eu quero que você faça isso no mesmo processo também.
+[18:43] Mas caso você já souber o nome,
+[18:45] você pode mandar, e caso você não souber o nome do que você quer colocar,
+[18:48] você pode mandar um vídeo de referência
+[18:50] só com aquela animação
+[18:52] e falar, ó, quero uma animação estilo vídeo tal.
+[18:55] Você vai falar aqui pra ele.
+[18:57] Essa parte lá, para os 23 segundos,
+[18:59] eu quero lá mais dinâmica,
+[19:01] então, você pode fazer um show real ali,
+[19:03] onde os sites,
+[19:05] eles vão, meio que os sites,
+[19:07] vão passando em 3D ali,
+[19:09] um número de 300 milhões.
+[19:11] Os primeiros sites jamais serão muito.
+[19:13] Eu queria que você fizesse mais parecido com referência.
+[19:16] Então, vou falar aqui pra ele.
+[19:18] Ó, essa parte do Wix,
+[19:20] eu quero que você faça mais parecido com a referência.
+[19:24] Aí, eu quero, na parte da referência,
+[19:27] esse estilo aqui, ó, que tá,
+[19:29] que eu mandei em anexo,
+[19:30] que é exatamente esse estilo aqui.
+[19:35] E no final,
+[19:36] você coloca um Arroba,
+[19:38] AyrtonCena.stg
+[19:40] e eu vou falar também
+[19:42] pra ele um resumo de forma geral.
+[19:44] Eu vou falar aqui pra ele no final.
+[19:46] Ó, de forma geral,
+[19:48] eu preciso que isso tudo fique mais dinâmico,
+[19:50] mais suave,
+[19:52] eu utilizo umas câmeras 3D também,
+[19:54] algumas partes de paralax,
+[19:56] e melhorar tudo de forma geral.
+[19:59] E agora, eu enviei.
+[20:01] Aí, tá vendo que a gente gastou um tempão aqui,
+[20:04] só pedindo alguns ajustes
+[20:06] e pedindo de formas específicas.
+[20:08] Isso daqui é o principal.
+[20:10] Você tem que saber a forma que você vai pedir.
+[20:12] Você vai ver que depois que a gente fizer esses ajustes,
+[20:15] o resultado que já tava bom
+[20:17] vai melhorar ainda mais.
+[20:19] E agora, é esperar.
+[20:21] Ele vai terminar de renderizar aqui
+[20:23] e vai mostrar novamente pelo Hyper Frames.
+[20:25] Ele não vai renderizar ainda.
+[20:27] Pronto, ele analisou tudo que eu mandei aqui
+[20:29] e mandou essas 6 opções aqui,
+[20:31] pra gente escolher.
+[20:33] Essa aqui me chamou de atenção.
+[20:35] Yoga na Floresta.
+[20:37] Vamos por essa daqui, então.
+[20:39] Aí, ele já me pergunta
+[20:41] quais as opções, né?
+[20:43] Vou falar aqui yoga na floresta.
+[20:45] E bora esperar aqui pra ver o que ele vai gerar.
+[20:47] Maravilha!
+[20:49] Ele já fez os ajustes aqui.
+[20:51] E bora ver como ficou agora, né?
+[21:00] O site vão ver em segundos.
+[21:02] Pode ver o que você quer.
+[21:06] E a piada o Ix monta pra você.
+[21:08] Depois, deixa o seu jeito.
+[21:10] Rasta, troca cor, muda ponte.
+[21:13] Sem limite.
+[21:15] E a área, sua assistente,
+[21:17] já visa o que fazer pra ter mais visitas,
+[21:19] aprender mais, que aparecendo no Google.
+[21:21] Mais de 300 milhões de sites
+[21:23] já nasceram aqui.
+[21:25] Isso.
+[21:27] Isso, isso vai ver.
+[21:31] Agora sim, foi o top, hein mano.
+[21:33] Mas ainda,
+[21:35] eu quero alguns ajustes aqui ainda.
+[21:37] Já tá muito bom.
+[21:39] Mas dá pra melhorar um pouquinho mais ainda.
+[21:42] Eu não gostei muito desse paralax
+[21:45] que ele fez aqui, vou falar pra ele.
+[21:47] Eu tenho alguns ajustes.
+[21:50] Lá pelos 8 segundos,
+[21:52] eu não gostei muito desse paralax
+[21:54] que tu fez aqui, como se fosse uma câmera 3D,
+[21:56] só de um lado e muito forte.
+[21:58] Ele tem que ser um paralax
+[22:00] um pouquinho mais suave.
+[22:03] E tanto pra direita quanto pra essa parte aqui,
+[22:06] eu não curti muito.
+[22:08] Vou falar aqui pra ele o motivo.
+[22:10] O motivo que eu não gostei muito
+[22:12] é que ela fica passando dentro do
+[22:14] do notebook aqui.
+[22:16] E eu achei a perspectiva do notebook
+[22:19] um pouquinho estranha também.
+[22:21] Vou falar tudo isso daqui pra
+[22:23] o cloud.
+[22:25] Ir um print pra tirar esse print aqui,
+[22:27] pelo Windows,
+[22:29] eu só tô colocando a tecla do Windows,
+[22:31] Shift, mais S.
+[22:33] Eu acho que é
+[22:36] comando mais Shift e mais S.
+[22:39] Mas vamos lá.
+[22:41] Essa parte aqui, lá pelos
+[22:43] 14 segundos,
+[22:45] a primeira coisa, a perspectiva do
+[22:47] MacBook não ficou bacana,
+[22:49] ele não ficou bem ambientado também.
+[22:51] Eu gostaria que o fundo
+[22:53] fosse um pouquinho mais escuro
+[22:55] pra ter um pouquinho mais de contraste com isso.
+[22:58] As coisas que vão passando atrás
+[23:01] também tem que ter
+[23:03] tipo um efeito de speed ramp
+[23:05] que começa rápido
+[23:07] e vai ficando devagar.
+[23:09] Então o notebook
+[23:11] ele faz um speed ramp
+[23:13] assim, diz um alto,
+[23:15] e começa rápido e termina devagar
+[23:17] e continua, movimento continua.
+[23:19] Enquanto isso atrás
+[23:21] como se fosse um carro
+[23:23] sério infinito,
+[23:25] vão passando vários outros sites.
+[23:27] Pode colocar eles um pouquinho
+[23:29] desfocados. Aqui já tô imaginando na minha cabeça
+[23:31] como é que eu quero, já tô falando dos efeitos
+[23:33] que eu já sei.
+[23:35] Mas se você não soubesse desse efeito
+[23:37] você podia pegar um outro vídeo e falar
+[23:39] se faz parecido com aquele efeito lá.
+[23:41] Essa parte da área for ok também.
+[23:43] Esse show real aqui.
+[23:45] Essa parte aqui, lá pelos
+[23:47] 22 segundos do show real
+[23:49] eu achei boa,
+[23:51] só que os vídeos
+[23:53] eles têm que passar ainda por cima
+[23:55] do
+[23:57] do negócio dos 300 milhões.
+[24:01] Então é como se
+[24:03] os 300 milhões estivessem no meio
+[24:05] e esse anel de show real
+[24:07] tivesse em volta fazendo como se fosse um efeito 3D.
+[24:09] Então a parte de fundo ainda fica no f...
+[24:11] Vai falando gente, vai falar
+[24:13] como é que vocês acham que é pra ser
+[24:15] que o clado vai entendendo também.
+[24:17] Se você falar
+[24:19] os termos técnicos, ele entende melhor.
+[24:21] Mas se você passar um vídeo, falar de
+[24:23] alguma outra forma do jeito que você quer
+[24:25] ele também vai entender. Agora
+[24:27] esperar a linha de ele irá de novo.
+[24:29] Aí vai aparecer aqui novamente.
+[24:31] Se vocês ajude como por mais cinco e mais rápido
+[24:33] já voltou aqui.
+[24:35] 30 sites com peixes em segundos
+[24:37] é só de endere...
+[24:39] Às vezes das suas carregadas, tá normal.
+[24:41] Tem uma carregada lá, bora assistir de novo.
+[24:43] 30 sites com peixes em segundos
+[24:45] é só de endere o que você quer
+[24:49] e a guiado mesmo monta pra você.
+[24:51] Aí é, é.
+[24:53] Rasta, troca o cor, muda a fonte, sem limite.
+[24:57] E a área, sua assistente,
+[24:59] se avisa por fazer...
+[25:01] Oxente, sumiu a área.
+[25:03] Até servei esse eburgo, né?
+[25:05] É burgo só do preview, que não, tá?
+[25:07] Que dúvida. Já bebi algo aqui
+[25:12] pra ver.
+[25:14] 30 sites com peixes em segundos
+[25:16] é só de endere o que você quer
+[25:20] e a guiado mesmo monta pra você.
+[25:22] Pois, deixa o sentido.
+[25:24] Rasta, troca o cor, muda a fonte,
+[25:26] sem limite.
+[25:28] E a área, sua assistente,
+[25:30] se avisa por fazer pra ter mais fizesia
+[25:32] e você perder mais pra aparecer no burgo.
+[25:34] Mais de 300 milhão de fizesia
+[25:36] são a ser um aqui.
+[25:38] Pois,
+[25:40] isso é muito difícil.
+[25:42] Top demais, rapazes.
+[25:44] Ó, pra mim
+[25:48] já
+[25:50] tá ótimo aqui, se você ainda quiser
+[25:52] fazer mais ajustes, dá pra fazer mais ajustes.
+[25:54] Mas aí agora,
+[25:56] você
+[25:58] que ir pra renderizar, que ele vai renderizar.
+[26:00] Acabou-se. Aí ele vai demorar um tempinho
+[26:02] aqui pra renderizar.
+[26:04] Crie seu site com o Wix em segundos.
+[26:06] É só dizer o que você quer
+[26:08] e a guiado Wix monta pra você.
+[26:11] Depois, deixa do seu jeito.
+[26:13] Arrasta, troca o cor,
+[26:15] muda a fonte, sem limite.
+[26:17] E a área, sua assistente,
+[26:19] te avisa o que fazer pra ter mais visitas,
+[26:21] vender mais e aparecer no burgo.
+[26:23] Então,
+[26:25] vim pra você ver mais visitas, vender mais
+[26:27] e aparecer no Google.
+[26:29] Mais de 300 milhões de sites já nasceram
+[26:31] aqui.
+[26:33] Wix,
+[26:35] isso é o que o Reddy sente.

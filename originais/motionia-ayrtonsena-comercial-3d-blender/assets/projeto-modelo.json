@@ -1,0 +1,20 @@
+{
+  "_ajuda": "Preenchido pelo Claude a partir do briefing. Campos explicados em references/projeto-json.md. Exemplo completo: assets/exemplo-danese/projeto.json",
+  "marca": "Marca",
+  "produto": "energético em lata",
+  "nao_oficial": true,
+  "assinatura": "@SEUARROBA",
+  "cor_marca": "#ff2e93",
+  "fontes": {"display": "Big Shoulders Stencil Display", "display_peso": 900, "texto": "Barlow Condensed"},
+  "lata": {"tamanho": "350 ml fina", "altura_mm": 146, "diametro_mm": 58, "foco_rotulo": 0.46},
+  "fundo_abertura": ["#2a1020", "#080306"],
+  "sabores": [
+    {"nome": "sabor 1", "modelo": "nome-do-arquivo-do-rotulo-1", "cor": "#ff0f6b", "fundo": ["#ff3a95", "#b8004f"],
+     "palavra": "PALAVRA", "cor_palavra": "#ffffff", "qtd": 12, "pecas": []}
+  ],
+  "pecas": {},
+  "final": {"linha": "LINHA DO PRODUTO", "aviso": "COMERCIAL NÃO OFICIAL"},
+  "musica": {"arquivo": "", "inicio": 0, "volume_db": -5},
+  "sfx": {"pasta": "", "arquivos": {}},
+  "blender": ""
+}

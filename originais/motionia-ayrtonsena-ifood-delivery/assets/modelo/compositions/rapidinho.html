@@ -1,0 +1,243 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f7f4ec;
+    }
+    #ra-cena {
+      position: absolute;
+      inset: 0;
+    }
+    .ra-vel {
+      position: absolute;
+      left: 0;
+      height: 14px;
+      border-radius: 7px;
+      background: #ddd5ca;
+    }
+    #ra-palavra {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 1080px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 250px;
+      font-family: "League Gothic", sans-serif;
+      font-size: 420px;
+      line-height: 0.8;
+      color: #b89bff;
+      letter-spacing: 0.01em;
+    }
+    #ra-palavra span {
+      display: inline-block;
+      transform-origin: 50% 100%;
+    }
+    #ra-motoboy {
+      position: absolute;
+      left: 560px;
+      top: 330px;
+      width: 820px;
+      height: 720px;
+    }
+  </style>
+  <div id="root" data-composition-id="rapidinho" data-width="1920" data-height="1080">
+    <div id="ra-cena">
+      <div id="ra-v1" class="ra-vel" style="top: 150px; width: 420px"></div>
+      <div id="ra-v2" class="ra-vel" style="top: 300px; width: 260px"></div>
+      <div id="ra-v3" class="ra-vel" style="top: 880px; width: 520px"></div>
+      <div id="ra-v4" class="ra-vel" style="top: 990px; width: 300px"></div>
+      <div id="ra-v5" class="ra-vel" style="top: 210px; width: 340px"></div>
+      <div id="ra-v6" class="ra-vel" style="top: 60px; width: 480px"></div>
+      <div id="ra-v7" class="ra-vel" style="top: 940px; width: 380px"></div>
+      <div id="ra-v8" class="ra-vel" style="top: 380px; width: 220px"></div>
+      <div id="ra-palavra"><span>R</span><span>A</span><span>P</span><span>I</span><span>D</span><span>I</span><span>N</span><span>H</span><span>O</span></div>
+      <div id="ra-motoboy">
+        <svg id="ra-vento" viewBox="0 0 300 400" style="position: absolute; left: -250px; top: 220px; width: 300px; height: 400px; overflow: visible">
+          <path d="M 280 60 L 120 60" stroke="#f5b21b" stroke-width="22" stroke-linecap="round" />
+          <path d="M 260 170 L 40 170" stroke="#f5b21b" stroke-width="22" stroke-linecap="round" />
+          <path d="M 280 280 L 150 280" stroke="#f5b21b" stroke-width="22" stroke-linecap="round" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="820" height="720" style="position: relative" viewBox="-40 60 820 720">
+  
+
+  
+  <g id="roda-tras" transform="translate(190 640)">
+    <circle r="118" fill="#8C1A2E"/>
+    <path d="M -101 -61 A 118 118 0 0 1 61 -101 L 41 -68 A 80 80 0 0 0 -68 -41 Z" fill="#A72A40"/>
+    <circle r="80" fill="#FBE3DA"/>
+    <path d="M -80 0 A 80 80 0 0 1 0 -80 L 0 -52 A 52 52 0 0 0 -52 0 Z" fill="#FFF1EA"/>
+    <circle r="34" fill="#F5B21B"/>
+    <circle cx="0" cy="-17" r="6" fill="#C9860C"/>
+    <circle cx="14.7" cy="8.5" r="6" fill="#C9860C"/>
+    <circle cx="-14.7" cy="8.5" r="6" fill="#C9860C"/>
+  </g>
+
+  
+  <g id="roda-frente" transform="translate(615 640)">
+    <circle r="118" fill="#8C1A2E"/>
+    <path d="M -101 -61 A 118 118 0 0 1 61 -101 L 41 -68 A 80 80 0 0 0 -68 -41 Z" fill="#A72A40"/>
+    <circle r="80" fill="#FBE3DA"/>
+    <path d="M -80 0 A 80 80 0 0 1 0 -80 L 0 -52 A 52 52 0 0 0 -52 0 Z" fill="#FFF1EA"/>
+    <circle r="34" fill="#F5B21B"/>
+    <circle cx="0" cy="-17" r="6" fill="#C9860C"/>
+    <circle cx="14.7" cy="8.5" r="6" fill="#C9860C"/>
+    <circle cx="-14.7" cy="8.5" r="6" fill="#C9860C"/>
+  </g>
+
+  
+  <path d="M 452 372 C 462 360 482 362 488 376 L 628 628 C 634 642 616 654 604 642 L 452 400 C 446 390 446 380 452 372 Z" fill="#8C1A2E"/>
+  <path d="M 470 372 L 612 618 L 604 624 L 460 380 Z" fill="#A72A40"/>
+
+  
+  <path d="M 478 652 C 474 566 546 500 640 506 C 684 509 706 526 704 546 C 616 532 534 572 520 652 Z" fill="#F5B21B"/>
+  <path d="M 478 652 C 476 610 492 574 520 548 C 528 560 524 600 520 652 Z" fill="#F08A24"/>
+
+  
+  <path d="M 60 572 C 76 484 190 446 306 480 L 302 516 C 206 488 114 512 92 580 Z" fill="#F5B21B"/>
+
+  
+  <path d="M 196 470 C 260 482 330 484 380 480 C 392 520 372 556 330 566 L 230 568 C 196 556 182 510 196 470 Z" fill="#6E1423"/>
+  <path d="M 250 500 L 340 500 C 350 512 346 530 334 536 L 256 536 C 244 528 242 510 250 500 Z" fill="#8C1A2E"/>
+
+  
+  <path d="M 60 432 C 62 406 80 392 104 396 L 150 404 C 200 414 260 416 312 410 C 352 392 420 386 476 396 C 540 406 596 424 612 452 C 600 488 552 510 500 520 L 352 530 C 258 534 140 514 76 478 C 62 466 58 448 60 432 Z" fill="#F5B21B"/>
+  <path d="M 340 400 C 410 388 470 390 520 402 C 560 412 594 428 606 446 C 540 444 470 436 400 420 Z" fill="#F7C64E"/>
+  <path d="M 76 478 C 140 514 258 534 352 530 L 500 520 C 470 534 420 544 360 546 C 250 550 140 532 88 502 Z" fill="#F08A24"/>
+  <path d="M 70 456 C 164 474 270 482 360 478 L 352 508 C 262 512 162 502 78 484 Z" fill="#8C1A2E"/>
+  
+  <path d="M 112 404 C 168 414 252 418 320 410 C 330 400 326 386 312 384 C 252 394 178 392 122 384 C 106 388 104 398 112 404 Z" fill="#6E1423"/>
+  <path d="M 122 384 C 178 392 252 394 312 384 C 300 380 250 384 190 383 C 160 382 136 380 122 384 Z" fill="#8C1A2E"/>
+
+  
+  <path d="M 276 606 L 352 676 C 362 686 346 704 334 696 L 256 628 C 246 616 264 596 276 606 Z" fill="#F08A24"/>
+
+  
+  <path d="M 72 560 L 338 640 C 366 650 354 698 324 692 L 54 614 C 26 604 44 552 72 560 Z" fill="#DCD6DA"/>
+  <path d="M 72 560 L 338 640 C 350 644 356 654 356 664 L 62 578 C 58 570 62 562 72 560 Z" fill="#F2EEF0"/>
+  <path d="M 54 614 L 324 692 C 312 694 300 690 292 686 L 60 620 Z" fill="#BEB6BC"/>
+
+  
+  <g id="bau" transform="rotate(-16 196 232)">
+    <path d="M 116 128 L 278 128 C 292 128 300 136 300 150 L 300 312 C 300 326 292 334 278 334 L 116 334 C 102 334 94 326 94 312 L 94 150 C 94 136 102 128 116 128 Z" fill="#EA1D2C"/>
+    <path d="M 116 128 L 278 128 C 292 128 300 136 300 150 L 300 166 L 94 166 L 94 150 C 94 136 102 128 116 128 Z" fill="#F2545B"/>
+    <path d="M 300 166 L 300 312 C 300 326 292 334 278 334 L 254 334 L 300 200 Z" fill="#C8101F"/>
+    <path d="M 146 188 L 250 188 C 262 188 268 194 268 206 L 268 290 C 268 302 262 308 250 308 L 146 308 C 134 308 128 302 128 290 L 128 206 C 128 194 134 188 146 188 Z" fill="#D41626"/>
+    <svg x="150" y="220" width="96" height="63" viewBox="225 455 465 305">
+      <path d="M627.48,687.45a295,295,0,0,1-212.26,66.86c-100.83-6.37-173-83.850-185.73-165.57h4.24c23.35,51,79.6,98.71,148.59,106.13,70,8.49,153.890-23.34,199.52-66.86L530.9,588.740H684.79l-34,163.45-22.29-63.68Z" fill="#F8F1E7"/>
+    </svg>
+  </g>
+
+  <g id="piloto">
+    
+    <path d="M 286 262 L 342 236 L 356 262 L 298 294 Z" fill="#C8101F"/>
+
+    
+    <path d="M 262 258 C 302 232 352 238 378 264 L 398 360 C 362 388 290 392 240 372 C 224 332 234 286 262 258 Z" fill="#FFFFFF"/>
+    <path d="M 262 258 C 234 286 224 332 240 372 C 268 382 300 386 322 384 C 304 342 288 300 262 258 Z" fill="#E9E2F5"/>
+    
+    <path d="M 334 244 L 362 250 L 394 352 L 368 360 Z" fill="#EA1D2C"/>
+
+    
+    <path d="M 236 350 C 322 356 404 386 450 420 C 466 442 458 472 434 486 L 398 602 L 334 592 L 368 480 C 318 460 262 446 222 428 C 200 408 208 360 236 350 Z" fill="#F25C54"/>
+    <path d="M 222 428 C 262 446 318 460 368 480 L 334 592 L 362 597 L 394 484 C 330 456 266 436 216 414 Z" fill="#D9433E"/>
+    <path d="M 300 356 C 362 364 420 390 450 420 C 420 412 360 392 300 374 Z" fill="#F7837B"/>
+
+    
+    <path d="M 330 586 L 402 598 C 428 620 444 650 440 672 L 330 668 C 302 660 298 628 314 604 Z" fill="#FFFFFF"/>
+    <path d="M 304 652 L 442 668 L 440 684 L 308 672 Z" fill="#EA1D2C"/>
+    <path d="M 360 604 L 390 616 M 356 620 L 392 628 M 384 600 L 372 636" stroke="#C8101F" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+    
+    <path d="M 328 292 C 356 268 382 278 398 298 L 474 358 L 456 396 L 370 346 C 344 336 322 318 328 292 Z" fill="#FFFFFF"/>
+    <path d="M 370 346 L 456 396 L 464 380 L 382 330 Z" fill="#E9E2F5"/>
+    
+    <path d="M 450 364 C 464 348 492 350 500 368 C 508 386 494 402 474 402 C 456 400 444 382 450 364 Z" fill="#B9A3E8"/>
+    <path d="M 474 352 C 490 352 500 362 500 372 C 490 366 480 364 470 366 Z" fill="#CFBFF2"/>
+
+    
+    <path d="M 348 214 L 388 222 L 382 262 L 344 256 Z" fill="#B9A3E8"/>
+
+    
+    <path d="M 358 190 C 358 150 394 126 432 130 C 472 134 498 164 494 200 C 492 226 472 240 446 242 L 386 240 C 368 234 358 212 358 190 Z" fill="#EA1D2C"/>
+    <path d="M 358 190 C 358 212 368 234 386 240 L 446 242 C 418 226 392 208 358 190 Z" fill="#C8101F"/>
+    <path d="M 392 146 C 408 136 430 132 448 136 C 430 142 410 152 398 164 Z" fill="#F2545B"/>
+    <path d="M 444 166 C 472 162 494 178 494 200 C 492 224 470 234 448 230 C 436 210 434 184 444 166 Z" fill="#8C1A2E"/>
+    <path d="M 458 176 C 472 176 482 186 484 196 L 472 196 C 468 188 464 184 456 182 Z" fill="#B3324A"/>
+    <circle cx="402" cy="186" r="19" fill="#FFFFFF"/>
+    <circle cx="402" cy="186" r="9" fill="#F2EEF0"/>
+  </g>
+
+  
+  <g id="linhas" stroke="#F5B21B" stroke-width="12" stroke-linecap="round" fill="none">
+    <path d="M 432 88 L 440 120"/>
+    <path d="M 478 108 L 498 86"/>
+    <path d="M 500 146 L 530 140"/>
+  </g>
+</svg>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+      var DUR = 2.8; // 28,80 → 31,60 abs · batidas locais: 0 · 0,53 · 1,08 · 1,63 · 2,17 · 2,70
+      var BAT = [0.53, 1.08, 1.63, 2.17];
+      // linhas de velocidade correndo pra esquerda (rápidas)
+      [["#ra-v1", 0.0, 0.4], ["#ra-v2", 0.15, 0.32], ["#ra-v3", 0.08, 0.45], ["#ra-v4", 0.3, 0.36], ["#ra-v5", 0.4, 0.38],
+       ["#ra-v6", 0.22, 0.42], ["#ra-v7", 0.05, 0.34], ["#ra-v8", 0.33, 0.3]].forEach(function (v) {
+        for (var t = v[1]; t < DUR; t += v[2]) tl.fromTo(v[0], { x: 2000 }, { x: -700, duration: v[2], ease: "none", immediateRender: false }, t);
+      });
+      gsap.set(".ra-vel", { x: 2000 });
+      // letras crescem pra cima, da esquerda pra direita, e se inclinam com o vento da moto
+      var letras = gsap.utils.toArray("#ra-palavra span");
+      letras.forEach(function (s, i) {
+        tl.fromTo(s, { scaleY: 0, scaleX: 0.7, skewX: -25 }, { scaleY: 2.45, scaleX: 1, skewX: 0, duration: 0.18, ease: "power2.out" }, 0.04 + i * 0.04);
+        tl.to(s, { scaleY: 2.05, duration: 0.3, ease: "elastic.out(1, 0.35)" }, 0.22 + i * 0.04);
+        // pulsam em onda a cada batida
+        BAT.forEach(function (b, k) {
+          if (b < 0.6) return;
+          tl.to(s, { scaleY: 2.35, scaleX: 0.92, y: -18, duration: 0.07, ease: "power2.out" }, b + i * 0.025);
+          tl.to(s, { scaleY: 2.05, scaleX: 1, y: 0, duration: 0.3, ease: "elastic.out(1, 0.4)" }, b + 0.07 + i * 0.025);
+        });
+      });
+      // câmera dá um soco em cada batida
+      BAT.forEach(function (b) {
+        tl.to("#ra-cena", { scale: 1.05, duration: 0.05, ease: "power2.out" }, b);
+        tl.to("#ra-cena", { scale: 1, duration: 0.35, ease: "elastic.out(1, 0.4)" }, b + 0.05);
+      });
+      // motoboy: entra inclinado, empina, pula, empina de novo e sai esticado
+      gsap.set("#ra-motoboy", { transformOrigin: "30% 92%" });
+      tl.fromTo("#ra-motoboy", { x: -1500, rotation: 8, skewX: -14 }, { x: 0, rotation: 0, skewX: 0, duration: 0.42, ease: "expo.out" }, 0.08);
+      tl.fromTo("#ra-motoboy", { y: 0 }, { y: 0, duration: 0.01 }, 0);
+      tl.to("#ra-motoboy", { rotation: -11, duration: 0.18, ease: "power2.out" }, 1.08);
+      tl.to("#ra-motoboy", { rotation: 0, duration: 0.35, ease: "bounce.out" }, 1.3);
+      tl.to("#ra-motoboy", { y: -60, duration: 0.14, ease: "power2.out" }, 1.63);
+      tl.to("#ra-motoboy", { y: 0, duration: 0.24, ease: "bounce.out" }, 1.77);
+      tl.to("#ra-motoboy", { rotation: -15, x: 60, duration: 0.2, ease: "power2.out" }, 2.17);
+      // sai pra direita esticando (31,22 → 31,50)
+      tl.to("#ra-motoboy", { x: 2200, rotation: 0, scaleX: 1.35, skewX: -12, duration: 0.3, ease: "power3.in" }, 2.4);
+      tl.to("#ra-palavra", { x: 1500, skewX: -28, scaleX: 1.4, filter: "blur(12px)", duration: 0.3, ease: "power3.in" }, 2.43);
+      // vento mostarda atrás da moto pisca
+      gsap.set("#ra-vento path", { transformOrigin: "100% 50%" });
+      for (var t = 0.4; t < 2.4; t += 0.18) {
+        tl.fromTo("#ra-vento path", { scaleX: 0.3, opacity: 1 }, { scaleX: 1, opacity: 0.2, duration: 0.18, ease: "power1.out", stagger: 0.03, immediateRender: false }, t);
+      }
+      // rodas girando e linhas do capacete
+      gsap.set(["#roda-tras", "#roda-frente"], { transformOrigin: "50% 50%" });
+      tl.fromTo(["#roda-tras", "#roda-frente"], { rotation: 0 }, { rotation: 360 * 9, duration: DUR, ease: "none" }, 0);
+      tl.fromTo("#linhas", { scale: 0, transformOrigin: "0% 100%" }, { scale: 1, duration: 0.2, ease: "back.out(3)" }, 0.5);
+      BAT.forEach(function (b) {
+        if (b < 0.6) return;
+        tl.to("#linhas", { scale: 1.3, duration: 0.06 }, b);
+        tl.to("#linhas", { scale: 1, duration: 0.25, ease: "back.out(3)" }, b + 0.06);
+      });
+      window.__timelines["rapidinho"] = tl;
+    })();
+  </script>
+</template>

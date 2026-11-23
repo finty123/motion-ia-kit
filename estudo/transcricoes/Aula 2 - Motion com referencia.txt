@@ -1,0 +1,241 @@
+# Aula 2 - Motion com referencia
+
+[00:00] para a segunda parte.
+[00:49] Esse vídeo aqui tem uma diferença que a gente vai usar, uma referência nele.
+[00:53] Ele é onde a gente vai pegar essa referência desse site aqui.
+[00:56] WatchLotships.com.
+[00:58] Aqui tem várias referências de mochos e vídeos criados com o cloud
+[01:03] e dá para usar qualquer um desses vídeos aqui como referência.
+[01:07] Qual é o por do gato?
+[01:08] É você não pegar uma referência dessa daqui e falar faz igual.
+[01:12] Porque se você for fazer isso daqui, você vai dar só copiando e colando.
+[01:16] Uma ideia é a gente pegar um vídeo como referência mesmo
+[01:19] e criar uma nova coisa a partir daquela referência.
+[01:22] E é exatamente o que eu usei de referência foi esse daqui.
+[01:26] Está vendo?
+[01:26] Essa daqui foi referência.
+[01:28] É como a gente faz.
+[01:29] Só pegar aqui e copiar o link jogar lá.
+[01:31] É o que a gente faz.
+[01:32] Criou um novo chat aqui.
+[01:34] Pronto.
+[01:34] Tipa, eu estou utilizando esse vídeo,
+[01:39] vai colocar o link do vídeo,
+[01:40] de referência visual.
+[01:43] Pegue todas as fontes e cores do site.
+[01:49] Vai colocar o site que é aqui.
+[01:51] Caso tenha algum site ou pode ser uma foto também
+[01:54] ou você pode falar para a data de cores.
+[01:56] O vídeo vai ser na vertical.
+[02:00] Ele vai passar em um telão.
+[02:04] Vão ser 60 segundos.
+[02:07] O objetivo do vídeo é mostrar como fazer um agendamento.
+[02:15] A pessoa vai contar a câmera para o que é e code.
+[02:21] Vai agendar o seu site.
+[02:24] Estou colocando em anexo vários rintes de como funciona esse agendamento.
+[02:35] O agendamento funciona assim.
+[02:37] Você é do que é e code.
+[02:39] Você consegue selecionar filial.
+[02:42] Você coloca o barbeiro, as coisas lá.
+[02:45] Tudo isso eu tenho e print e vou colocar aqui agora.
+[02:48] Depois já tirando aqui para fazer a o vivo aqui.
+[02:51] Já terei print aqui dessa parte.
+[02:53] Acho que está aqui no agendamento.
+[02:56] Aí selecionar filial.
+[02:57] Adipoting aqui.
+[02:59] Coloca o barbeiro.
+[03:01] Escolha o serviço.
+[03:03] Confirma a data e hora.
+[03:05] Você vai ter que cuidar de tudo.
+[03:07] Marcar o que você quer.
+[03:09] Confirma a data e hora.
+[03:12] Se eu fosse agendar aqui e aparecer um cartão com o meu nome, o nome do barbeiro, etc.
+[03:21] Essas coisas aqui você pode ligar o microfone e falar como funciona.
+[03:26] Para em como eu estou usando o microfone para falar.
+[03:29] Então vou colocar por aqui.
+[03:31] Vou descrever como funciona aqui.
+[03:33] A animação.
+[03:34] Eu quero mostrar isso.
+[03:36] Mostrar o celular e os d.
+[03:39] Os caneando o que é ecoli.
+[03:43] Depois entra nesse messa tela inicial.
+[03:48] Depois clica em agendar.
+[03:51] Depois seleciona filial.
+[03:56] Depois seleciona o barbeiro.
+[04:01] Nessa parte do barbeiro aqui deixa ícones genéricos para quando ficar lá no telão.
+[04:09] Não fica promovendo um barbeiro em específico.
+[04:13] Aí é melhor deixar os ícones genéricos para não ficar induzindo a pessoa escolher aquele barbeiro.
+[04:18] Acorda os ícones genéricos sem nome e aí nome venérico também pode ser barbeiro.
+[04:28] O nome clica e fica verde no que clicou.
+[04:33] Coloca um mais um pouco só.
+[04:38] 4 opções.
+[04:39] Aí aparecem os serviços.
+[04:44] Seleciona o serviço de corte 40 reais.
+[04:51] Aí seleciona data e hora fica em agendar e vai aparecer um cartãozinho com o nome do
+[05:04] vinte nome do barbeiro data horário e serviço.
+[05:12] Pronto está agendado.
+[05:14] Tem que ser dinâmico.
+[05:17] Mostra como funciona.
+[05:19] Tá deixa eu pensar em outra coisa aqui eu quero que tipo assim vem o celular aí escanei
+[05:25] o que é ecoli.
+[05:26] Então imagina assim se ela chega ler o que é ecoli aí o que é ecoli lança lá
+[05:33] para a parte do agendamento e mostra o celular aí clicando nas coisas e agendado bem simples
+[05:39] mesmo.
+[05:40] Música de trap.
+[05:41] Efeitos sonoras.
+[05:42] Deixa eu pensar em outra coisa.
+[05:47] Eu acho que é isso né.
+[05:49] Talvez eu possa enviar aqui também a logo mas acho que nem precisa colocar logo não.
+[05:53] Só dessa ponta já está o suficiente.
+[05:55] Aí deixa sempre em opo 5.5 e no alto.
+[05:59] Enviar.
+[06:00] Aí ele vai fazer o pronto.
+[06:01] Tem que ir para a gente.
+[06:02] Vou aqui o prompt para a gente.
+[06:04] Vou a entrada.
+[06:05] Alegre de agendamento.
+[06:07] Video de referência.
+[06:09] Em marzinha nexo.
+[06:11] Quando direção estrutura.
+[06:14] Sobre a área de prostituição.
+[06:16] Avelho do islocas almeida.
+[06:19] Dá até horário som dos pintes.
+[06:22] Dentro do salão a manteiga escolhe o aplicativo.
+[06:25] Escanhar.
+[06:26] Corre o salão de minha pedra do site.
+[06:28] Eu quero sentir as legendas.
+[06:30] É o que pode.
+[06:31] Em um e do aqui.
+[06:32] Ou uma maravilha.
+[06:34] Só copiar aqui.
+[06:35] Então abrir o outro.
+[06:37] 5.5 alto.
+[06:38] Deixa a magia acontecer.
+[06:40] Agora esperava em um vídeo.
+[06:42] Ele indicou algumas coisas aqui do prompt.
+[06:44] Que vai colegir o prompt quebra no primeiro quadro.
+[06:47] Proquiza aqui os prontos.
+[06:49] A gente só copia.
+[06:51] Então aqui só copia esse prompt que ele gerou.
+[06:54] Abre o novo.
+[06:55] Copia também as referências aqui.
+[06:58] Agora espera a magia acontecer.
+[07:00] Só esperar que ele vai mandar primeiro algumas coisas.
+[07:03] Para dar uma olhadinha.
+[07:05] Se está tudo certo.
+[07:07] Ele montou aqui o relatório de como vai ser.
+[07:10] Você pode ir dando uma olhadinha aqui em tudo que eu quero comendo.
+[07:13] Você vai olhando cada coisa.
+[07:15] Você pode fazer um ajuste aqui.
+[07:17] Olha que isso vai economizar Tolkien.
+[07:19] Ou você pode falar para general o vídeo.
+[07:21] Como eu dei uma boa especificada.
+[07:23] Eu acredito que vai gerar do jeito que eu quero.
+[07:25] Caso não gere eu vou ajustar depois do vídeo feito.
+[07:28] O bagastro é o mais toco e mais não tem problema.
+[07:31] Eu acho que vou acabar perdendo mais tempo.
+[07:33] Revisando as coisas do que se for superar geral.
+[07:35] Vamos lá.
+[07:37] Primeiro ele analisou.
+[07:39] Vem que ele mandou.
+[07:41] Olha o que ele mandou aqui.
+[07:43] O que ele fez.
+[07:45] A parte do agendamento.
+[07:47] Espanhol que é encode.
+[07:49] Escolhou o barbinho.
+[07:51] Escolhou o barbinho.
+[07:53] Escolhou o agendamento.
+[07:55] Escolhou o barbeiro.
+[07:57] Escolhou a agendamento.
+[07:59] Escolhou o barbeiro.
+[08:01] Tá ótimo.
+[08:03] A única coisa que eu quero mudar é que ele está fazendo uma vertical.
+[08:05] Ele está fazendo uma vertical.
+[08:07] Tem que mandar o logo para ele.
+[08:09] Eu esqueci de mandar o logo para ele.
+[08:11] Estraio.
+[08:13] O ganchinho foi agendado há dois segundos.
+[08:15] Sei.
+[08:17] Não precisa de gancho porque vai ficar parado lá.
+[08:19] Ele é longe.
+[08:21] Mas fica pequeno e fãs abertas.
+[08:23] Deve ser fãs topos.
+[08:25] Corrige essa parte do arpiquica.
+[08:29] Piquinho.
+[08:31] Caso estiver usado.
+[08:33] Vou falar o que é ótimo.
+[08:35] Vera na horizontal.
+[08:37] Ao invés de vertical.
+[08:39] E pode continuar.
+[08:41] Depois disso.
+[08:43] Gera o vídeo.
+[08:45] Eu gosto de ver ele primeiro na horizontal.
+[08:47] Então o melhor é falar.
+[08:49] Já para ele gerar na horizontal.
+[08:51] Depois eu peço para ele colocar na vertical.
+[08:53] Agora ele vai continuar até gerar o vídeo.
+[08:55] Dei uma falsa.
+[08:57] Acabou de gerar.
+[08:59] Ele gerou essa folha.
+[09:01] Com tudo que ele fez.
+[09:03] O vídeo está aqui.
+[09:05] Eu gostei.
+[09:07] Eu só senti falta de uma animação.
+[10:10] Nesse início.
+[10:12] Foi bem didático.
+[10:18] As coisas ir para o que ele está pedindo.
+[10:20] Foi bem didático.
+[10:26] Eu gostei muito.
+[10:28] Eu gostei muito.
+[10:30] Só precisa.
+[10:34] Animação.
+[10:36] De entrada.
+[10:38] No começo do vídeo.
+[10:40] Trado os elementos.
+[10:42] Que é a e-code.
+[10:44] Textos.
+[10:46] E de saída.
+[10:48] Saindo.
+[10:50] Mentos.
+[10:52] E de volta.
+[10:54] Etc.
+[10:56] E de saída.
+[10:58] Saindo.
+[11:00] Mentos.
+[11:02] E etc.
+[11:04] No final do vídeo.
+[11:06] No começo.
+[11:08] Eu quero também.
+[11:10] Uma animação.
+[11:12] Do celular.
+[11:14] Lendo o que é a e-code.
+[11:16] Na tela.
+[11:18] Eu termino de gerar aqui agora.
+[11:20] E assim que ele fizer essas alterações.
+[11:25] Eu quero.
+[12:23] Maravilha.
+[12:25] É isso aí pessoal.
+[12:27] Vamos finalizar aqui.
+[12:29] Como foi o motion.
+[12:31] Isso daqui dá para você fazer.
+[12:33] Ter o computador.
+[12:35] Para oferecer o celular.
+[12:37] E não precisa abrir nenhum outro programa.
+[12:39] Você precisa falar.
+[12:41] Para estilo.
+[12:43] Se você pode ter referência.
+[12:45] Se você quiser colocar.
+[12:47] Se você quer colocar.
+[12:49] De detalhes.
+[12:51] Melhor ficar.
+[12:53] Às vezes precisa.
+[12:55] Mas não é isso.
+[12:57] Assim como ele fez.
+[12:59] Dá para fazer qualquer outro.
+[13:01] Só seguir essas etapas.
+[13:03] Fechou.
+[13:05] Para deixa eu ter chegado até aqui.
+[13:07] Vou fazer o primeiro lar.
+[13:09] Marca.
+[13:11] Marca o que eu quero ver.
+[13:13] Tchau.

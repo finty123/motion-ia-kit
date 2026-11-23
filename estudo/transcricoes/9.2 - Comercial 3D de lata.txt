@@ -1,0 +1,457 @@
+# 9.2 - Comercial 3D de lata
+
+[00:00] Vamos embora, rapaz, para mais um aula aqui, essa aula aqui, você vai precisar do Blender.
+[00:06] O Blender, ele é um programa gratuito, de modelagem 3D, então a gente vai instalar o Blender aqui
+[00:13] e vai mandar o Cloud mexendo o Blender, ou seja, a gente não vai modelar nada, que vai modelar o Cloud.
+[00:19] E você não vai precisar pagar nada por isso, porque ele é um programa gratuito.
+[00:26] Só você vem aqui nesse link, que está aqui embaixo, tá?
+[00:29] Você vai vir aqui, download para o Blender, ele vai pedir aqui um valor, se você quiser doar, entendeu?
+[00:37] Você não precisa necessariamente doar um valor, só você salva aqui, que ele vai baixar o instalador.
+[00:43] Baixou aqui, chegou em 100%, é só você dar dois cliques aqui, assim que terminou, dá dois cliques aqui.
+[00:52] Ele vai preparar a instalação, né, que se você vai escolher o melhor lugar aqui para você deixar ele, tá?
+[00:58] Pode deixar no lugar normal, ou então você será sendo no lugar tanto faz.
+[01:01] Só clicar aqui em instalar, que ele vai começar a instalar, vai pedir uma permissão, você vai apertar aqui em sim,
+[01:06] copiando as arquivos, etc.
+[01:13] Só você deixar aqui que ele vai instalar.
+[01:15] Pronto, só clicar aqui em finish, e ele já vai abrir aqui o programa.
+[01:23] Clicar em finish, pesquisar por Blender, ele já vai estar aqui, Blender 5.3.
+[01:29] Se você quer abrir, já está instalado o seu Blender, já pode usar aqui, mas a gente não vai usar.
+[01:38] É só para deixar instalado, tá?
+[01:40] Pode até fechar aqui, não salva, já fecha tudo aqui, e bora voltar para o que interessa aqui, que é o cloud, mano.
+[01:49] Só você colocar aqui, Blender, ele já vai aparecer.
+[01:53] O que você acha que ele vai fazer agora?
+[01:55] Sashkill vai fazer várias perguntas aqui, que vai servir como um briefing para montar a ideia de como vai ser o vídeo.
+[02:03] Se você primeiro precisa baixar todos os materiais que estão aqui embaixo, e instalar os kills,
+[02:09] e os materiais, assim como eu ensino nas primeiras aulas, kills.
+[02:14] Quando você instalar o kill, e apertar aqui, selecionar Blender, ele já vai aparecer aqui.
+[02:20] Aí é só você fazer esse meio de percurso, né?
+[02:23] Selecionar Blender, coloca, dá enter, e ele vai começar a rodar ali o skill, para já preparar essas perguntas aqui, para fazer para você.
+[02:32] Ó, perguntando aqui, ó, você já tem alguma ideia em mente?
+[02:35] Não, não tem ideia nenhum.
+[02:37] Tem alguma referência?
+[02:39] Tem, tem uma referência assim.
+[02:41] Como é que você consegue passar essas referências?
+[02:43] Você vai ver aqui no Pinterest, o outro eu fiz em uma latinha 3D de um energetic, esse daqui eu vou fazer Guaraná.
+[02:52] Você vai lá no Pinterest, digita, lata 3D, e vão aparecer vários e vários comerciais aqui, ó, tá vendo?
+[03:01] Ó, você pode selecionar alguns deles aqui embaixo, já tem alguns referências para você e a própria skill.
+[03:10] Já mostro para você algumas referências, mas se você tiver alguma outra referência, você pode dar uma olhada para aqui e baixar aqui também.
+[03:19] Por exemplo, tem uma, essa daqui, essa daqui eu gostei bastante.
+[03:23] Aí como é que você vai fazer para baixar a que você tende referência agora?
+[03:28] Você pode baixar várias referências, tá?
+[03:30] Essa daqui foi só uma das que eu baixei, porque já tem algumas lá no arquivo.
+[03:35] Você vai ficar aqui e copiar depois disso.
+[03:38] Você vai ver nesse outro link aqui que tá aqui na descrição também da aula.
+[03:43] Vou lá aquele link que eu acredito que a gente acabou de copiar e ele vai baixar.
+[03:47] Vou baixar, vai. Só clicar aqui para você baixar o vídeo. Pronto. Já baixou o vídeo.
+[03:52] Aí, o que é que eu vou fazer agora?
+[03:55] Vou mandar esse vídeo lá para o cloud.
+[04:00] Vou mandar o vídeo que a gente baixou lá para o cloud e tem outras referências que a gente precisa mandar também.
+[04:07] É logo aqui embaixo ele pergunta qual o produto marca, né?
+[04:11] Mas antes da gente enviar, eu já vou mandar aqui algumas referências.
+[04:17] Por exemplo, outra referência que a gente consegue mandar aqui é o site.
+[04:21] O site do cliente, o site da marca.
+[04:23] Você pode mandar por aqui também, por exemplo.
+[04:26] O site da Guaraná já é bem bacana, porque aqui já tem a lata.
+[04:32] Aqui já ganha a qualidade aqui que o próprio cloud pode baixar.
+[04:37] Já tem a logo aqui também para o cloud baixar.
+[04:40] Tem a fonte, tem o jeito que é marcas comunicas. Já tem outras latas aqui também.
+[04:47] É cores, enfim, tudo isso o cloud vai pegar daqui. Então o que você vai fazer?
+[04:52] Copiar o site e jogar aqui. Já tem referência.
+[04:56] Essa daqui é referência. Vou colocar aqui.
+[04:59] Nesse site você vai pegar as cores, fontes, o jeito que a marca se comunica
+[05:05] e tudo o que precisar também, inclusive fotos, você também consegue pegar desse site.
+[05:10] Logo também. Não envia ainda, calma aí.
+[05:14] Ainda tem mais coisa para mandar. Você consegue mandar também a identidade do visual.
+[05:19] Nesse caso, o que é que eu normalmente faria para um cliente?
+[05:24] Eu iria no Instagram, iria aqui no Instagram do cliente e ia procurar aqui, referência de design,
+[05:32] se já tiverem, coisas que eles têm aqui também da marca, mas só do design.
+[05:39] No caso aqui da Guaraná, eu não achei nada interessante para colocar no mostro.
+[05:44] Então o que foi que eu fiz? Eu procurei lá pelo Pinterest e já aparece várias coisas aqui do Guaraná.
+[05:52] Aí o que foi que eu peguei? Eu peguei essa daqui, que tem sabor original.
+[05:57] Eu peguei essa do Coisa Nossa e peguei também essa lata aqui.
+[06:02] Foi essa lata que peguei? Não, foi essa daqui. Eu peguei essa lata também.
+[06:07] Então eu peguei essa daqui, essa, essa lata e essa outra.
+[06:11] Para fazer para um outro cliente, você pode olhar aqui mais coisas da marca, etc.
+[06:17] Vai olhando, vai caçando, o que foi interessante, você vai copiar, ou você vai baixar, né?
+[06:23] Você vai vir aqui, ó, clicar na imagem, coisa aqui, salvar a imagem como e salva na sua parte de preferência.
+[06:31] Sempre deixa tudo em uma pasta só, tá? Eu já coloquei aqui para o meu cloud colocar em uma parte específica.
+[06:39] Então é só você fazer o seguinte, ó, você vai selecionar a pasta, copiar essa parte aqui de cima,
+[06:45] vai vir aqui no cloud, pronto, aí já deixaria tudo centralizado aqui.
+[06:50] Isso daqui eu já fiz antes, tá? Por isso que eu não vou fazer aqui de novo, mas no seu caso,
+[06:54] você pode setar para aqui para tudo que está centralizado em uma pasta, para os arquivos espalhados.
+[06:59] O próprio cloud, ele vai conseguir mexer nos seus arquivos, tá? O cloud code, que ele está utilizando,
+[07:06] ele está utilizando o cloud code. Tá, a gente já mandou aqui o vídeo de referência,
+[07:12] a gente vai mandar agora algumas imagens aqui, ó, de referência, todas aquelas que eu falei.
+[07:19] E a gente vai mandar também a latinha, agora, na...
+[07:24] E a gente vai mandar aqui, ó, a música que a gente vai utilizar no motion também.
+[07:32] Nesse caso aqui, a música escolhida foi essa daqui, ó.
+[07:39] Vou achar essa música aqui do YouTube, tá? Eu gostei dela porque eu já tenho uns efeitos sonoros ali bacana,
+[08:07] ele não vai precisar colocar efeitos sonoros também. Caso a gente precisar colocar efeitos sonoros,
+[08:12] como é que faria? Pega a pasta e eu deixo lá nos bônus de efeitos sonoros,
+[08:18] você vai copiar a parte de cima aqui, ó, você vai pegar daqui, copiar essa parte aqui da pasta,
+[08:25] joga aqui e fala, no nosso caso, eu não vou fazer isso porque a própria música já tem efeitos sonoros.
+[08:32] Inclusive, tem uma coisa muito boa aqui dessa música, que nos 8 segundos,
+[08:37] nos 8 para 9 segundos tem essa virada.
+[08:48] Eu quero utilizar essa também, só que demora muito para chegar aqui, então o que é que eu vou falar?
+[08:53] Ignore 2, 5 segundos para trás da música.
+[08:58] Lá pelos 8 a 9 segundos, tem uma virada da música,
+[09:04] onde ela fica mais alta e tem um efeito sonoro ali também na própria música.
+[09:09] Você vai utilizar essa parte como gancho, então de 5 segundos até os 8, 9 segundos,
+[09:15] da música, você vai utilizar já como um gancho visual para esse vídeo aqui que a gente tá fazendo.
+[09:23] Eu ainda não coloquei a música, né? Deixa eu jogar essa música aqui.
+[09:27] Deixa eu jogar a música aqui também, então a gente tem as referências,
+[09:32] a gente tem um vídeo de referência e a gente tem a música,
+[09:36] ele já respondeu essas primeiras perguntas aqui dele.
+[09:40] Caso você não tiver a ideia criada ainda,
+[09:44] você pode pedir uma ideia para ele que ele mesmo já vai montando a ideia aqui dentro com você.
+[09:54] Agora é só esperar ele tudo aí que ele te mandou.
+[10:06] Ele falou aqui que no site do Guaraná Antarctica tem duas viladas, o original e o zero,
+[10:12] com essa hora eu vou entrar.
+[10:13] Aí tem que o original, o zero, que é recomendado, só o original e o outro.
+[10:17] Vou colocar aqui os dois, horizontal vertical, vou colocar aqui no horizontal,
+[10:21] um tal, portfólio oficial, outro, vou colocar aqui que é no portfólio.
+[10:26] Da referência à brisa, ela tá sobrogirando, com brilhinhos,
+[10:31] uma planta pedida, um lá transparente, como tu quer usar isso?
+[10:35] Padrão, dois ou três estes, arco, closers, estrutura da brisa.
+[10:40] Aqui ele dá perguntando se eu quero utilizar só uns dois ou três ali.
+[10:45] Da referência que eu mandei, se eu quero usar a estrutura do vídeo inteiro que eu mandei,
+[10:50] eu quero utilizar aquele padrão da outra do Dante.
+[10:54] Vou colocar aqui que eu quero utilizar só duas ou três cenas.
+[10:58] Tá perguntando mais coisas aqui, qual o palavra eu vou ficar atrás do original,
+[11:08] prazerosite.rotl, coisa nossa, vou colocar aqui o Coisa Nossa,
+[11:12] para o gigante atrás do zero, zero.
+[11:15] Quais cenas de referência do vídeo que eu mandei, além do arco padrão?
+[11:19] Os brilhinhos, eu não quero colocar,
+[11:22] tem uma lá de gelo, lá do copo e a fruta, essas três aqui.
+[11:29] Vou colocar aqui, ele tá perguntando, na linha final do produto embaixo do logo,
+[11:33] que eu quero colocar, sabor do Brasil, ou é coisa nossa?
+[11:37] Vou colocar aqui sabor do Brasil.
+[11:40] Maravilha, ele mandou aqui a resolução final do que que ele mandou, né?
+[11:49] Do site ele tirou a longo, a música, a referência, ele utilizou o movimento,
+[11:56] colocou aqui a marca, o formato, a lata, as três cenas novas,
+[12:02] enquanto isso eu tô aprovando o rótulo, tá?
+[12:05] Pra gerar esse rótulo aqui, a gente pode gerar em qualquer ar,
+[12:09] pode gerar no geminai, no chatpt, no flow, qualquer ar gratuita
+[12:15] que você tiver acesso só você pegar aqui.
+[12:19] Ó, meu chatpt é o plano gratuito, tá vendo aqui?
+[12:24] Então você jogar esse pronto e lá, aí você vai pegar aquela foto da...
+[12:31] a foto da lata, você vai jogar aqui, aquela careta baixou lá no início,
+[12:36] e então um enter aqui, ele já vai gerar a imagem pra você.
+[12:40] Pronto, ele já gerou o rótulo aqui pra gente, tá?
+[12:48] Então você clicar aqui, baixar e jogar esse rótulo lá no plano.
+[12:54] Pronto, ó, colocar aqui com uma aprovada também,
+[12:58] pra falar sobre as coisas, ele já jogueu o rótulo aqui também.
+[13:02] Maravilha, pode gerar aqui o nosso primeiro storyboard.
+[13:13] O que é esse storyboard aqui?
+[13:15] É ele demonstrando uma prévia do que a gente vai fazer,
+[13:18] porque como a gente vai modelar em 3D,
+[13:22] então ele demora bastante pra conseguir modelar,
+[13:25] isso mesmo se você não tiver um computador tão bom.
+[13:28] Então por isso que a gente precisa fazer esse storyboard aqui
+[13:31] pra ter certeza de cada etapa que como é que vai ser, tá?
+[13:35] Ó, eu acho que ele confundiu algumas coisas aqui.
+[13:38] Por exemplo, esse gancho aqui com o olho, a lata não tem olho.
+[13:42] Então eu vou poder já colocar aqui, ó, a lata não tem olho.
+[13:47] Não é pra você utilizar esse gancho, é pra criar um novo gancho.
+[13:51] Nessa aula, o que foi que aconteceu aqui?
+[13:54] Ele tá confundindo as referências, porque eu coloquei aqui nessa aula
+[13:59] os outros referências que você consegue utilizar também.
+[14:02] Então o que é que eu vou pedir pra ele agora?
+[14:04] Vou pedir pra ele me mandar essas referências aqui,
+[14:07] pra eu selecionar o que é que vai entrar, o que é que vai entrar.
+[14:10] Eu vou falar exatamente assim pra ele, ó.
+[14:12] Eu quero que você monte um HTML pra mim,
+[14:15] com as referências na pasta,
+[14:18] e me mande pra eu aprovar as referências,
+[14:21] porque você acabou misturando aqui referências que...
+[14:26] Eu queria referências que eu não queria.
+[14:28] Aí ele vai mandar agora pra mim.
+[14:30] Por quê? Porque ele tá misturando com as referências que já tem na pasta.
+[14:34] Aí ele montando esse HTML e a gente consegue selecionar melhor.
+[14:38] Ele tá falando aqui que é só da brisa.
+[14:40] Eu não tô falando do vídeo de referência que eu mandei.
+[14:43] Eu tô falando que você acabou confundindo
+[14:46] com as referências que estão lá na pasta.
+[14:49] Na pasta de referências em geral.
+[14:53] Normalmente, acho que ela já mandaria aqui pra você
+[14:57] esse HTML pra você poder aprovar.
+[15:01] Porém, como a gente já mandou uma ideia pronta,
+[15:04] aí ela acabou pulando essa etapa.
+[15:07] Então ele já montou aqui o HTML,
+[15:09] é só clicar em abrir,
+[15:11] ele vai abrir essa parte aqui, ó.
+[15:13] Os materiais abaixo tem todos esses vídeos aqui de referência, tá?
+[15:17] Eu tava falando no início.
+[15:19] Escolher aqui qual você vai querer.
+[15:21] Então esse daqui eu quero só,
+[15:23] esse daqui eu acho bacana também ter,
+[15:26] esse daqui eu não quero.
+[15:28] Esses vídeos aqui eu também não quero.
+[15:30] Esse daqui eu quero.
+[15:32] Esse daqui eu não quero.
+[15:34] Esse daqui é bacana pra ter também.
+[15:36] E esse daqui eu não quero.
+[15:38] Esse daqui também eu não quero.
+[15:40] Só ficando esse botão rosa aqui de copiar as escolhas
+[15:42] e dar um control V aqui,
+[15:44] ou colar aqui no chat de mandar.
+[15:53] Maravilha, ó.
+[15:55] Ele já montou aqui outra história em Bode.
+[15:57] Depois ele tá provando aqui de lá.
+[15:59] Ó, eu tô agora.
+[16:01] Então uma coisa mais bacana.
+[16:03] Ó, o gancho da câmara escorrega,
+[16:06] os fotos passando aqui na câmara,
+[16:08] essa parte que eu gostei,
+[16:10] a virada com explosão,
+[16:12] a lata fatiando,
+[16:14] esse da lata fatiando eu não gostei,
+[16:16] porque agora não combina
+[16:19] com a marca da Guaraná, sabe?
+[16:21] Se fosse alguma coisa de laranja,
+[16:24] alguma outra fruta assim,
+[16:27] que talvez combinasse.
+[16:29] Trim, print aqui agora.
+[16:31] Tô jogando no chat e tô falando nessa parte aqui.
+[16:34] Bora entender esse storyboard aqui que ela montou.
+[16:37] Por quê?
+[16:39] Porque como a gente vai modelar lá no Blender,
+[16:41] esse daqui já é meio que a forma como é que vai ficar.
+[16:46] Então ele tem que deixar esse daqui bem ajustado
+[16:50] pra não ter tempo de jogar do fora.
+[16:53] Então a primeira parte,
+[16:55] ela vai vir aqui com o gancho,
+[16:57] vai ser colado na tampa,
+[16:59] vai desvizear pelo corpo da lata,
+[17:01] achei bacana.
+[17:03] Depois as frutas aqui passando na tela,
+[17:05] descendo, achei bacana também.
+[17:07] Depois a virada, explosão com as coisas aqui,
+[17:10] a lata fatiando,
+[17:13] fruto com grafismo,
+[17:15] a câmara de gelo.
+[17:17] Aí a lata para do lado do corpo também achei bacana,
+[17:20] originais e aeros juntas.
+[17:23] Maravilha, esse daqui é o storyboard,
+[17:25] tá aprovado.
+[17:27] Só essa parte aqui,
+[17:29] eu não quero que eu já vou falar aqui pra ele.
+[17:37] Pronto, Maravilha.
+[17:39] Agora já mandou outra storyboard,
+[17:41] sem aquela parte lá que eu não gostei.
+[17:43] E pra mim isso, tá aprovado.
+[17:45] Aqui ele tá pedindo permissão
+[17:52] pra baixar as peças aí no meu Chrome.
+[17:56] Então você já tem que estar com o Chrome aqui ligado.
+[18:00] Você tem que estar com o Chrome aqui.
+[18:07] Tá aberto.
+[18:08] Tá porque ele vai utilizar o teu Chrome
+[18:10] pra baixar algumas coisas em 3D
+[18:14] e algumas outras coisas, tá?
+[18:17] Aí como é que vai funcionar?
+[18:19] Primeiro, tu vai baixar a extensão do cloud
+[18:22] e o próprio cloud aqui, caso tu não tenha
+[18:25] a extensão no Google.
+[18:26] Ele vai te auxiliar,
+[18:28] como é que tu consegue fazer essa extensão.
+[18:30] Depois de fazer a extensão,
+[18:32] aplicar aqui,
+[18:33] normalmente é por aqui,
+[18:35] as extensões,
+[18:37] vai aparecer por aqui.
+[18:38] Aí ele vai aparecer aqui.
+[18:39] Quando ele tiver aqui,
+[18:41] é porque vai estar funcionando, tá?
+[18:43] Aí depois que o cloud já apareceu aqui no Chrome,
+[18:46] aí ele já vai estar conectado.
+[18:48] Só tu clicar aqui e o próprio cloud
+[18:50] ele vai mexendo aqui ontem.
+[18:52] O teu Chrome vai baixando as coisas.
+[18:54] Todos os modelos que o cloud
+[19:02] tiver baixando são gratuitos, tá?
+[19:04] Desse sketch fab aqui.
+[19:06] Você só precisa fazer login
+[19:08] nas coisas que ele for pedir pra fazer login.
+[19:10] Conectar ele no Chrome.
+[19:12] Ele vai te auxiliar, conectar no Chrome também.
+[19:15] E,
+[19:16] pode deixar ele baixando as coisas aqui
+[19:18] que ele mesmo está fazendo, tá?
+[19:20] Eu não estou mexendo em nada,
+[19:21] é o meu modo aqui do lado.
+[19:22] Eu não estou mexendo em nada.
+[19:24] Quem está fazendo isso aqui,
+[19:25] tudo, mexendo sketch fab,
+[19:27] baixando as coisas, é tudo cloud.
+[19:29] A certa dele, esse é o aranjo aqui.
+[19:32] É ele que está mexendo aqui nas coisas.
+[19:35] Ele falou que precisava do roto,
+[19:45] da zero.
+[19:46] Também que a gente só fez o roto da,
+[19:48] agora na comum.
+[19:49] E como a gente vai fazer com a zero
+[19:51] e com a comum,
+[19:52] é o projeto do roto da zero também.
+[19:54] Aí,
+[19:55] eu pedi pra ele mandar
+[19:57] a latinha do zero pra gente
+[19:59] fazer a mesma coisa que fez
+[20:01] na normal.
+[20:02] Vou lá ver o chat de pt.
+[20:03] Aí eu só copiei o prompt daqui de cima,
+[20:06] coloquei a latinha aqui, colei o prompt,
+[20:09] e ele já me devolveu aqui.
+[20:11] É só baixar e jogar lá no cloud.
+[20:14] E pronto.
+[20:15] Só esperar ele gerar,
+[20:17] ele gerar as coisas agora.
+[20:18] Pronto, maravilha aqui.
+[20:25] Um roto, eu já fiz aqui a prévia da lata.
+[20:28] Tá vendo se daqui já foi o que ele modelou lá no blender.
+[20:31] Show, maravilha.
+[20:32] Pra mim, já tá aprovado,
+[20:34] ele já pode seguir.
+[20:35] Se você quiser se ajustar alguma coisa,
+[20:37] esse é o momento que você pedir, tá?
+[20:40] Pra mim aqui,
+[20:41] só pra fazer de porta e folha,
+[20:43] já tá ótimo.
+[20:44] Olha, já mandou meio que uma prévia aqui,
+[20:52] de como é que tá ficando.
+[20:54] Então, a partir daqui,
+[20:55] já pode pedir alguns ajustes, por exemplo.
+[20:57] Esse gelo aqui, eu não achei realista.
+[21:00] Tem que tá mais realista.
+[21:02] Esse gelo aqui,
+[21:03] eu não achei realista.
+[21:05] Ele precisa estar mais realista,
+[21:07] efeito de fumaça,
+[21:09] precisa parecer que tá gelado.
+[21:11] E outra coisa aqui também.
+[21:13] Esse copo,
+[21:14] ele também precisa ser um copo mais realista.
+[21:16] Esse copo tá parecendo muito de plástico,
+[21:19] de papel, sei lá.
+[21:21] Ele precisa ser realista.
+[21:22] Olha aí,
+[21:24] já mandou nois prévios, tá vendo?
+[21:31] Tá vilho, ó.
+[21:32] Já tem meu gelo aqui,
+[21:33] ele deu algumas coisas aqui,
+[21:35] melhorou o copo,
+[21:37] a parte do gelo também
+[21:39] deu melhorada, tá vendo?
+[21:42] E no final,
+[21:44] ele virou aqui o MP4
+[21:46] que é pra gente.
+[21:47] Bora clicar aqui pra ver como é que ficou.
+[22:06] Eu achei bacana,
+[22:08] só que dá pra melhorar
+[22:09] algumas coisas, por exemplo.
+[22:11] Essa parte inicial,
+[22:13] que você não consegue entender nada.
+[22:15] Então,
+[22:16] eu vou falar aqui pra ele.
+[22:18] Dois zeros segundos
+[22:20] até os dois segundos,
+[22:22] não dá pra entender nada,
+[22:24] tá com muito zoom.
+[22:25] Deixa
+[22:26] com menos zoom,
+[22:28] mais suave,
+[22:30] essa parte inicial.
+[22:32] Essa parte aqui,
+[22:34] dá pra gente fazer o seguinte.
+[22:36] Quando vem os ingredientes assim,
+[22:38] a lata já tem que estar lá no fundo
+[22:40] dos dois segundos,
+[22:42] quando a fruta do guaraná
+[22:44] tá vindo em direção à câmera,
+[22:46] a gente já tem que colocar
+[22:48] a lata lá no fundo já.
+[22:50] Ou então,
+[22:52] a lata pode dar uma subida.
+[22:54] Aí lá,
+[22:56] nessa parte aqui da lata
+[22:58] onde ela dá essa volta,
+[23:00] o líquido,
+[23:02] ele ficou estranho,
+[23:04] não ficou com textura de guaraná.
+[23:06] Tem que ajeitar esse líquido.
+[23:08] E a parte do Coisa Nossa
+[23:10] ficou cortada,
+[23:12] a fonte, a parte de cima.
+[23:14] A parte dos seis segundos
+[23:16] onde tá os frutos,
+[23:18] eu não gostei muito
+[23:20] também, seria melhor se
+[23:22] tivesse algum efeito
+[23:24] nesses frutos, eles tivessem um pouquinho
+[23:26] mais longe da tela
+[23:28] e tivesse com a parte preta
+[23:30] virada pra câmera.
+[23:32] E vai ficar como se o olhinho
+[23:34] aqui tivesse olhando pra câmera, né?
+[23:36] Essa parte dos 12 segundos
+[23:38] aqui seria bom se a lata
+[23:40] tipo abrisse assim
+[23:42] um leque de 2.
+[23:44] Já assisti no preview.
+[23:57] 2, 5 para os 6 segundos
+[24:04] não precisa dar esse zoom
+[24:06] pra mostrar a fruta.
+[24:08] Ela já pode vim
+[24:10] num corte seco e a fruta
+[24:12] tá fazendo
+[24:14] um movimento ali.
+[24:29] Lá pelos 9 segundos
+[24:31] achei que a lata ficou
+[24:33] um muito reflexo
+[24:35] nesses 9 segundos aí.
+[24:37] Seria bom se tivesse uma fumaça
+[24:39] atrás
+[24:41] do copo e da lata também.
+[24:43] Pra não ficar esse fundo
+[24:45] chapado.
+[24:56] De forma geral, dei uma melhorada
+[24:58] no que você acha que dá pra melhorar.
+[25:00] Analise todo
+[25:02] o vídeo que você gerou
+[25:04] e pense a forma que você consegue
+[25:06] melhorar esse vídeo.
+[25:08] Melhorar o tempo
+[25:10] da música
+[25:12] Seja melhor
+[25:14] o vídeo em si, speed ramp
+[25:16] Melore, analise e melore.
+[25:20] Pronto, a gente já mandou pra ele
+[25:22] todos os ajustes aqui
+[25:24] agora ele vai ver
+[25:26] tudo isso aqui e vai fazer os ajustes.
+[25:28] Pronto, maravilha aqui. Ele falou agora que
+[25:30] tá já aprovado
+[25:32] já tá exportado, tá vendo?
+[25:34] Vamos ver aqui em cima como é que ficou.
+[25:39] É doido, rapaz. Ficou
+[25:55] top demais, hein?
+[25:57] Se você quiser fazer
+[25:59] outro ajuste aqui no vídeo
+[26:01] é só pedir pra ele
+[26:03] do mesmo jeito que
+[26:05] eu pedi esses ajustes aqui também que ele vai fazer.
+[26:07] Aí você vai colhindo
+[26:09] até ficar do jeito que você precisa.
+[26:11] Tá?
+[26:13] E se tiver aprovado, já tá aprovado,
+[26:15] já tá lá na pasta.
+[26:17] Tá vendo? Ele jogou aqui, ó.
+[26:19] Ele falou pasta? Não.
+[26:21] Ele vai colocar na pasta, mas de qualquer forma
+[26:23] você pode perguntar a ele aqui, ó.
+[26:25] Você clicar aqui, ó.
+[26:27] Ele já vai abrir aqui a pasta.
+[26:29] Tá vendo? Vai exportar com
+[26:31] e sem a música também.
+[26:33] Fechou? Foi isso aí.
+[26:35] O vídeo tá. Posto o resultado lá
+[26:37] no grupo de anos que a gente vai dar uma olhada.

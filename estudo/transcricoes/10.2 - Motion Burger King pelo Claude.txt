@@ -1,0 +1,214 @@
+# 10.2 - Motion Burger King pelo Claude
+
+[00:00] Bora sim, bora rapaz, mais uma aula aqui, dessa vez a gente vai aprender a criar no estilo de motion
+[00:06] pra aplicativo de comida e fude em geral. Aí é só você vir aqui ó, primeiro você vai baixar
+[00:12] a skill que tá aqui embaixo, jogar aqui no clode code e mandar instalar, mesmo processo que a gente fez antes, tá?
+[00:18] Só joga aqui no clode code, ele vai instalar, aí é só você apertar aqui ó, colocar a barra iFUDE
+[00:26] que ela aparece, tá vendo? Aí é só mandar enter que ela vai fazer algumas perguntas aqui pra você já.
+[00:37] Ó, primeira coisa que que ela pergunta, qual vai ser o tipo de diálogo que a gente vai fazer aqui, ó?
+[00:43] A gente vai fazer uma, o portfólio, então selecione aqui ó, portfólio. Qual tom o motion deve ter?
+[00:50] Leve, engraçado, emocional, direto, vou colocar aqui engraçado, a duração do motion.
+[00:56] Tá, bora colocar uns 45 segundos, vai ser a minha voz, a voz de Adébenébis, vai ser a voz de Adébenébis.
+[01:04] Lembra de tá com o opo e cinco pontos, tá? Aí ele tá fazendo mais algumas perguntas aqui ó.
+[01:09] Marca, bora fazer do, bora fazer do boi aqui, a situação, a definir, não tô com uma ideia montanha não.
+[01:20] É, referência, agora coisa boa, cá tá agora a referência disso daí.
+[01:25] Eu vou dar uma procurada lá pelo Intrash, para ver se a gente acha alguma coisa boa por lá.
+[01:33] Para ver, isso aqui que parece bacana né?
+[01:38] Hmm, eu gostei dessa parte aqui que fala o óper, ó.
+[01:42] Já vou apertei o botão central do mouse pra ele já ir pra cá,
+[01:48] vou pegar só aquela partezinha lá que eu gostei.
+[01:52] Bora lá, agora é o momento que a gente vai olhando as coisas.
+[02:01] Isso aqui parece bom, mais ou menos a estética do Burger King, mas eu...
+[02:07] Mais ou menos, ó, esse daqui é bom pra pegar da parte de design, eu já coloquei aqui.
+[02:14] Eu acho que eu não vou achar muita coisa de design de Burger King.
+[02:28] Tá, não tô achando muita coisa por aqui.
+[02:35] Essa daqui, essa parte inicial aqui eu gostei muito.
+[02:41] Esse daqui é a identidade visual, né?
+[02:44] Vou mandar aqui essa identidade visual, vou colocar aqui esse site aqui.
+[02:50] Ele vai estar aqui na descrição também, se você...
+[02:57] Agora eu vou no site da Burger King pra ver.
+[03:02] Eu vou no Instagram da Burger King, mais imagem real.
+[03:15] Agora vamos pro site deles então.
+[03:18] O site deles é esse aqui, ó, site, agora tem umas coisas bocadas.
+[03:28] Bora mandar o logo aqui também da Burger King.
+[03:36] Comida, essas coisas eu não tô conseguindo pegar.
+[03:47] Eu acho que de referência vai acabar sendo isso daqui mesmo.
+[03:50] Eu preciso ainda enviar uns hambúrgueres aqui pra ele, né?
+[03:56] Mas aí isso daí eu não tô na minha cabeça o que eu consigo pegar agora,
+[03:59] então eu vou pedir pra a própria inscrição mandar isso daqui pra mim.
+[04:02] Então, falar tudo isso daqui pra ele.
+[04:04] Ó, eu não tô com... eu te mandei aí, anexo, referência de vídeo,
+[04:08] referência de design e mandei também o site deles,
+[04:13] onde de lado vai tirar fontes, vai tirar os...
+[04:16] Tem que ser bem no estilo de Burger King, da marca Burger King mesmo, tá?
+[04:22] Nas identidade visual deles, cores, fontes, etc.
+[04:25] Aí agora o que que a gente precisa?
+[04:27] Eu preciso te mandar umas fotos de... umas fotos reais de lanches, né?
+[04:33] Do Burger King pra você conseguir inserir no vídeo esses lanches reais.
+[04:38] Aí você tem que mandar pra mim quantos lanches eu preciso te mandar,
+[04:42] quais vão seus lanches, e me manda também um prompt pra gerar a imagem desses lanches,
+[04:50] pra gerar no mesmo nível ali das coisas do Burger King.
+[04:56] Na verdade, da identidade visual, mesmo isso e etc.
+[04:59] O prompt tem que gerar esse tipo de coisa.
+[05:01] Sobre o roteiro, tu tem que me mandar um roteiro também pra eu te mandar a narração.
+[05:07] Eu ainda não tive a ideia do vídeo, tu vai ter que me ajudar com essa ideia do vídeo também.
+[05:13] Às telas do aplicativo, tu pode tirar de lado do site.
+[05:17] A música pode gerar, vai ser do Eleven Labs.
+[05:24] Os efeitos sonoros, pode pegar da minha pasta de efeitos sonoros, alguns.
+[05:31] E no final, tu coloca no final do vídeo, tu coloca que eu ensino a fazer esse motion
+[05:42] lá pelo curso Motion Cunha, isso daí na narração, né?
+[05:46] E que ele tá na black agora e pra pessoa comentar Burger e olhar o Direct.
+[06:04] E agora é esperar ele vai tá gerando aqui bastante e esperar ele mandar as coisas pra mim.
+[06:10] Ele vai analisar tudo aqui agora.
+[06:22] Esse roteiro, eu acabei de ler aqui, eu achei, ok, só que não sei se tá na cara das King.
+[06:32] Sabe então, vou falar isso aqui pra ele.
+[06:34] Só achei que esse roteiro aí que tu mandou não ficou muito com cara de Burger King.
+[06:39] Tenho certeza que esse é o estilo da Burger King, o estilo que ele se comunica e etc.
+[06:52] Inclusive ele falou aqui pra mim que vai conseguir pegar as imagens direto, oficial e direto do site.
+[07:00] Então, bora ver.
+[07:01] Esse efeito geral do prompt, não, vamos confiar nele aqui, né?
+[07:05] Vamos ver qual foi essas imagens aí que ele vai conseguir pegar direto do site.
+[07:09] O nome é Motion com IA.
+[07:12] Sobre as imagens, como tu falou que vai conseguir pegar as imagens direto do site, aí pode pegar por lá mesmo, tá?
+[07:22] Pode baixar a fonte, pode pegar as fotos oficiais lá do site, contanto que fica uma qualidade boa, pode pegar.
+[07:39] Agora é esperar, né?
+[07:52] Acabou de terminar de carregar aqui, que é que foi que ele mandou.
+[07:56] Ele recortou aqui o resultado aqui, olha, essas fotos que ele pegou.
+[08:02] Vou achar esse daqui bem melhor.
+[08:05] Aí a gente vai fazer lá pelo Elevem Labs, né?
+[08:08] Só que como é que a gente vai fazer?
+[08:10] A gente vai pedir pra ele que já colocar tags lá do Elevem Labs.
+[08:20] Tá pedindo uma sacola, uma imagem dessa daqui, gerando lá pelo...
+[08:30] Aqui, pronto e apertei o botão aqui, ela já tá gerando.
+[08:37] Que tá pedindo essa sacola aí em específico.
+[08:40] Mas você pode baixar de qualquer outro lugar.
+[08:43] Inclusive, eu vou deixar aqui embaixo um banco de imagens gratuito pra você conseguir baixar algumas imagens.
+[08:51] Já vou aqui em New Loads, as fontes.
+[08:55] Ele mandou esses três sites daqui, ó, pra eu baixar essas fontes.
+[08:59] Pra eu ver aqui então.
+[09:00] Eu cliquei aqui e já baixou os três fontes.
+[09:05] Vou jogar aqui o roteiro, né?
+[09:08] Vou falar pro ele assim, ó.
+[09:09] Roteiro tá aprovado, mas me manda tags pra deixar mais dinâmico pelo Elevem Labs.
+[09:16] Aqui ele vai fazer, ele vai pegar todos esses materiais aqui, já vai salvar ali do jeito que ele vai querer fazer.
+[09:22] E o roteiro ele vai mandar com as tags, a gente vai colocar lá pelo Elevem Labs.
+[09:34] Você já mandou aqui, ó, com as tags, eu só vou copiar e vou abrir aqui o Elevem Labs.
+[09:40] Eu já tenho alguns cretos aqui na conta, mas quando você cria uma conta nova, ele dá alguns cretos pra você também.
+[09:47] Então eu não precisa nem você pagar, só criar uma conta nova e utilizar.
+[09:52] Aí vou clicar aqui em Test To Speech, aqui já era outra coisa, né?
+[09:55] Ó, você vai começar aqui nessa tela, aí é só clicar aqui em Test To Speech.
+[10:00] Eu gosto de usar essa voz aqui, ó.
+[10:02] Tá analis, eu achei ela mais carismática.
+[10:04] Só colar aqui, tá vendo que já ficou com as tags e as rosas, vai deixar o vídeo mais.
+[10:21] Eu vou baixar aqui e vou mandar lá pro qual já envia aqui.
+[10:25] E esse cupom aí eu vou pedir pra ele colocar tudo, é doido.
+[10:33] Aí agora ele vai ver tudo isso daqui que ele mandou e já vai gerar o vídeo.
+[10:44] Lembrando, eu vou pedir pra ele colocar tudo em uma pasta aqui, centralizar tudo em uma pasta.
+[10:57] Lembra de centralizar todos os arquivos nessa pasta, tá?
+[11:00] Os que ficaram espalhados, você vai mover pra essa pasta aqui também, pra mover.
+[11:06] E a vinda de ficar arquivos duplicados, então sempre faça esse processo aqui.
+[11:11] E agora é só esperar ele gerar.
+[11:14] Abre o Hyper Frames aqui no Cloud.
+[11:17] E só abre o Hyper Frames aqui no Cloud, não abre no navegador.
+[11:21] Mas dá pra dar uma melhorada, né?
+[11:23] É.
+[11:24] Já abriu aqui.
+[11:25] Olha, nossa!
+[11:28] Ó, utilidade!
+[11:30] Utilidade!
+[11:34] Ó.
+[11:35] E eu acho que dá pra centralizar melhor as coisas, tá?
+[11:45] Esse início aqui com as letras, eu não gostei muito.
+[11:51] Eu gostei desse fogo com o hambúrguer centralizado.
+[12:01] Eu gostei desse fogo com os nomes passapoco.
+[12:05] E já pode gerar tudo, que eu quero ver o resultado completo.
+[12:11] Agora é só esperar que ele vai gerar o restante.
+[12:15] Se ele te volta aqui novamente com dele.
+[12:17] Aí, bora ver qual é o resultado agora, né?
+[12:20] Pente na chama, pra fazer o molho de um bêster.
+[13:02] Eu achei bom, porém, dá pra melhorar, né?
+[13:06] Só com essa, você já consegue ter um resultado ótimo já na primeira tentativa.
+[13:12] Porque ela já tá pré-configurada aqui, ó.
+[13:15] Pra exportar esse tipo de vídeo aqui, você pode tanto exportar por aqui,
+[13:19] como você vai controlar, qual vai ser a resolução, o formato, a fiscalidade.
+[13:25] Ou você pode pedir pra exportar pelo chat aqui.
+[13:28] Qualquer um dos jeitos aqui já funciona, tá?
+[13:31] Aí, o que é que eu vou fazer agora?
+[13:33] Agora eu vou pedir alguns ajustes aqui pra melhorar ainda mais esse vídeo.
+[13:38] Bora reassistir aqui e ir pontuando os ajustes.
+[14:01] Esse daqui eu gostei, que já chamou mais atenção, tá vendo?
+[14:05] Eu queria falar isso daqui pra ele.
+[14:07] Ó, o começo eu gostei muito mais dessa referência.
+[14:12] Porque já aparece um hambúrguer ali, já tem as fontes ali mais ou menos.
+[14:18] Eu queria que o começo fosse bem parecido com essa referência daqui, ó.
+[14:22] Aparecer umas fontes assim.
+[14:25] Aí já aparece um hambúrguer logo de cara.
+[14:28] Isso daí aparecendo também as palavras, né?
+[14:31] E na parte do fogo, eu queria que colocasse também, como se fosse um 2D ali de fogo,
+[14:37] que combinasse ali com a identidade visual também.
+[14:41] Essa daqui é a parte inicial.
+[14:44] Essas doadinhas aí de aplicativa não gostei.
+[14:48] Vou falar aqui pra ele, ó.
+[14:49] Esses efeitos sonoros de aplicativo, eu não gostei.
+[14:54] Eu não quero que você utilize esse estilo.
+[14:56] Eu quero que utilize mais uma coisa mais...
+[14:59] Algumas coisas aqui e ali, mas sem usar muito esses de aplicativo, sabe?
+[15:06] Tem que usar efeitos sonoros de fogo também, na hora do fogo.
+[15:10] Da chapa, na hora da chapa.
+[15:13] Bora pra outros ajustes aqui.
+[15:15] Essa transição aqui, lá pelos 15 segundos pra diagonal, eu não gostei.
+[15:19] Eu prefiro que a transição seja pra lateral, sabe?
+[15:27] Esse celular aqui que você colocou lá pelos 17 segundos, ele tá invisível.
+[15:31] Você tem que criar um mock-up de iPhone pra colocar aqui.
+[15:36] Aí na hora de pegar o cupom, essas coisas, aí você pode até meio que expandir a tela assim, sabe?
+[15:42] Pra mostrar mais dessa parte do cupom e tal, porque convidou na horizontal.
+[15:47] Aí tem que aproximar mais.
+[15:49] Bora pra mais ajuste.
+[15:55] Show.
+[15:56] Acho que os ajustes são esse daí mesmo.
+[15:59] Pronto, aperta enter e esperais gerar aqui.
+[16:02] Show, maravilha, ele já gerou aqui.
+[16:04] Vou tomar aquele que ele gerou.
+[16:06] E agora, bora ver o resultado, como é que ficou.
+[16:09] Que isso não tá bom.
+[16:15] Boa!
+[16:17] A gente vai dar pra gente ver a textura, né?
+[16:20] A gente leva a série do seu jeito.
+[16:23] Tem cebola, um bacon, um carnet do braço, né?
+[16:28] Bom, gente, é exateus pra você, né?
+[16:30] Então, eu aprendi a fazer um mock-up dele.
+[16:39] Muito bem.
+[16:40] Moço.
+[16:41] Tá na blackboard.
+[16:42] Vou ir no burger e olha teu direto.
+[16:48] Agora sim, futebol.
+[16:50] Ih, rapaz.
+[16:51] Ué, doido.
+[16:52] Agora sim, futebol.
+[16:54] A única coisa que eu quero ajeitar aqui é que essa parte aqui ficou transparente
+[17:00] ainda.
+[17:01] Eu só vou falar isso aqui pra ele e pra mim já tá top de verdade, rapaz.
+[17:08] Só essa parte aqui do mock-up do celular que ainda ficou transparente, entendeu?
+[17:14] Não pode ficar transparente essa parte.
+[17:16] Tem que ficar um mock-up mais bem feito.
+[17:19] Três desses possível.
+[17:20] Fechou.
+[17:21] É isso aí, rapaz.
+[17:22] E eu já vou pedir pra ele exportar aqui a última parte.
+[17:25] Caramba.
+[17:26] Já gerou aqui, tá?
+[17:27] Pra gente.
+[17:28] Tem um burger que é feito em uma chaca.
+[17:31] Coitado.
+[17:32] O nosso vai pro fogo.
+[17:36] Carne de verdade.
+[17:38] Frescura?
+[17:39] A gente leva a sério.
+[17:41] E do seu jeito.
+[17:42] Sem cebola, com bacon, carne dobrada.
+[17:46] Pede no app, pega o cupom e diz adeus pra fila.
+[17:50] Afinal, quem é rei?
+[17:52] É rei.
+[17:57] Quer aprender a fazer um motion desse?
+[17:59] Eu ensino no curso Motion com Iá, que tá na black agora.
+[18:02] Comenta burger e olha teu direct.

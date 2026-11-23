@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard Dane-se</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+  :root { --papel: #f5f1e6; --lapis: #2b2b2b; --cinza: #8a857a; --aviso: #b3261e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--papel); color: var(--lapis); font-family: "Patrick Hand", "Comic Sans MS", cursive; }
+  .folha { width: 1600px; margin: 0 auto; padding: 36px 40px 48px; }
+  h1 { font-family: "Caveat", cursive; font-size: 54px; margin: 0; line-height: 1; }
+  .sub { font-size: 20px; color: var(--cinza); margin: 6px 0 18px; }
+  .regra { border: 3px dashed var(--aviso); color: var(--aviso); padding: 12px 18px; font-size: 21px; line-height: 1.35; margin-bottom: 26px; border-radius: 6px; }
+  .regra b { font-family: "Caveat", cursive; font-size: 30px; display: block; }
+  .grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px 30px; }
+  .quadro svg { width: 100%; display: block; background: #fbf9f3; border: 2.5px solid var(--lapis); border-radius: 4px; filter: url(#tremido); }
+  .cab { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; gap: 10px; }
+  .cab .n { font-family: "Caveat", cursive; font-size: 30px; font-weight: 700; white-space: nowrap; }
+  .cab .t { font-size: 18px; color: var(--cinza); white-space: nowrap; }
+  .notas { font-size: 17px; line-height: 1.3; margin-top: 8px; }
+  .notas div { margin: 2px 0; }
+  .notas span { color: var(--cinza); }
+  .cor { display: inline-block; width: 14px; height: 14px; border: 1.5px solid var(--lapis); vertical-align: -2px; margin-right: 3px; border-radius: 3px; }
+  .rodape { margin-top: 26px; font-size: 18px; color: var(--cinza); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="tremido"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter>
+</svg>
+<div class="folha">
+  <h1>Dane-se · storyboard (rascunho)</h1>
+  <div class="sub">Comercial 3D não oficial · 16:9 · 32 s · 120 BPM (64 batidas, 1 batida = 0,5 s) · sem narração, só música + efeitos</div>
+  <div class="regra">
+    <b>REGRA: isto é só rascunho de montagem.</b>
+    Este desenho mostra a ORDEM das cenas, o que entra em cada uma e para onde a câmera e as latas se movem. NÃO copie o visual dele: nem o traço de lápis, nem a fonte manuscrita, nem o papel, nem as setas, nem a composição exata. O design final segue a &lt;direcao&gt; do prompt e as latas 3D reais. Os quadradinhos de cor são só anotação.
+  </div>
+  <div class="grade" id="grade"></div>
+  <div class="rodape">Legenda: seta cheia = movimento da câmera · seta tracejada = movimento da lata ou das peças · bN = batida N · letras vazadas grandes = palavra ATRÁS da lata · lata escura = silhueta · quadradinho branco no canto = close de detalhe rápido dentro da cena</div>
+</div>
+
+<script>
+const L = "#2b2b2b";
+// lata: centro (x,y), largura w, altura h, inclinacao em graus; rotulo opcional
+function lata(x, y, w, h, ang, rot = "", o = {}) {
+  const r = w / 2, ey = w * 0.16, topo = y - h / 2, base = y + h / 2, pesc = h * 0.1;
+  const corpo = `M${x - r},${topo + pesc} L${x - r},${base - ey * 0.4} Q${x},${base + ey} ${x + r},${base - ey * 0.4} L${x + r},${topo + pesc}`;
+  const pescoco = `M${x - r},${topo + pesc} Q${x - r},${topo + pesc * 0.4} ${x - r * 0.84},${topo} M${x + r},${topo + pesc} Q${x + r},${topo + pesc * 0.4} ${x + r * 0.84},${topo}`;
+  const cheia = o.cheia || "#fbf9f3";
+  let s = `<g transform="rotate(${ang} ${x} ${y})" fill="none" stroke="${L}" stroke-width="2.2" stroke-linecap="round">`;
+  // corpo preenchido: a lata tampa o que estiver atras dela
+  s += `<path d="M${x - r},${topo + pesc} L${x - r},${base - ey * 0.4} Q${x},${base + ey} ${x + r},${base - ey * 0.4} L${x + r},${topo + pesc} L${x + r * 0.84},${topo} L${x - r * 0.84},${topo} Z" fill="${cheia}" stroke="none"/>`;
+  s += `<path d="${corpo}"/><path d="${pescoco}"/><ellipse cx="${x}" cy="${topo}" rx="${r * 0.84}" ry="${ey * 0.85}" fill="${cheia}"/>`;
+  s += `<ellipse cx="${x + r * 0.1}" cy="${topo}" rx="${r * 0.28}" ry="${ey * 0.3}" stroke-width="1.6"/>`;
+  if (!o.silhueta) s += `<line x1="${x + r * 0.55}" y1="${topo + pesc + 6}" x2="${x + r * 0.55}" y2="${base - 10}" stroke-width="1.3" stroke-dasharray="3 5"/>`;
+  if (rot) s += `<text x="${x}" y="${y + 4}" text-anchor="middle" font-family="Caveat" font-weight="700" font-size="${w * 0.3}" fill="${o.texto || L}" stroke="none" transform="rotate(-90 ${x} ${y})">${rot}</text>`;
+  if (o.gotas) for (let i = 0; i < 9; i++) s += `<circle cx="${x - r * 0.7 + (i * 37 % 100) / 100 * r * 1.4}" cy="${topo + pesc + 10 + (i * 53 % 100) / 100 * (h - pesc - 30)}" r="1.6" fill="${L}" stroke="none"/>`;
+  return s + "</g>";
+}
+const seta = (d, tr = false) => `<path d="${d}" fill="none" stroke="${L}" stroke-width="2.4" stroke-linecap="round" ${tr ? 'stroke-dasharray="7 6"' : ""} marker-end="url(#ponta)"/>`;
+const giro = (x, y, rx) => `<path d="M${x - rx},${y} A${rx},${rx * 0.32} 0 1 0 ${x + rx * 0.2},${y + rx * 0.31}" fill="none" stroke="${L}" stroke-width="2" marker-end="url(#ponta)"/>`;
+const txt = (x, y, t, tam = 20, o = "") => `<text x="${x}" y="${y}" font-family="Caveat" font-size="${tam}" fill="${L}" ${o}>${t}</text>`;
+const vazada = (x, y, t, tam) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="Caveat" font-weight="700" font-size="${tam}" fill="none" stroke="${L}" stroke-width="1.6" letter-spacing="4">${t}</text>`;
+const nota = (x, y, t) => `<g><rect x="${x - 4}" y="${y - 15}" width="${t.length * 7.4 + 8}" height="21" fill="#fff" stroke="${L}" stroke-width="1.2" rx="3"/>${txt(x, y, t, 16)}</g>`;
+const fundo = (c) => c ? `<rect x="0" y="0" width="480" height="270" fill="${c}" opacity="0.22"/>` : "";
+// close de detalhe rapido: quadradinho no canto com o desenho e a legenda
+const inset = (x, y, conteudo, legenda) => `<rect x="${x}" y="${y}" width="96" height="60" fill="#fff" stroke="${L}" stroke-width="1.6"/>${conteudo}${txt(x, y + 76, legenda, 15)}`;
+const olhoMini = (x, y) => `<circle cx="${x}" cy="${y}" r="18" fill="none" stroke="${L}" stroke-width="2"/><circle cx="${x}" cy="${y}" r="7" fill="${L}"/>`;
+const fundoLataMini = (x, y) => `<ellipse cx="${x}" cy="${y}" rx="30" ry="12" fill="none" stroke="${L}" stroke-width="2"/><ellipse cx="${x}" cy="${y}" rx="18" ry="6" fill="none" stroke="${L}" stroke-width="1.4"/>`;
+const bordaMini = (x, y) => `<path d="M${x - 38},${y + 15} Q${x},${y - 25} ${x + 38},${y + 15}" fill="none" stroke="${L}" stroke-width="2"/>` +
+  [0, 1, 2, 3].map(i => `<circle cx="${x - 26 + i * 18}" cy="${y + 7 - (i % 2) * 8}" r="3" fill="none" stroke="${L}" stroke-width="1.4"/>`).join("");
+
+// frutas e explosao (so rascunho)
+const rodela = (x, y, r, a) => `<g transform="rotate(${a} ${x} ${y})" fill="#fbf9f3" stroke="${L}" stroke-width="1.6"><circle cx="${x}" cy="${y}" r="${r}"/><circle cx="${x}" cy="${y}" r="${r * 0.72}" fill="none"/>` +
+  [0, 1, 2, 3, 4, 5].map(i => `<line x1="${x}" y1="${y}" x2="${x + Math.cos(i * Math.PI / 3) * r * 0.72}" y2="${y + Math.sin(i * Math.PI / 3) * r * 0.72}" stroke-width="1"/>`).join("") + `</g>`;
+const cubo = (x, y, r, a) => `<g transform="rotate(${a} ${x} ${y})" fill="#fbf9f3" stroke="${L}" stroke-width="1.6"><rect x="${x - r}" y="${y - r}" width="${r * 2}" height="${r * 2}" rx="${r * 0.35}"/><path d="M${x - r * 0.6},${y - r} l${r * 0.4},${-r * 0.4} h${r * 1.6} l${-r * 0.4},${r * 0.4}" fill="none"/></g>`;
+const gota = (x, y, r, a) => `<g transform="rotate(${a} ${x} ${y})" fill="#fbf9f3" stroke="${L}" stroke-width="1.6"><path d="M${x},${y - r * 1.3} Q${x + r},${y + r * 0.1} ${x},${y + r * 0.9} Q${x - r},${y + r * 0.1} ${x},${y - r * 1.3} Z"/><circle cx="${x - r * 0.25}" cy="${y + r * 0.1}" r="${r * 0.18}" fill="${L}" stroke="none"/></g>`;
+function explosao(cx, cy, peca, qtd) {
+  let s = "";
+  for (let i = 0; i < qtd; i++) {
+    const a = i / qtd * Math.PI * 2 + 0.3, d = 105 + (i * 37 % 60), x = cx + Math.cos(a) * d * 1.45, y = cy + Math.sin(a) * d * 0.82;
+    s += `<path d="M${cx + Math.cos(a) * 55},${cy + Math.sin(a) * 40} L${x - Math.cos(a) * 18},${y - Math.sin(a) * 12}" stroke="${L}" stroke-width="1.1" stroke-dasharray="2 5"/>`;
+    s += peca(x, y, 9 + (i * 13 % 7), i * 47);
+  }
+  return s;
+}
+const expulsos = (peca) => [[40, 40, -150], [440, 50, -30], [30, 230, 150], [450, 230, 30]].map(([x, y, a]) => `<g opacity="0.45">${peca(x, y, 12, 0)}</g>` +
+  seta(`M${x + Math.cos(a * Math.PI / 180) * -40},${y + Math.sin(a * Math.PI / 180) * -40} L${x - Math.cos(a * Math.PI / 180) * 6},${y - Math.sin(a * Math.PI / 180) * 6}`)).join("");
+const fixa = (x, y) => `<ellipse cx="${x}" cy="${y + 108}" rx="44" ry="8" fill="none" stroke="${L}" stroke-width="1.2" stroke-dasharray="4 4"/>`;
+const giroRapido = (x, y) => `<path d="M${x - 58},${y - 20} A58,18 0 1 0 ${x + 30},${y - 34}" fill="none" stroke="${L}" stroke-width="2.6" marker-end="url(#ponta)"/><path d="M${x - 52},${y - 8} A52,15 0 1 0 ${x + 24},${y - 22}" fill="none" stroke="${L}" stroke-width="1.4"/>`;
+const cruz = (s = 1) => lata(240, 135 - 53 * s, 40 * s, 96 * s, 0) + lata(240, 135 + 53 * s, 40 * s, 96 * s, 180) + lata(240 - 53 * s, 135, 40 * s, 96 * s, -90) + lata(240 + 53 * s, 135, 40 * s, 96 * s, 90);
+// contorno de lata em neon (tunel)
+const contornoLata = (cx, cy, w, h) => { const r = w / 2, c = w * 0.22; return `M${cx - r + c},${cy - h / 2} L${cx + r - c},${cy - h / 2} L${cx + r},${cy - h / 2 + c} L${cx + r},${cy + h / 2 - c} L${cx + r - c},${cy + h / 2} L${cx - r + c},${cy + h / 2} L${cx - r},${cy + h / 2 - c} L${cx - r},${cy - h / 2 + c} Z`; };
+const defs = `<defs><marker id="ponta" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${L}"/></marker>
+  <linearGradient id="silh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8197a" stop-opacity="0.45"/><stop offset="1" stop-color="#e8197a" stop-opacity="0.08"/></linearGradient></defs>`;
+
+const cenas = [
+  { n: 1, t: "0–2 s · b1–4", nome: "Gancho: câmera cai na tampa", cor: ["#111", "#e8197a"],
+    svg: fundo("#2a1020") +
+      `<ellipse cx="250" cy="236" rx="220" ry="58" fill="#fbf9f3" stroke="${L}" stroke-width="2.4"/><ellipse cx="250" cy="236" rx="196" ry="48" fill="none" stroke="${L}" stroke-width="1.6"/>` +
+      `<path d="M190,228 q60,-24 130,-4 q14,10 -6,18 q-70,16 -118,2 q-18,-6 -6,-16z" fill="none" stroke="${L}" stroke-width="2"/>` +
+      [0, 1, 2, 3, 4].map(i => `<circle cx="${120 + i * 62}" cy="${244 + (i % 2) * 10}" r="3" fill="none" stroke="${L}" stroke-width="1.3"/>`).join("") +
+      `<path d="M250,8 L250,120" stroke="${L}" stroke-width="3.2"/>` +
+      `<path d="M250,124 L250,170" stroke="${L}" stroke-width="2.4" stroke-dasharray="3 7" marker-end="url(#ponta)"/>` +
+      `<path d="M262,30 L262,110 M238,30 L238,110" stroke="${L}" stroke-width="1" stroke-dasharray="10 6"/>` +
+      txt(272, 60, "RÁPIDO (b1)", 22) + txt(272, 150, "câmera lenta, quase", 19) + txt(272, 168, "encostando (b2–b4)", 19) +
+      nota(22, 40, "Melancia") + txt(22, 82, "macro: gotas e", 18) + txt(22, 100, "lacre enchem a tela", 18),
+    cam: "despenca de cima rápido e freia em câmera lenta a milímetros da tampa (speed ramp)", tela: "nenhum texto: o movimento é o gancho", som: "whoosh rápido caindo → corte seco pro grave em câmera lenta" },
+  { n: 2, t: "2–4 s · b5–8", nome: "Mergulho revela o olho", cor: ["#111", "#e8197a"],
+    svg: fundo("#2a1020") +
+      `<path d="M110,0 L110,270 M370,0 L370,270" stroke="${L}" stroke-width="2.4"/><rect x="110" y="0" width="260" height="270" fill="#fbf9f3" opacity="0.7"/>` +
+      `<path d="M140,150 Q240,60 340,150 Q240,240 140,150 Z" fill="#fbf9f3" stroke="${L}" stroke-width="2.4"/>` +
+      `<circle cx="240" cy="150" r="46" fill="none" stroke="${L}" stroke-width="2.2"/><circle cx="240" cy="150" r="20" fill="${L}"/>` +
+      [...Array(12).keys()].map(i => `<line x1="${240 + Math.cos(i * Math.PI / 6) * 22}" y1="${150 + Math.sin(i * Math.PI / 6) * 22}" x2="${240 + Math.cos(i * Math.PI / 6) * 44}" y2="${150 + Math.sin(i * Math.PI / 6) * 44}" stroke="${L}" stroke-width="1.4"/>`).join("") +
+      `<path d="M60,10 Q60,120 60,250" stroke="${L}" stroke-width="2.6" fill="none" marker-end="url(#ponta)"/>` + txt(14, 262, "mergulha antes de encostar", 16) +
+      txt(380, 40, "o olho", 22) + txt(380, 62, "aparece", 22) + txt(380, 84, "e encara", 22),
+    cam: "antes de tocar a tampa, mergulha descendo colada no corpo até parar de frente pro olho", tela: "só o olho do rótulo (sem texto extra)", som: "whoosh grave descendo, hit quando o olho fica de frente (b7)" },
+  { n: 3, t: "4–6 s · b9–12", nome: "Closes de detalhe", cor: ["#111", "#e8197a"],
+    svg: fundo("#2a1020") + `<line x1="240" y1="0" x2="240" y2="270" stroke="${L}" stroke-width="2.4"/>` +
+      // esquerda: borda da tampa com gotas (ref. Lit Energy)
+      `<path d="M10,250 Q30,60 230,40" fill="none" stroke="${L}" stroke-width="3"/><path d="M22,256 Q44,78 232,58" fill="none" stroke="${L}" stroke-width="1.6"/>` +
+      [...Array(9).keys()].map(i => `<circle cx="${40 + i * 21}" cy="${200 - i * 18 + (i % 2) * 6}" r="${3 + (i % 3)}" fill="#fbf9f3" stroke="${L}" stroke-width="1.4"/>`).join("") +
+      seta("M60,150 Q90,80 180,66") + txt(70, 262, "escorrega pela borda (b9–10)", 15) +
+      // direita: lateral inclinada com desfoque raso (ref. Ape Brau)
+      `<path d="M300,0 L262,270 M450,0 L412,270" stroke="${L}" stroke-width="2.4"/>` +
+      [...Array(14).keys()].map(i => `<circle cx="${290 + (i * 41 % 130)}" cy="${20 + (i * 67 % 230)}" r="${i % 4 === 0 ? 7 : 2.5}" fill="${i % 4 === 0 ? "none" : "#fbf9f3"}" stroke="${L}" stroke-width="1.2" ${i % 4 === 0 ? 'stroke-dasharray="2 3"' : ""}/>`).join("") +
+      seta("M470,30 L460,230") + txt(250, 262, "desce colada, foco nas gotas", 15) + txt(330, 24, "rack focus (b11–12)", 15),
+    cam: "dois macros: escorrega pela curva da borda cheia de gotas, depois desce colada na lateral com o foco passeando", tela: "nenhum texto", som: "dois cliques metálicos baixos + gota escorrendo" },
+  { n: 4, t: "6–8 s · b13–16", nome: "Melancia inteira", cor: ["#111", "#e8197a"],
+    svg: fundo("#2a1020") + lata(300, 140, 78, 200, 18, "DANE-SE", { gotas: true }) + giro(300, 140, 62) +
+      seta("M440,250 Q470,140 420,40") + txt(318, 262, "câmera abre em arco", 17) +
+      txt(26, 110, "Sem medo.", 32) + nota(28, 132, "b13") + txt(26, 190, "Sem frescura.", 32) + nota(28, 212, "b15"),
+    cam: "abre em arco revelando a Melancia inteira, inclinada, e para de frente (posição fixa dos giros)", tela: "“Sem medo.” (b13) · “Sem frescura.” (b15)", som: "hit no b13 e no b15" },
+  { n: 5, t: "8–11 s · b17–22", nome: "Giro → Limão + explosão", cor: ["#f2f2ef", "#1f9d4c"],
+    svg: fundo("#e8efe6") + vazada(240, 178, "CORAGEM", 92) + explosao(240, 140, rodela, 11) +
+      fixa(240, 140) + lata(240, 140, 70, 190, -18, "DANE-SE", { gotas: true }) + giroRapido(240, 140) +
+      txt(14, 28, "giro rápido no b17:", 18) + txt(14, 46, "troca o rótulo no borrão", 16) +
+      inset(372, 12, olhoMini(420, 42), "close olho verde b21") + txt(14, 262, "frutas flutuam em câmera lenta", 16),
+    cam: "parada, de frente, leve push-in contínuo; punch-in rápido no olho (b21)", tela: "CORAGEM gigante atrás da lata", som: "whoosh do giro + boom da explosão (b17), hit no punch-in (b21)" },
+  { n: 6, t: "11–14 s · b23–28", nome: "Giro → Manga + explosão", cor: ["#f28a1a"],
+    svg: fundo("#f28a1a") + vazada(240, 178, "ATITUDE", 96) + expulsos(rodela) +
+      explosao(240, 140, cubo, 10) + fixa(240, 140) + lata(240, 140, 70, 190, -18, "DANE-SE", { gotas: true }) + giroRapido(240, 140) +
+      inset(14, 60, fundoLataMini(62, 90), "macro fundo b27") +
+      txt(70, 22, "limões são expulsos pra fora", 16) + txt(300, 262, "pedaços de manga", 17) + txt(300, 246, "giro no b23", 17),
+    cam: "parada no mesmo enquadramento; macro rápido no fundo da lata (b27)", tela: "ATITUDE gigante atrás da lata", som: "whoosh do giro + boom (b23), clique metálico (b27)" },
+  { n: 7, t: "14–17 s · b29–34", nome: "Giro → Água + aceleração", cor: ["#111", "#e8197a", "#f2f2ef", "#f28a1a"],
+    svg: fundo("#111") + vazada(240, 182, "REAL", 130) + explosao(240, 140, gota, 12) +
+      fixa(240, 140) + lata(240, 140, 70, 190, -18, "DANE-SE", { gotas: true }) + giroRapido(240, 140) +
+      inset(372, 12, bordaMini(420, 42), "borda c/ gotas b31") +
+      txt(14, 28, "gotas e respingos de água (b29)", 17) + txt(14, 246, "b33–34: troca os 4 sabores, cada vez", 16) + txt(14, 262, "mais rápido → a lata vira 4 no b35", 16),
+    cam: "parada; macro rápido na borda (b31); na aceleração, micro tremida a cada troca", tela: "REAL atrás; na aceleração as palavras piscam junto com o sabor", som: "whoosh + splash grave (b29), ticks acelerando (b33–34), boom quando vira 4" },
+  { n: 8, t: "17–22 s · b35–44", nome: "Hélice com rastro", cor: ["#111", "#f2f2ef", "#f28a1a", "#e8197a"],
+    svg: fundo("#cfc6d6") +
+      [6, 5, 4, 3, 2, 1].map(k => `<g transform="rotate(${-k * 8} 240 135)" opacity="${0.18 + (6 - k) * 0.1}">${cruz()}</g>`).join("") + cruz() +
+      `<circle cx="240" cy="135" r="8" fill="none" stroke="${L}" stroke-width="1.6"/>` + giro(240, 135, 160) +
+      txt(16, 30, "a lata vira 4 e abre", 18) + txt(16, 52, "em cruz (b35), e gira", 17) + txt(330, 30, "rastro em leque", 18) + txt(330, 50, "(igual ref. Gloria)", 16) +
+      txt(16, 250, "acelera: rastro abre", 17) + txt(16, 266, "freia: rastro fecha", 17) + txt(338, 250, "fundo troca", 18) + txt(338, 266, "a cada batida", 16),
+    cam: "câmera parada de frente, leve push-in; a hélice gira", tela: "nenhum texto (respiro visual)", som: "boom quando vira 4 (b35), whoosh crescendo com o giro, tick a cada troca de fundo" },
+  { n: 9, t: "22–24 s · b45–48", nome: "Morph: rastro vira túnel", cor: ["#2a1020", "#e8197a"],
+    svg: fundo("#2a1020") +
+      [0, 1, 2, 3, 4].map(i => { const k = 1 - i * 0.17; return `<path d="${contornoLata(240, 135, 190 * k, 250 * k)}" fill="none" stroke="${L}" stroke-width="${2.8 - i * 0.4}" ${i < 2 ? 'stroke-dasharray="6 5"' : ""}/>`; }).join("") +
+      [3, 2, 1].map(k => `<g transform="rotate(${-k * 14} 240 135)" opacity="${0.25 + (3 - k) * 0.15}">${lata(240, 135, 34, 92, 0)}</g>`).join("") +
+      lata(240, 135, 34, 92, 0) +
+      txt(14, 30, "a hélice fecha numa", 17) + txt(14, 48, "lata só, de frente (b45)", 17) +
+      txt(330, 30, "as cópias do rastro", 17) + txt(330, 48, "viram contornos neon", 17) +
+      txt(14, 246, "e se espalham em profundidade", 16) + txt(14, 262, "= o túnel (b46–47)", 16) + seta("M420,250 L300,170") + txt(352, 262, "câmera mergulha (b48)", 15),
+    cam: "parada enquanto a hélice fecha; no b48 mergulha pro centro", tela: "nenhum texto", som: "whoosh invertido (o rastro se recolhendo) + hum grave do neon acendendo" },
+  { n: 10, t: "24–26 s · b49–52", nome: "Túnel → silhueta no chão", cor: ["#e8197a", "#1f9d4c", "#f28a1a"],
+    svg: `<rect width="480" height="270" fill="url(#silh)"/>` +
+      [0, 1, 2, 3, 4].map(i => { const k = 1 - i * 0.16; return `<path d="${contornoLata(240, 135, 300 * k * 0.62, 250 * k)}" fill="none" stroke="${L}" stroke-width="${3.2 - i * 0.5}"/>`; }).join("") +
+      `<path d="M150,190 L330,190" stroke="${L}" stroke-width="1.6"/>` +
+      lata(240, 150, 26, 70, 0, "", { cheia: "#3b3438", silhueta: true }) +
+      `<path d="M228,192 L228,214 M252,192 L252,214" stroke="${L}" stroke-width="1.1" stroke-dasharray="2 4"/>` +
+      seta("M240,262 L240,222") + txt(14, 30, "anéis passam, um por batida,", 16) + txt(14, 48, "nas cores dos sabores", 16) +
+      txt(310, 30, "no fim do túnel:", 17) + txt(310, 48, "a lata em silhueta", 17) + txt(310, 66, "no chão espelhado (b52)", 15),
+    cam: "atravessa o túnel e desacelera chegando na lata em silhueta, contra a luz rosa", tela: "nenhum texto", som: "whoosh atravessando + hit grave a cada anel, freia num silêncio com sub grave" },
+  { n: 11, t: "26–29 s · b53–58", nome: "Afasta: revela a fileira", cor: ["#111"],
+    svg: fundo("#111") + `<path d="M0,200 L480,200" stroke="${L}" stroke-width="2.2"/>` +
+      [0, 1, 2, 3].map(i => lata(105 + i * 90, 140, 50, 116, 0, "", i === 0 ? { cheia: "#3b3438", silhueta: true } : (i < 3 ? {} : { cheia: "#3b3438", silhueta: true })) +
+        `<path d="M${85 + i * 90},210 L${85 + i * 90},250 M${125 + i * 90},210 L${125 + i * 90},250" stroke="${L}" stroke-width="1.3" stroke-dasharray="3 5"/>` +
+        txt(100 + i * 90, 30, "b" + (55 + i), 22)).join("") +
+      `<rect x="78" y="74" width="54" height="138" fill="none" stroke="${L}" stroke-width="1.4" stroke-dasharray="5 4"/>` + txt(60, 66, "a do túnel", 15) +
+      seta("M200,250 L140,262") + seta("M300,250 L360,262") + txt(170, 248, "câmera se afasta (b53)", 15) + txt(330, 225, "reflexo no chão", 15),
+    cam: "do chão espelhado a câmera se afasta, recuando e subindo um pouco, e revela as outras 3 latas ao lado", tela: "nenhum texto", som: "respiro grave no recuo, 4 hits quando cada lata acende (b55–b58)" },
+  { n: 12, t: "29–32 s · b59–64", nome: "Logo, aviso e assinatura", cor: ["#111"],
+    svg: fundo("#111") + `<rect x="140" y="52" width="200" height="100" fill="none" stroke="${L}" stroke-width="2.4"/>` +
+      `<text x="240" y="96" text-anchor="middle" font-family="Caveat" font-weight="700" font-size="44" fill="${L}">DANE</text><text x="240" y="140" text-anchor="middle" font-family="Caveat" font-weight="700" font-size="44" fill="${L}">-SE</text>` +
+      txt(150, 180, "Energy drink · Zero açúcar", 22) + txt(152, 216, "Comercial não oficial · by @ayrtonsena.stg", 15) +
+      nota(26, 34, "logo real do site") + seta("M420,200 L460,250") + txt(330, 264, "fecha no preto (b63–64)", 17),
+    cam: "parada", tela: "logo real + “Energy drink · Zero açúcar” + “Comercial não oficial · by @ayrtonsena.stg”", som: "hit final + cauda de reverb, silêncio no preto" },
+];
+
+document.getElementById("grade").innerHTML = cenas.map(c => `
+  <div class="quadro">
+    <div class="cab"><span class="n">${c.n}. ${c.nome}</span><span class="t">${c.t}</span></div>
+    <svg viewBox="0 0 480 270">${defs}${c.svg}</svg>
+    <div class="notas">
+      <div><span>cor:</span> ${c.cor.map(h => `<i class="cor" style="background:${h}"></i>`).join("")}</div>
+      <div><span>câmera:</span> ${c.cam}</div>
+      <div><span>tela:</span> ${c.tela}</div>
+      <div><span>som:</span> ${c.som}</div>
+    </div>
+  </div>`).join("");
+</script>
+</body>
+</html>

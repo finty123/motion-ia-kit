@@ -1,0 +1,136 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #co-3d { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    /* mundo do DOM: anda junto com a câmera 3D (201,5 px por unidade no plano z = 0) */
+    #co-world { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 960px 540px; }
+    .co-pos { position: absolute; width: 0; height: 0; }
+    .co-pos > .c { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); white-space: nowrap; }
+    #co-agora { font: 700 300px/1 Outfit, sans-serif; letter-spacing: -11px; display: flex; }
+    #co-agora .l { display: inline-block; background: var(--grad); background-size: 320% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; padding: 0 4px; }
+    #co-sub { font: 500 62px/1.1 Outfit, sans-serif; letter-spacing: -1px; color: var(--ink); }
+    #co-sub .w { display: inline-block; margin: 0 9px; }
+    #co-abre { display: flex; align-items: center; gap: 34px; }
+    #co-abre .tx { font: 600 112px/1 Outfit, sans-serif; letter-spacing: -3px; color: var(--ink); }
+    #co-logo { width: 300px; height: 168px; background: linear-gradient(100deg, #820ad1, #b06bff 45%, #820ad1 55%, #820ad1); background-size: 300% 100%;
+      -webkit-mask: url(assets/nu-branco.png) center / contain no-repeat; mask: url(assets/nu-branco.png) center / contain no-repeat; }
+    #co-pill { width: 640px; height: 104px; border-radius: 52px; display: flex; align-items: center; padding: 0 22px 0 48px; }
+    #co-pill .ty { font: 600 50px Outfit, sans-serif; color: #2a0b4d; white-space: pre; display: flex; align-items: center; }
+    #co-cursor { display: inline-block; width: 4px; height: 56px; margin-left: 5px; background: #820ad1; border-radius: 2px; }
+    #co-pill .ok { margin-left: auto; width: 72px; height: 72px; border-radius: 36px; display: grid; place-items: center; color: #fff; font: 700 38px Outfit;
+      background: radial-gradient(circle at 35% 30%, #b06bff, #820ad1 55%, #4a0a8c); box-shadow: inset 0 2px 1px rgba(255,255,255,.6); }
+    .co-chip { height: 64px; padding: 0 26px; display: flex; align-items: center; gap: 10px; font: 600 30px Inter, sans-serif; color: #2a0b4d; }
+    .co-chip b { color: #1a9e4a; }
+    #co-flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="corrida" data-width="1920" data-height="1080">
+    <canvas id="co-3d" width="1920" height="1080"></canvas>
+    <div id="co-world" data-layout-allow-overflow>
+      <div class="co-pos" style="left:960px;top:288px"><div class="c"><div id="co-agora"><span class="l">A</span><span class="l">g</span><span class="l">o</span><span class="l">r</span><span class="l">a</span></div></div></div>
+      <div class="co-pos" style="left:960px;top:575px"><div class="c"><div id="co-sub"><span class="w">é</span><span class="w">a</span><span class="w">vez</span><span class="w">do</span><span class="w">seu</span><span class="w">dinheiro</span><span class="w gtext" style="font-weight:700">correr!</span></div></div></div>
+      <div class="co-pos" style="left:3781px;top:399px"><div class="c"><div id="co-abre"><span class="tx">Abre o</span><span id="co-logo"></span></div></div></div>
+      <div class="co-pos" style="left:3781px;top:480px"><div class="c"><div id="co-pill" class="glass"><div class="ty"><span class="k">M</span><span class="k">i</span><span class="k">n</span><span class="k">h</span><span class="k">a</span><span class="k"> </span><span class="k">c</span><span class="k">a</span><span class="k">i</span><span class="k">x</span><span class="k">i</span><span class="k">n</span><span class="k">h</span><span class="k">a</span><span id="co-cursor"></span></div><div class="ok">✓</div></div></div></div>
+      <div class="co-pos" style="left:3540px;top:640px"><div class="c"><div id="co-k1" class="co-chip glass">✦ <b>+ R$ 0,47</b></div></div></div>
+      <div class="co-pos" style="left:4040px;top:610px"><div class="c"><div id="co-k2" class="co-chip glass lilas">✦ Rendendo todo dia</div></div></div>
+      <div class="co-pos" style="left:3600px;top:560px"><div class="c"><div id="co-k3" class="co-chip glass">✦ <b>+ R$ 0,46</b></div></div></div>
+    </div>
+    <div id="co-flash"></div>
+  </div>
+  <script type="module">
+    import "https://cdn.jsdelivr.net/npm/three@0.181.2/+esm";
+    import { THREE, makeStage, makeCoin, ready, seg, ease, lerp } from "./compositions/kit3d.js";
+    import { makeBox } from "./compositions/kit3d-extra.js";
+    await ready();
+    const PXU = 201.5, FLOOR = -2.3, R = 0.72, X0 = -7.5, BX = 14;
+    const st = makeStage(document.getElementById("co-3d"));
+    st.ground.visible = true; st.ground.position.set(7, FLOOR, 0); st.ground.scale.set(2, 1, 1);
+    st.key.shadow.camera.left = -14; st.key.shadow.camera.right = 14; st.key.shadow.camera.updateProjectionMatrix();
+    const coin = makeCoin({ R, T: 0.17 });
+    st.scene.add(coin);
+    const box = makeBox();
+    box.group.position.set(BX, FLOOR, 0);
+    st.scene.add(box.group);
+    const iC = ease.inOut, cub = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+
+    // câmera: entra com zoom out, segue a moeda no "correr!" (afasta no meio do caminho), desce pra caixinha e mergulha nela
+    function cam(t) {
+      const pan = cub(seg(t, 2.0, 3.2));
+      let x = lerp(0, BX, pan), z = lerp(7.4, 10, ease.outExpo(seg(t, 0, 0.6))) + 2.6 * Math.sin(Math.PI * pan), y = 0;
+      const down = iC(seg(t, 3.95, 4.65));
+      y = lerp(0, -0.9, down); z = lerp(z, 7.8, down);
+      z -= 0.6 * seg(t, 4.65, 6.25);
+      const dive = Math.pow(seg(t, 6.25, 6.65), 3);
+      z = lerp(z, 2.6, dive); y = lerp(y, -1.45, dive);
+      return { x, y, z };
+    }
+    function coinX(t) {
+      if (t < 1.95) return lerp(X0, -2.6, ease.outQuart(seg(t, 0.15, 1.2)));
+      return lerp(-2.6, 11.5, cub(seg(t, 1.95, 3.15)));
+    }
+    const world = document.getElementById("co-world");
+    function render(t) {
+      const c = cam(t), s = 10 / c.z;
+      st.camera.position.set(c.x, c.y, c.z);
+      // velocidade da câmera vira desfoque de movimento no DOM
+      const v = Math.abs(cam(t + 1 / 60).x - c.x) * 60;
+      world.style.transform = `translate(${(-c.x * PXU * s).toFixed(2)}px, ${(c.y * PXU * s).toFixed(2)}px) scale(${s.toFixed(4)})`;
+      world.style.filter = v > 0.4 ? `blur(${Math.min(12, v * 0.9).toFixed(1)}px)` : "none";
+      // moeda: rola, para balançando, dispara, e no "e deixe" pula pra dentro da caixinha
+      const x = coinX(t), jump = seg(t, 4.87, 5.3);
+      const wob = Math.sin(seg(t, 1.2, 1.95) * Math.PI * 3) * 0.08 * (1 - seg(t, 1.2, 1.95));
+      if (jump <= 0) {
+        coin.position.set(x, FLOOR + R + 0.02, 0.6);
+        coin.rotation.set(0, -0.25 + wob, -(x - X0) / R);
+        coin.scale.setScalar(1);
+      } else {
+        const j = iC(jump);
+        coin.position.set(lerp(11.5, BX, j), lerp(FLOOR + R, -0.1, Math.sin(Math.PI * Math.min(1, j * 1.25)) * 0.9 + j * 0.1) - (jump > 0.8 ? (jump - 0.8) * 6 : 0), lerp(0.6, 0, j));
+        coin.rotation.set(0, lerp(-0.25, 0, j), -(11.5 - X0) / R - j * 6);
+        coin.scale.setScalar(lerp(1, 0.55, j));
+      }
+      coin.visible = !(jump > 0.95);
+      // caixinha: sobe com mola, tampa abre, recebe a moeda, fecha, amassa e brilha
+      const ap = seg(t, 4.03, 4.75);
+      box.group.visible = t >= 4.03;
+      box.group.scale.set(ease.spring(ap), ease.spring(ap) * (1 - 0.08 * Math.sin(Math.PI * seg(t, 5.5, 5.8))), ease.spring(ap));
+      box.group.rotation.y = lerp(-1.2, -0.35, ease.outQuart(ap)) + 0.22 * seg(t, 4.75, 6.65);
+      box.hinge.rotation.x = -1.9 * ease.outExpo(seg(t, 4.3, 4.65)) * (1 - ease.inCubic(seg(t, 5.3, 5.5)));
+      const glow = Math.sin(Math.PI * seg(t, 5.5, 6.3));
+      box.mat.emissive.set("#a54bff"); box.mat.emissiveIntensity = 0.35 * glow;
+      st.render();
+    }
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#co-agora .l", { opacity: 0, filter: "blur(16px)", scale: 1.25 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.55, ease: "expo.out", stagger: 0.05 }, 0.18);
+    tl.fromTo("#co-agora .l", { backgroundPosition: "0% 0%" }, { backgroundPosition: "100% 0%", duration: 2.4, ease: "sine.inOut" }, 0);
+    const wt = [0.61, 0.87, 0.95, 1.13, 1.29, 1.59, 1.95];
+    document.querySelectorAll("#co-sub .w").forEach((w, i) => {
+      const g = w.classList.contains("gtext");
+      tl.fromTo(w, g ? { opacity: 0, filter: "blur(6px)" } : { color: "#cfc8d8", opacity: 0, filter: "blur(6px)" },
+        g ? { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power2.out" } : { color: "#17121f", opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power2.out" }, wt[i] - 0.03);
+    });
+    // "Abre o nu": já está lá; quando a câmera chega, o gradiente passa no logo
+    tl.fromTo("#co-agora .l", { x: 0, skewX: 0 }, { x: -260, skewX: 10, duration: 0.6, ease: "power2.in", stagger: { each: 0.04, from: "end" } }, 2.0);
+    tl.fromTo("#co-sub", { x: 0 }, { x: -180, duration: 0.6, ease: "power2.in" }, 2.05);
+    tl.fromTo("#co-abre .tx", { x: 420, skewX: -12 }, { x: 0, skewX: 0, duration: 0.9, ease: "back.out(1.5)" }, 2.55);
+    tl.fromTo("#co-logo", { x: 640, rotation: 8 }, { x: 0, rotation: 0, duration: 1.0, ease: "back.out(1.6)" }, 2.6);
+    tl.fromTo("#co-logo", { backgroundPosition: "0% 0%" }, { backgroundPosition: "100% 0%", duration: 0.8, ease: "power2.inOut" }, 3.0);
+    tl.fromTo("#co-abre", { scale: 1 }, { scale: 1.05, duration: 0.3, ease: "power2.out", yoyo: true, repeat: 1 }, 3.1);
+    tl.to("#co-abre", { scale: 0.5, y: 40, duration: 0.6, ease: "power3.inOut" }, 3.95);
+    // pílula de vidro digitando o nome da caixinha
+    tl.fromTo("#co-pill", { scaleX: 0.3, opacity: 0, filter: "blur(10px)" }, { scaleX: 1, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 4.03);
+    tl.fromTo("#co-pill .k", { display: "none" }, { display: "inline-block", duration: 0.001, stagger: 0.045 }, 4.12);
+    tl.fromTo("#co-cursor", { opacity: 1 }, { opacity: 0, duration: 0.01, repeat: 5, yoyo: true, repeatDelay: 0.22 }, 4.8);
+    tl.fromTo("#co-pill .ok", { scale: 0.6, opacity: 0.4 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(2)" }, 4.8);
+    tl.to("#co-pill", { y: -20, opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power2.in" }, 5.55);
+    // "deixe ele trabalhar": rendimentos sobem da caixinha
+    [["#co-k1", 5.55], ["#co-k2", 5.75], ["#co-k3", 5.95]].forEach(([k, a]) => {
+      tl.fromTo(k, { y: 120, scale: 0.5, opacity: 0, filter: "blur(8px)" }, { y: -40, scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, a);
+      tl.to(k, { y: -90, duration: 0.5, ease: "none" }, a + 0.6);
+    });
+    tl.fromTo("#co-flash", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.in" }, 6.45);
+    const clock = { t: 0 };
+    tl.to(clock, { t: 6.65, duration: 6.65, ease: "none", onUpdate: () => render(clock.t) }, 0);
+    render(0);
+    window.__timelines["corrida"] = tl;
+  </script>
+</template>

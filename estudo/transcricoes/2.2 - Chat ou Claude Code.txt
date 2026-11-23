@@ -1,0 +1,103 @@
+# 2.2 - Chat ou Claude Code
+
+[00:00] Chate ou Cloud Code.
+[00:02] Qual é que tu vai utilizar agora?
+[00:03] Nem daquele chef.
+[00:05] Então, agora a gente vai ver qual cozinha que ele vai trabalhar.
+[00:09] E os dois jeitos funcionam, viu?
+[00:12] No Chate, o chef ele cozinha ali na cozinha dele, né?
+[00:16] Num servidor da Antropos, ok?
+[00:18] E o teu computador no esquenta.
+[00:20] Por isso que dá pra fazer pelo celular,
+[00:22] fazer pelo notebook.
+[00:23] Só que tem um detalhe.
+[00:25] Toda vez tu vai ter que ir levar os ingredientes até ele.
+[00:28] Toda vez tu tem que mandar tal referência pra ele,
+[00:32] toda vez tu tem que enviar arquivo de músicas, de vídeo,
+[00:35] de efeito de sonoro, etc.
+[00:38] E de forma geral, o resultado final, ele sai praticamente dentro.
+[00:43] Já fiz alguns testes aqui.
+[00:45] Na maioria dos motions, você vai poder utilizar o Chate pra fazer também.
+[00:50] Tem outro detalhe também.
+[00:52] Lá pelo Chate, ele vai acabar gastando um pouquinho mais de Tolkien.
+[00:56] Por quê?
+[00:57] Porque toda vez que você for pedir um vídeo novo pra ele,
+[01:00] ele for fazer, aí ele vai gerar o vídeo inteiro,
+[01:04] aí você vai pedir ajuste pra ele,
+[01:06] aí ele vai gerar tudo novamente.
+[01:08] Já no Code, não acontece isso.
+[01:11] Porque é como se o chef ele estivesse na tua casa, né?
+[01:14] Então já vai abrir na jadeira, vai pegando as pastas e tudo mais.
+[01:18] E tem um diferencial também que é o Hyper Frames.
+[01:21] Hyper Frames é o que a gente utiliza
+[01:24] pra pegar as prévias do vídeo.
+[01:27] É como se fosse a prévia de um editor de vídeo,
+[01:32] um Premiere, da vida, um CapCut.
+[01:36] Primeiro ele mostra a prévia e depois no render ele mora mão um pouquinho, né?
+[01:41] Vai pedir pra ele usar o Hyper Frames lá pelo Code.
+[01:44] Ele vai te mostrar essa prévia e tu vai fazendo ajustes lá por essa prévia.
+[01:49] Por isso que acaba não gastando tanto Tolkien,
+[01:52] ele tá ajustando a prévia.
+[01:54] Aí quando tu pede pra ele renderizar,
+[01:57] aí ele vai gastar o Stalking lá pra...
+[02:02] mais Stalking pra renderizar, né?
+[02:04] Então pra resumir, os pros de tudo usar...
+[02:06] ele tudo utilizar o Chef.
+[02:08] Pelo Chef, ele não vai usar teu computador,
+[02:11] teu PC não vai acabar esquentando,
+[02:13] nem na hora de gerar, nem na hora de ajustar,
+[02:15] não render nada.
+[02:16] O Pro funciona de qualquer lugar.
+[02:19] Ele vai rolar no computador, no notebook da Xuxa, qualquer lugar.
+[02:23] E o outro Pro vai que é só abrir e começar,
+[02:26] não precisa configurar, instalar nem nada.
+[02:28] Agora os contras do chat.
+[02:30] Tu tem que ficar toda vez mandando as coisas pra lá, né?
+[02:34] Mandando...
+[02:35] Tu quer trocar o efeito sonoro, tem que mandar...
+[02:37] Outro contra é que gasta muito mais Tolkien,
+[02:40] porque ele vai estar sempre gerando do zero.
+[02:43] É...
+[02:44] Toda vez tu pedir pra ele ajustar.
+[02:46] Aí agora o Code.
+[02:47] Os Pros do Code, né?
+[02:49] Que ele já consegue acessar os arquivos dele do seu computador, né?
+[02:53] Então tu pode deixar, por exemplo, uma pasta
+[02:55] só pra efeito sonoro.
+[02:57] Ele vai pegar as efeito sonoro dali.
+[02:59] Tu pode colocar uma pasta com vários vídeos
+[03:02] e pedir pra ele ir fazendo os mostros dali em fila.
+[03:07] Outro Pro, ele economiza mais Tolkien,
+[03:10] porque a gente vai estar utilizando justamente essa prévia
+[03:13] pra fazer os ajustes dali.
+[03:15] Outro Pro.
+[03:17] Tudo ali vai acabar ficando só organizado.
+[03:20] O Code é top de mais rapaz.
+[03:23] Se você tiver como utilizar, tu utiliza.
+[03:25] Agora os contras do Code.
+[03:27] Ele só funciona no computador, não funciona no celular.
+[03:31] Outro contra.
+[03:33] Ele tá utilizando o teu computador.
+[03:36] Então principalmente na hora do render,
+[03:38] aí dependendo do seu computador,
+[03:40] pode ser até que dê umas travadas nessa hora.
+[03:42] Outro contra.
+[03:44] Tem uma pequena estaçãozinha no começo,
+[03:46] mas isso daí é tranquilo.
+[03:48] Vou te mostrar o passo a passo.
+[03:50] Mas aí, qual que eu recomendo você utilizar?
+[03:53] Eu recomendo se você tiver um computador
+[03:55] utilizar o Cloud Code,
+[03:57] porque ele você vai conseguir economizar mais Tolkien,
+[04:00] você vai pegando já uma familiaridade,
+[04:02] você vai conseguir fazer mais coisas dali.
+[04:04] Se você tá com o computador um pouco mais fraco,
+[04:07] tá com talvez até um celular ali,
+[04:09] vai acompanhando as horas pelo chat mesmo,
+[04:12] que também vai funcionar.
+[04:14] Eu vou gravar a maioria das aulas,
+[04:16] eu vou gravar as aulas aqui pelo computador.
+[04:18] Aí, eu vou fazer na alguns dos dois erros,
+[04:20] para você ver os resultados.
+[04:22] É isso aí.
+[04:24] Próximo bora.

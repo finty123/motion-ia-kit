@@ -1,0 +1,337 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: "Montserrat", sans-serif;
+    }
+    #li-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #li-app {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1920px;
+      height: 1500px;
+    }
+    #li-end {
+      position: absolute;
+      left: 120px;
+      top: 64px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #3e3e3e;
+    }
+    #li-end b {
+      color: #ea1d2c;
+      font-weight: 800;
+    }
+    #li-abas {
+      position: absolute;
+      left: 120px;
+      top: 150px;
+      display: flex;
+      gap: 64px;
+      font-size: 46px;
+      font-weight: 600;
+      color: #a6a6a6;
+    }
+    #li-abas span {
+      display: inline-block;
+      position: relative;
+    }
+    #li-abas .ativa {
+      color: #ea1d2c;
+      font-weight: 700;
+    }
+    #li-abas .ativa::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -14px;
+      height: 5px;
+      border-radius: 3px;
+      background: #ea1d2c;
+    }
+    #li-chips {
+      position: absolute;
+      left: 120px;
+      top: 262px;
+      display: flex;
+      gap: 20px;
+    }
+    .li-chip {
+      display: inline-block;
+      height: 70px;
+      padding: 0 30px;
+      line-height: 66px;
+      border: 2px solid #e4e4e4;
+      border-radius: 35px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #3e3e3e;
+    }
+    #li-titulo {
+      position: absolute;
+      left: 120px;
+      top: 384px;
+      font-size: 44px;
+      font-weight: 800;
+      color: #3e3e3e;
+    }
+    .li-card {
+      position: absolute;
+      width: 560px;
+      height: 170px;
+    }
+    .li-icone {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 32px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .li-icone img {
+      width: 132%;
+      height: auto;
+      transform: translate(6%, 12%);
+    }
+    .li-mono span {
+      font-size: 54px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+    }
+    .li-txt {
+      position: absolute;
+      left: 180px;
+      top: -2px;
+      width: 380px;
+    }
+    .li-nome {
+      font-size: 34px;
+      font-weight: 700;
+      color: #3e3e3e;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.25;
+    }
+    .li-meta {
+      font-size: 26px;
+      font-weight: 500;
+      color: #717171;
+      line-height: 1.32;
+      white-space: nowrap;
+    }
+    .li-estrela {
+      color: #f5b21b;
+    }
+    .li-gratis {
+      color: #2eb35a;
+      font-weight: 700;
+    }
+    .li-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      height: 38px;
+      padding: 0 16px;
+      border-radius: 19px;
+      background: #e6f6ec;
+      color: #2eb35a;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .li-tag i {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background: #2eb35a;
+    }
+    #li-splash {
+      position: absolute;
+      inset: 0;
+      background: #ea1d2c;
+      overflow: hidden;
+    }
+    #li-estrela {
+      position: absolute;
+      left: 960px;
+      top: 540px;
+      width: 1px;
+      height: 1px;
+      overflow: visible;
+    }
+    #li-logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1300px;
+      margin-left: -650px;
+      margin-top: -344px;
+    }
+  </style>
+  <div data-hf-id="hf-sruy" id="root" data-composition-id="lista" data-width="1920" data-height="1080">
+
+    <div data-hf-id="hf-jp02" id="li-cam">
+      <div data-hf-id="hf-2vwe" id="li-app">
+        <div data-hf-id="hf-3p9i" id="li-end">Rua da Madrugada, 247 <b data-hf-id="hf-g377">⌄</b></div>
+        <div data-hf-id="hf-2x3k" id="li-abas"><span data-hf-id="hf-dtd7" class="ativa">Restaurantes</span><span data-hf-id="hf-cpuf">Mercados</span><span data-hf-id="hf-nar0">Farmácias</span><span data-hf-id="hf-y69n">Bebidas</span><span data-hf-id="hf-cmb6">Pet</span></div>
+        <div data-hf-id="hf-ur86" id="li-chips"><span data-hf-id="hf-3a9i" class="li-chip">Ordenar ⌄</span><span data-hf-id="hf-fpou" class="li-chip">Aberto agora</span><span data-hf-id="hf-w90f" class="li-chip">Entrega grátis</span><span data-hf-id="hf-pijg" class="li-chip">Até 30 min</span><span data-hf-id="hf-rirx" class="li-chip">Cupons</span></div>
+        <div data-hf-id="hf-z9bp" id="li-titulo">Abertos agora perto de você</div>
+        <div data-hf-id="hf-k8ql" id="li-card-1" class="li-card" style="left:120px;top:470px">
+          <div data-hf-id="hf-hwc5" class="li-icone" style="background:#8C1A2E"><img data-hf-id="hf-in3w" src="assets/img/comidas/pizza.png" alt="" /></div>
+          <div data-hf-id="hf-h1ye" class="li-txt">
+            <div data-hf-id="hf-4xa9" class="li-nome">Pizzaria Lua Cheia</div>
+            <div data-hf-id="hf-5yqc" class="li-meta"><span data-hf-id="hf-h7oc" class="li-estrela">★</span> 4,8 · Pizza · 1,2 km</div>
+            <div data-hf-id="hf-5ato" class="li-meta">25–35 min · <span data-hf-id="hf-u6wp" class="li-gratis">Grátis</span></div>
+            <div data-hf-id="hf-kjur" class="li-tag"><i data-hf-id="hf-wt6k"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-09sg" id="li-card-2" class="li-card" style="left:700px;top:470px">
+          <div data-hf-id="hf-21pt" class="li-icone" style="background:#F5B21B"><img data-hf-id="hf-7oj7" src="assets/img/comidas/burger.png" alt="" /></div>
+          <div data-hf-id="hf-ecve" class="li-txt">
+            <div data-hf-id="hf-2gwc" class="li-nome">Burger da Madruga</div>
+            <div data-hf-id="hf-0z37" class="li-meta"><span data-hf-id="hf-6dxw" class="li-estrela">★</span> 4,7 · Lanches · 0,9 km</div>
+            <div data-hf-id="hf-qpaa" class="li-meta">20–30 min · <span data-hf-id="hf-mrzz">R$ 4,99</span></div>
+            <div data-hf-id="hf-vk77" class="li-tag"><i data-hf-id="hf-zeb8"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-rz6z" id="li-card-3" class="li-card" style="left:1280px;top:470px">
+          <div data-hf-id="hf-el17" class="li-icone" style="background:#5B2A86"><img data-hf-id="hf-savi" src="assets/img/comidas/acai.png" alt="" /></div>
+          <div data-hf-id="hf-er6f" class="li-txt">
+            <div data-hf-id="hf-z079" class="li-nome">Açaí do Corujão</div>
+            <div data-hf-id="hf-ngno" class="li-meta"><span data-hf-id="hf-570t" class="li-estrela">★</span> 4,9 · Açaí · 1,5 km</div>
+            <div data-hf-id="hf-1elo" class="li-meta">15–25 min · <span data-hf-id="hf-jgb1" class="li-gratis">Grátis</span></div>
+            <div data-hf-id="hf-v5w6" class="li-tag"><i data-hf-id="hf-y7e5"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-0rht" id="li-card-4" class="li-card" style="left:120px;top:666px">
+          <div data-hf-id="hf-0aiv" class="li-icone" style="background:#E8622A"><img data-hf-id="hf-4ng7" src="assets/img/comidas/pastel.png" alt="" /></div>
+          <div data-hf-id="hf-f5hg" class="li-txt">
+            <div data-hf-id="hf-rl8r" class="li-nome">Pastel da Insônia</div>
+            <div data-hf-id="hf-70gr" class="li-meta"><span data-hf-id="hf-5lbu" class="li-estrela">★</span> 4,6 · Pastel · 2,1 km</div>
+            <div data-hf-id="hf-rxqg" class="li-meta">25–40 min · <span data-hf-id="hf-cm65">R$ 2,99</span></div>
+            <div data-hf-id="hf-url5" class="li-tag"><i data-hf-id="hf-ylp6"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-2ek2" id="li-card-5" class="li-card" style="left:700px;top:666px">
+          <div data-hf-id="hf-i5c3" class="li-icone li-mono" style="background:#1B1B1F"><span data-hf-id="hf-wxm0">S24</span></div>
+          <div data-hf-id="hf-fjsh" class="li-txt">
+            <div data-hf-id="hf-sibf" class="li-nome">Sushi 24h</div>
+            <div data-hf-id="hf-oc1x" class="li-meta"><span data-hf-id="hf-7kuz" class="li-estrela">★</span> 4,8 · Japonesa · 3,0 km</div>
+            <div data-hf-id="hf-idsw" class="li-meta">35–45 min · <span data-hf-id="hf-vcox">R$ 6,99</span></div>
+            <div data-hf-id="hf-uda4" class="li-tag"><i data-hf-id="hf-0l8b"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-xced" id="li-card-6" class="li-card" style="left:1280px;top:666px">
+          <div data-hf-id="hf-7q1l" class="li-icone li-mono" style="background:#2E7D5B"><span data-hf-id="hf-4xom">EN</span></div>
+          <div data-hf-id="hf-fy3i" class="li-txt">
+            <div data-hf-id="hf-86j4" class="li-nome">Esfiha Noturna</div>
+            <div data-hf-id="hf-xs7o" class="li-meta"><span data-hf-id="hf-7z60" class="li-estrela">★</span> 4,5 · Árabe · 1,8 km</div>
+            <div data-hf-id="hf-g7o6" class="li-meta">30–40 min · <span data-hf-id="hf-kn84" class="li-gratis">Grátis</span></div>
+            <div data-hf-id="hf-tyz3" class="li-tag"><i data-hf-id="hf-0zjc"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-6qvm" id="li-card-7" class="li-card" style="left:120px;top:862px">
+          <div data-hf-id="hf-0159" class="li-icone li-mono" style="background:#C8101F"><span data-hf-id="hf-pt3b">DB</span></div>
+          <div data-hf-id="hf-gcej" class="li-txt">
+            <div data-hf-id="hf-2vkj" class="li-nome">Dogão do Beco</div>
+            <div data-hf-id="hf-5lb0" class="li-meta"><span data-hf-id="hf-6s8x" class="li-estrela">★</span> 4,7 · Lanches · 0,6 km</div>
+            <div data-hf-id="hf-7f0k" class="li-meta">15–25 min · <span data-hf-id="hf-k8x3" class="li-gratis">Grátis</span></div>
+            <div data-hf-id="hf-tko2" class="li-tag"><i data-hf-id="hf-zsm9"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-r2ej" id="li-card-8" class="li-card" style="left:700px;top:862px">
+          <div data-hf-id="hf-g98b" class="li-icone li-mono" style="background:#1F3A93"><span data-hf-id="hf-rkrd">TL</span></div>
+          <div data-hf-id="hf-gqpk" class="li-txt">
+            <div data-hf-id="hf-qp37" class="li-nome">Tapioca da Lua</div>
+            <div data-hf-id="hf-lqip" class="li-meta"><span data-hf-id="hf-76jy" class="li-estrela">★</span> 4,9 · Nordestina · 2,4 km</div>
+            <div data-hf-id="hf-zh9g" class="li-meta">25–35 min · <span data-hf-id="hf-m480">R$ 3,99</span></div>
+            <div data-hf-id="hf-t6d1" class="li-tag"><i data-hf-id="hf-06xa"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-hwc0" id="li-card-9" class="li-card" style="left:1280px;top:862px">
+          <div data-hf-id="hf-cufu" class="li-icone li-mono" style="background:#6D4C41"><span data-hf-id="hf-ku1i">MV</span></div>
+          <div data-hf-id="hf-h50l" class="li-txt">
+            <div data-hf-id="hf-m5wo" class="li-nome">Marmita da Vó</div>
+            <div data-hf-id="hf-yckf" class="li-meta"><span data-hf-id="hf-9633" class="li-estrela">★</span> 4,8 · Brasileira · 1,1 km</div>
+            <div data-hf-id="hf-f8py" class="li-meta">20–30 min · <span data-hf-id="hf-lfu6" class="li-gratis">Grátis</span></div>
+            <div data-hf-id="hf-ss20" class="li-tag"><i data-hf-id="hf-26gf"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-7p48" id="li-card-10" class="li-card" style="left:120px;top:1058px">
+          <div data-hf-id="hf-wu5u" class="li-icone li-mono" style="background:#3A3A3A"><span data-hf-id="hf-k386">CT</span></div>
+          <div data-hf-id="hf-hjbm" class="li-txt">
+            <div data-hf-id="hf-m0kh" class="li-nome">Churrasquinho Até Tarde</div>
+            <div data-hf-id="hf-r84y" class="li-meta"><span data-hf-id="hf-9ke4" class="li-estrela">★</span> 4,6 · Churrasco · 2,7 km</div>
+            <div data-hf-id="hf-qe01" class="li-meta">30–45 min · <span data-hf-id="hf-29ru">R$ 5,99</span></div>
+            <div data-hf-id="hf-sdqz" class="li-tag"><i data-hf-id="hf-2krg"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-765d" id="li-card-11" class="li-card" style="left:700px;top:1058px">
+          <div data-hf-id="hf-6mhw" class="li-icone li-mono" style="background:#B8860B"><span data-hf-id="hf-2ivx">24h</span></div>
+          <div data-hf-id="hf-cajy" class="li-txt">
+            <div data-hf-id="hf-jmlm" class="li-nome">Padaria 24 Horas</div>
+            <div data-hf-id="hf-geha" class="li-meta"><span data-hf-id="hf-3ovg" class="li-estrela">★</span> 4,7 · Padaria · 0,8 km</div>
+            <div data-hf-id="hf-vk2v" class="li-meta">15–20 min · <span data-hf-id="hf-l1j5" class="li-gratis">Grátis</span></div>
+            <div data-hf-id="hf-63bd" class="li-tag"><i data-hf-id="hf-oz7w"></i>aberto agora</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-3hk6" id="li-card-12" class="li-card" style="left:1280px;top:1058px">
+          <div data-hf-id="hf-qgqh" class="li-icone li-mono" style="background:#D81B60"><span data-hf-id="hf-p97j">CC</span></div>
+          <div data-hf-id="hf-bw8x" class="li-txt">
+            <div data-hf-id="hf-4kl6" class="li-nome">Crepe Coruja</div>
+            <div data-hf-id="hf-x0h7" class="li-meta"><span data-hf-id="hf-3akf" class="li-estrela">★</span> 4,8 · Doces · 1,9 km</div>
+            <div data-hf-id="hf-drc5" class="li-meta">20–35 min · <span data-hf-id="hf-6jvt">R$ 3,49</span></div>
+            <div data-hf-id="hf-6hme" class="li-tag"><i data-hf-id="hf-okwv"></i>aberto agora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+      // 0 = 13,25 abs. O splash continua o zoom da tela do celular.
+      tl.fromTo("#li-cam", { scale: 1.08, x: 0 }, { scale: 1, x: 0, duration: 0.9, ease: "expo.out" }, 0.03);
+
+      // topo do app
+      ["#li-end", "#li-abas", "#li-chips", "#li-titulo"].forEach(function (id, i) {
+        tl.fromTo(id, { y: 120, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 0.05 + i * 0.05);
+      });
+      // cards em cascata (0,37 = 13,62 abs)
+      gsap.utils.toArray(".li-card").forEach(function (c, i) {
+        var t = 0.12 + i * 0.06;
+        tl.fromTo(c, { y: 420, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, t);
+        tl.fromTo(c.querySelector(".li-icone"), { scale: 0.2, rotation: -10 }, { scale: 1, rotation: 0, duration: 0.42, ease: "back.out(2.2)" }, t + 0.03);
+      });
+      // tags "aberto agora" estalam (1,35 = 14,6 abs)
+      gsap.utils.toArray(".li-tag").forEach(function (g, i) {
+        tl.fromTo(g, { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.32, ease: "back.out(2.6)", transformOrigin: "0% 50%" }, 1.13 + i * 0.045);
+      });
+      // câmera viva: desce devagar
+      tl.fromTo("#li-app", { y: 0 }, { y: -40, duration: 1.0, ease: "sine.inOut" }, 1.2);
+      // rolagem rápida com RGB split (2,05–2,9 = 15,3–16,15 abs)
+      tl.fromTo("#li-app", { filter: "drop-shadow(0px 0px 0px rgba(255,0,72,0)) drop-shadow(0px 0px 0px rgba(0,190,255,0)) blur(0px)" },
+        { filter: "drop-shadow(0px -22px 0px rgba(255,0,72,0.55)) drop-shadow(0px 22px 0px rgba(0,190,255,0.55)) blur(5px)", duration: 0.53, ease: "power2.in", immediateRender: false }, 2.22);
+      tl.to("#li-app", { y: -820, duration: 0.53, ease: "power2.in" }, 2.22);
+      window.__timelines["lista"] = tl;
+    })();
+  </script>
+</template>

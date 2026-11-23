@@ -1,0 +1,514 @@
+# Aula 1 - Fazendo o Motion
+
+[00:00] Pronto, mostrou gráficas.
+[00:01] Acho que eu preciso fazer um vídeo na horizontal de um cliente de barbiaria.
+[00:13] Você pode falar tanto aqui quanto no microfone.
+[00:16] Normalmente eu falo no microfone, porém como eu estou usando o microfone aqui para conseguir
+[00:20] falar, aí fica o complicado, mas você pode tanto escrever quanto fala no microfone.
+[00:24] O objetivo do vídeo é mostrar os serviços e principalmente chamar para o cliente ser um
+[00:38] nascinante do cobre, certo?
+[00:41] Dependendo do cliente, ele pode ou não pode ter um site já com as coisas.
+[00:46] Esse cliente aqui em específico, ele tem um site e nesse site já tem planeta de coó,
+[00:50] ele já tem fonte, já tem tudo.
+[00:52] Aí você vai sempre passar como é que vai ser pro cliente, porque se você não passar essas
+[00:56] coisas o code pode acabar inventando e vai ficar com cara de ar.
+[01:00] Então você precisa mandar referências também.
+[01:05] Então no caso aqui a paleta de cores e tudo está no site.
+[01:09] Então vou falar aqui para ele.
+[01:10] A paleta de cores cliente está no site.
+[01:16] Wontowgiantiebardearia.com.qd as fontes cores estilo e etc.
+[01:28] Quero que no começo anime a logo do cliente e quero que vá alternando entre as cores.
+[01:40] A cor principal é verde.
+[01:43] Esse cliente tem muito verde lá.
+[01:46] Então quero que essa cor seja a principal.
+[01:48] Mas pode a entre o branco e preto também.
+[01:52] Aí eu vou enviar aqui a logo do cliente que eu tirei lá do próprio site dele.
+[01:57] Isso aqui é logo.
+[01:58] Ele vai carregar aqui as coisas para montar o prompt.
+[02:01] Ele não vai montar o vídeo ainda.
+[02:03] Ele vai montar o prompt para você conseguir fazer esse vídeo.
+[02:05] Ele está baixando a ATML do site.
+[02:07] Está pegando o preço das coisas.
+[02:10] Tem tudo lá no site.
+[02:11] Deixa eu mostrar o site aqui para vocês darem uma olhada.
+[02:13] Tem tudo aqui.
+[02:14] Tem as cores.
+[02:15] Tem o preço.
+[02:16] Tem os serviços que ele faz aqui.
+[02:18] Caso essas coisas não tivessem aqui no site.
+[02:22] Eu ia ter que falar tudo isso aqui para ele.
+[02:23] Tem que falar aquele mais e bem avaliado do Google.
+[02:27] Já puxei tudo do site.
+[02:29] Já pegou aqui o código da conta.
+[02:31] Do site preto branco.
+[02:34] Já pegou a fonte.
+[02:35] O clube.
+[02:36] E aqui tem as coisas do prompt.
+[02:39] E no caso eu já estou pedindo tudo para ele.
+[02:41] Mas caso eu ainda não tivesse ideia de como fazer ou o que falar.
+[02:46] O que principal para você conseguir fazer essas coisas é você colocar isso aqui no prompt.
+[02:50] A própria esquila também faz uma mini entrevista com você.
+[02:53] Então eu poderia vir aqui.
+[02:55] Me novo.
+[02:56] Quero pronte para o vídeo.
+[02:59] Me faça perguntas para montar o prompt.
+[03:04] Aí ela vai investigar e vai trabalhar nisso daí.
+[03:08] O formato do vídeo.
+[03:10] Eu no caso quero um vídeo na horizontal.
+[03:13] Depois eu vou mostrar como eu quero deixar esse vídeo na vertical também.
+[03:16] Mas agora eu quero.
+[03:17] Tem as duas versões também.
+[03:18] Mas para a gente economizar um pouquinho vou fazer só aqui.
+[03:21] A duração vou deixar uns 60 segundos.
+[03:25] O estilo que eu quero.
+[03:26] O estilo de motion graphics.
+[03:30] Eu acho que eu escrevi até graphics errados aqui.
+[03:32] Mostrando os benefícios do plano.
+[03:38] Ter vícios também.
+[03:41] Para ver o que ele vai falar.
+[03:42] Ele está fazendo as perguntas aqui.
+[03:44] Tá vendo?
+[03:44] De quem que é o plano?
+[03:45] É seu.
+[03:46] É o consenso de benefício e serviço que vão aparecer.
+[03:49] Tem preço, oferta, prova.
+[03:51] Qual é a ficha mais final?
+[03:52] Onde é que vai passar a música?
+[03:54] A trilha sintetizada?
+[03:55] Um código padrão?
+[03:57] Você é anexo ou não?
+[03:58] Viveria de autorais?
+[03:59] Tá.
+[04:00] Aí como a gente já tem a questão da paleta de cores.
+[04:03] Já tem tudo lá no site do cliente.
+[04:06] Então o que a gente vai fazer?
+[04:08] A gente vai falar para ele tirar tudo do site.
+[04:10] A gente vai falar assim.
+[04:11] Quire todas as informações do site do cliente.
+[04:18] É a www.gigantebarbearia.com.
+[04:23] Aqui tem as informações e também os serviços.
+[04:29] Precisa mostrar todos os serviços.
+[04:34] A chamada final é para a pessoa assinar o ano.
+[04:40] É onde é que vai passar?
+[04:41] Vai passar em um telão na própria barbearia.
+[04:48] Em loop.
+[04:49] Aí é a música.
+[04:50] A música vai ser música estilo barbearia mesmo.
+[04:56] Você gera a música e eles é feito em tom noro.
+[05:03] Por mais que lá não vá ter os efeitos, eu não acho que vai ficar mudo lá.
+[05:07] Que vai ficar passando no telão.
+[05:09] Aí...
+[05:10] Mas eu vou colocar com música efeito para você dar uma olhada como é que fica com a música e os efeitos também.
+[05:15] Já tem aqui as informações do cliente.
+[05:17] Vai ter aqui do site.
+[05:18] Esqueci de pedir para ele colocar logo do cliente.
+[05:21] Eu quero sempre que você tiver alguma ideia que você queira que seja dessa forma você tem que falar.
+[05:26] Porque senão ele vai inventar.
+[05:28] Por exemplo, eu quero que o começo seja a animação da logo.
+[05:32] Então eu tenho que falar aqui.
+[05:33] O começo eu quero e anime a logo do cliente.
+[05:40] Vou enviar a logo.
+[05:42] Eu vou enviar depois que eu terminei de coisa esse barrigo de jazz aqui.
+[05:45] Ele está trabalhando, fazendo renda e tudo mais.
+[05:48] Ele vai gerar o prompt e esse prompt vai jogar no próximo chat.
+[05:52] O jeito que eu faria, como já tenho de cabeça como é que eu quero as coisas.
+[05:56] Seria desse jeito aqui.
+[05:58] Que eu falo para ele já como é que eu quero.
+[06:01] Eu falo que é que eu quero e tudo mais.
+[06:03] Se eu quisesse mais eu poderia até falar.
+[06:05] Eu quero que mostre a data, eu quero que mostre o lugar onde é que tem.
+[06:09] Eu quero que tenha animação de tal forma.
+[06:11] Só que como ele já vai ver pelo site essas coisas.
+[06:14] Então ele já vai provavelmente criar alguma coisa ali.
+[06:18] Eu que imagino.
+[06:19] Mas se eu quisesse realmente ter mais controle sobre isso eu falaria.
+[06:23] Eu quero vou desse jeito.
+[06:24] Para ele já fazia.
+[06:27] Já gerou o prompt aqui.
+[06:29] Uma entrada, produto.
+[06:31] Aqui as cores.
+[06:33] Aqui o corte, barba e tal.
+[06:35] Proibido, título centralizado.
+[06:38] Proibido as generais para um partícula.
+[06:40] As coisas que eu proibido aqui.
+[06:42] Para dar um revisado aqui.
+[06:44] Se não entender algumas coisas não tem problema.
+[06:46] Depois que ele gerar o vídeo aí tu pode pedir algumas alterações.
+[06:49] É que a gente faz.
+[06:50] É bem simples.
+[06:51] Copia, novo, cola.
+[06:53] E joga o Google Play and add um também.
+[06:55] Caso você pediu mais alguma outra coisa.
+[06:58] Aí você colocaria aqui também.
+[07:00] Se você quer que mostre uma falta de tal coisa.
+[07:03] Um texto, alguma coisa específica.
+[07:06] Alguma paleta de cookies que você não mencionou aqui.
+[07:08] E joga tudo aqui em anexo.
+[07:10] Que ele vai ver essas coisas aí que tu pediu.
+[07:12] Agora ele vai analisar o prompt que eu mandei.
+[07:15] Analyzar os anexos que eu mandei também.
+[07:17] Fazer uma prévia ali.
+[07:19] Ou seja, ele vai mandar para mim o tipo da batida de som que vai ter.
+[07:23] Ele vai mandar para mim algumas cenas de como vai ter também.
+[07:26] Mas isso tudo antes de animar.
+[07:28] A skill ela já pede para o prompt fazer dessa forma.
+[07:33] Então o prompt já fala para ele fazer.
+[07:35] Essa daqui porque fica mais fácil de fazer as alterações.
+[07:38] Então se você quiser alguma alteração.
+[07:40] Você não gostou de algum elemento, alguma coisa.
+[07:42] Você dá para alteração aqui antes de animar.
+[07:44] Porque animar demora mais.
+[07:46] Então é mais fácil fazer as alterações antes.
+[07:48] Ele abri aqui o site que estava no prompt.
+[07:51] Vai ter o 100% com prompt aqui.
+[07:53] As cores, o verde, a fonte, o serviço.
+[07:57] Os planos, a variação.
+[07:59] Pediu. Aqui tu vai ver as coisas que ele vai escrever.
+[08:02] Você pode fazer alterações já a partir daqui.
+[08:05] Por isso que é sempre bom dar uma revisada aqui no que ele mandou.
+[08:08] Caso você não tenha paciência para ler isso daqui.
+[08:12] Você pode só pedir para ele gerar do jeito que está.
+[08:14] E quando ele fizer o vídeo.
+[08:16] Aí tu perde as alterações.
+[08:19] Depois que ele gerou o vídeo que funciona também.
+[08:22] Eu vou botar aqui só o TV de aqui.
+[08:24] Recomendou e pode continuar.
+[08:25] Porque ele vai gerar aqui alguns em mares agora.
+[08:31] Ela já está gerando mais ou menos algumas coisas.
+[08:36] Por exemplo aqui.
+[08:37] Ela já começa com essa parte daqui.
+[08:40] Ela está formando a logo.
+[08:41] Está vendo aquela parte da tesoura que ela falou?
+[08:44] Aí depois gira.
+[08:45] E fala chegou só vez de virar gigante.
+[08:49] Depois aqui a varveria.
+[08:51] Por essa natura.
+[08:53] Mais umas madeiras de 2021.
+[08:55] Conheço a gigante.
+[08:57] Conheço o clube.
+[08:58] É corte barba.
+[09:00] Corte mais barba.
+[09:01] 104.
+[09:03] Uma escolhida que ele ainda tem ponto tapa.
+[09:05] E depois mostra os 3.
+[09:06] Eu gostei dessas partes aqui.
+[09:09] Aí conheço o gigante clube.
+[09:10] Limitado.
+[09:12] Segunda sábado.
+[09:13] Visual impecável.
+[09:15] Corte barba terapia.
+[09:17] Selagem.
+[09:18] Alizamento capilar.
+[09:19] Barba hidrotreção.
+[09:21] Pigmentação.
+[09:22] Imunização penteada e previsa.
+[09:25] Melhor rodada de indbulls com origina.
+[09:27] Eu vou falar aqui para ele o que?
+[09:28] Dá uma pausa.
+[09:30] Aí tem alguns ajustes.
+[09:33] O primeiro ajuste é que eu estou achando muito com o cara de IA.
+[09:38] Sabe?
+[09:38] Depois as colheções.
+[09:40] Fidelidad da marca.
+[09:42] Eu gostei dessa desafia que ela fez.
+[09:45] Porém eu estou achando com o cara de IA.
+[09:48] Mas ainda quer que eu falar para ele?
+[09:50] Está também disso?
+[09:51] Está achando o cara.
+[09:53] Vamos fazer.
+[09:54] Eu prefere.
+[09:55] Faz com hortes batidas do ritmo.
+[10:00] Mas sem exagerar.
+[10:02] Tem que ser suave.
+[10:05] Porque para o telão.
+[10:08] Não quero nada muito rápido.
+[10:09] Nesse tempo eu estou falando aqui para ele.
+[10:11] Na parte do horário e dia.
+[10:14] O horário ele fala.
+[10:15] Ele fala o dia da semana.
+[10:17] Parte do dia da semana.
+[10:19] Faz uma animação tipo preenchendo cada dia.
+[10:25] Menos domingo que é fechado.
+[10:28] Se não pode ter que prestar alguma coisa diferente.
+[10:30] Não deixa alinhado à esquerda.
+[10:35] Deixa tudo centralizado.
+[10:38] A frase vem ser gigante.
+[10:42] Tem que ter um pacto.
+[10:45] Deixa eu ver aqui outra coisa que eu quero mudar.
+[10:47] Em metade segunda sábado.
+[10:49] Esse daqui.
+[10:50] Parte do ano todo.
+[10:52] Tem que ter uma animação.
+[10:56] Com o ano passando os meses do ano.
+[11:00] Essa parte.
+[11:02] Onde ele fala.
+[11:03] Olha também.
+[11:04] Barba.
+[11:05] Eu não sei o que.
+[11:06] Eu quero que vá passando de forma dinâmica.
+[11:08] Então isso que eu vou falar para ele.
+[11:09] Essa parte dos serviços.
+[11:13] Tem que ir passando de forma dinâmica.
+[11:17] Deixa eu ver outra coisa que eu quero alterar também.
+[11:20] Esse vence gigante.
+[11:22] Tá preto.
+[11:23] Primeira tela.
+[11:25] Quero o fundo verde.
+[11:27] Deixa eu ver aqui outra coisa.
+[11:29] Esses de avaliação.
+[11:32] O Google.
+[11:34] Quero a animação.
+[11:36] Endocada estrela.
+[11:38] Como se a pessoa.
+[11:40] A ideia é que.
+[11:42] Nessa parte onde aparece.
+[11:44] Para a avaliação do Google.
+[11:46] Eu quero que pareça que seja tipo a pessoa.
+[11:48] E no lá e dando as cinco estrelas.
+[11:50] Então é isso que eu vou falar para ele.
+[11:52] Que essa parte da avaliação do Google.
+[11:54] Para a animação.
+[11:55] Para a estrela.
+[11:56] Como se a pessoa.
+[11:58] Estivesse.
+[12:00] Dando.
+[12:01] Essa avaliação.
+[12:03] Lá pelo Google.
+[12:05] Tá.
+[12:06] Deixa eu ver outra coisa que eu quero mudar.
+[12:08] Pode de uns efeitos passando atrás também de letras.
+[12:11] Deixa eu ver aqui.
+[12:12] Vai ver o que é essa notura.
+[12:14] Essa parte aqui ficou ok.
+[12:16] Aqui do mais escolhido.
+[12:18] Eu acho que com essa avaliação.
+[12:20] Vai dar uma melhorada.
+[12:21] Bora ver.
+[12:22] Chocolate fair.
+[12:23] Aqui os outros.
+[12:32] Eu fiz a agradinha e teve os seus ajustes.
+[12:34] Tudo centralizado.
+[12:36] Dois desses uns.
+[12:38] Que tomei.
+[12:39] Tá.
+[12:40] O lasso está indo no verde.
+[12:41] Beleza.
+[12:42] Para dos ajustes.
+[12:43] E monta.
+[12:44] Aquelas imagens.
+[12:47] Antes.
+[12:48] E animar.
+[12:49] E me passa.
+[12:51] Para provar.
+[12:52] Antes.
+[12:53] De animar.
+[12:54] Porque a animação.
+[12:56] Ela gasta mais toque também.
+[12:58] Então a gente tem o máximo que a gente puder.
+[13:01] E ajustando.
+[13:02] Antes.
+[13:03] De ele fazer o vídeo.
+[13:04] Melhor.
+[13:05] Mas também se ele tivesse gerado o vídeo.
+[13:07] A gente podia ajustar essas coisas.
+[13:09] Depois que eu gero um.
+[13:10] Não tem problema nenhum.
+[13:11] Já está mais toque em mais tempo.
+[13:13] Aqui ele já fez alguns ajustes.
+[13:15] Que eu achei bem bacana.
+[13:16] Por exemplo.
+[13:17] Já tirou mais aquela cara de ar.
+[13:19] Que eu estava achando.
+[13:20] Fez os efeitos aqui.
+[13:21] Como se a pessoa tivesse danois 5 estrelas.
+[13:24] Eu gostei.
+[13:25] Fez um comentário aqui também.
+[13:26] Mais bem avaliado.
+[13:27] A beira ia por essa nature.
+[13:29] Aqui mais outro.
+[13:31] Conheço o gigante cub.
+[13:33] Corso limitado.
+[13:34] Corte barba.
+[13:36] Corso mais barba.
+[13:37] Aqui eu falo dos preços.
+[13:39] Elimitado.
+[13:40] Gostei desse efeito que ele deu aqui.
+[13:42] De segunda sábado.
+[13:43] Aqui o preenchimento.
+[13:44] Que eu falei pra ele preencher.
+[13:45] Lembra?
+[13:46] Conheço o gigante cub.
+[13:47] Aí segunda sábado.
+[13:49] Olha esse efeito que ele fez aqui.
+[13:50] Muito bacana rapaz.
+[13:51] Eu imaginei.
+[13:52] Ele fazendo tipo.
+[13:53] Os meses assim.
+[13:55] Na vertical.
+[13:56] Mas esse formato aqui.
+[13:57] Ele fez.
+[13:58] Já é do que eu gostei também.
+[13:59] Aqui fazemos.
+[14:00] Corte barba.
+[14:01] Terapia.
+[14:02] Olha.
+[14:03] Foi passando assim.
+[14:04] Eu gostei.
+[14:05] Não era assim que eu estava imaginando.
+[14:06] Mas ficou até melhor.
+[14:07] Do que eu estava imaginando.
+[14:08] Pecumitação.
+[14:09] Máscara.
+[14:10] Finabilização.
+[14:11] Beleza.
+[14:12] Os quinhas serviços aqui.
+[14:13] Eu não gostei muito.
+[14:14] Que ele colocou esse número.
+[14:16] Sabe?
+[14:17] De 15.
+[14:18] Essa parte aqui.
+[14:19] Mas o restante.
+[14:20] Assim.
+[14:21] Eu acho que ele voltou.
+[14:22] Vem ser gigante.
+[14:23] Um estrom do assim.
+[14:24] Gostei.
+[14:25] Foi bacana.
+[14:26] Vem ser gigante.
+[14:27] Ficou melhor.
+[14:28] Eu só não gostei.
+[14:30] Da parque.
+[14:32] Dos serviços.
+[14:33] O que eu falei aqui.
+[14:34] Quando gostei.
+[14:35] Eu estou falando pra ele.
+[14:36] Pra ele fazer.
+[14:37] Eu não gostei.
+[14:38] Quem colocou um número.
+[14:41] Porque essa ideia dele.
+[14:43] Colocar um número lá.
+[14:44] Eu não gostei.
+[14:45] São muitos serviços.
+[14:46] Que eles fazem lá.
+[14:47] Mas quando você coloca um número.
+[14:48] A sensação que fica.
+[14:49] É que só um pouco.
+[14:50] Meio sendo bastante.
+[14:51] A sensação que fica é pouco.
+[14:52] É meio 2, 2.
+[14:53] Mas é o que acontece.
+[14:55] Esse de colocar um número.
+[14:57] Se você lá.
+[14:58] 100 ia funcionar melhor.
+[14:59] Mas como um número abaixo de 50.
+[15:02] Aí já não funciona tanto.
+[15:04] Então eu prefiro que removo o número.
+[15:06] Para o serviço.
+[15:08] De uma maneira melhor.
+[15:11] O resto mantém.
+[15:13] Envia e envia agora.
+[15:15] Da quantidade de serviços.
+[15:17] Para confundir contra o coisa.
+[15:19] E é que só clicar aqui.
+[15:32] Que ele já tem um vídeo.
+[15:33] Bora assistir.
+[15:34] Eu gostei.
+[16:36] Do resultado.
+[16:37] Só que tem algumas passas.
+[16:38] Que eu quero alterar.
+[16:39] E é isso que eu vou falar aqui.
+[16:40] Para ele.
+[16:41] Por exemplo.
+[16:42] Quem se fez de cortado.
+[16:43] Eu não gostei.
+[16:44] Aí eu vou colocar aqui.
+[16:45] Não gostei.
+[16:46] De início.
+[16:47] Que você fez de tesoura.
+[16:48] Eu coloquei.
+[16:49] Ao invés de.
+[16:50] Essa parte aqui.
+[16:51] De clicando.
+[16:52] Da estrela.
+[16:53] Também não gostei muito.
+[16:54] Porque vai clicando.
+[16:55] Cada vez.
+[16:56] Eu quero uma coisa mais.
+[16:57] Para passar todos de uma vez.
+[16:58] E já fica melhor.
+[16:59] Mas eu coloco aqui.
+[17:00] Para ele.
+[17:01] Ao invés de clicar.
+[17:02] Para o estrela.
+[17:03] Para o estrela.
+[17:04] Para ele.
+[17:05] Para ele.
+[17:06] Para ele.
+[17:07] Para ele.
+[17:08] Para ele.
+[17:09] Para ele.
+[17:10] Para ele.
+[17:11] Para ele.
+[17:12] Para ele.
+[17:13] Para ele.
+[17:14] Para ele.
+[17:15] Para ele.
+[17:16] Para ele.
+[17:17] Para ele.
+[17:18] Para ele.
+[17:19] Para ele.
+[17:20] Para ele.
+[17:21] Para ele.
+[17:22] Para ele.
+[17:23] Para ele.
+[17:24] Para ele.
+[17:25] Para ele.
+[17:26] Para ele.
+[17:27] Para ele.
+[17:28] Para ele.
+[17:29] Para ele.
+[17:30] Para ele.
+[17:31] Para ele.
+[17:32] Para ele.
+[17:33] Para ele.
+[17:34] Para ele.
+[17:35] Para ele.
+[17:36] Para ele.
+[17:37] Para ele.
+[17:38] Para ele.
+[17:39] Para ele.
+[17:40] Para ele.
+[17:41] Para ele.
+[17:42] Para ele.
+[17:43] Para ele.
+[17:44] melhor tirar o que fazemos que vai aparecer serviços também não gostei eu prefiro que
+[17:50] apareça cada serviço na tela mesmo que seja mais rápido depois a gente faz um outro aparecendo
+[17:55] mais lento mas por agora isso que a gente está fazendo que era que seja rápido então vai ser dessa
+[18:00] forma que apareceu o serviço deixar um que o serviço aparecendo na tela aí vai passando
+[18:05] para mostrar todos mesmo que fique menos tempo na tela aí pode ter um efeito de letra no fundo
+[18:11] talvez e vai atendendo a cor do fundo a cada serviço também e na outra parte onde a próxima
+[18:17] vem ser gigante e ficar melhor se o fundo mudasse para a minha pôda letra e esse eu
+[18:21] falar aqui pra ele ó quando aproximar o fundo tá ficando ver ele não quero isso muda
+[18:26] para a mesma pôda letra e bora gerar aqui de novo pronto ó gerou aqui ó bora ver se ele
+[18:37] corrigiu todos os mudanços que eu falei aqui pra ele né eu gostei mais da música eu só
+[19:38] gostei dessa parte aqui ó que eu pedi pra ele colocar um letra no fundo só que ele colocou
+[19:44] e deixou isso aqui o que fazemos aí ficou estranho aí eu vou pedir pra ele deixar só o serviço
+[19:49] aqui no meio e alternar no fundo só isso vai ficar aí eu tô falando aqui pra ele né
+[19:54] que essa parte do texto do serviço não é um parte do texto do que fazemos em cima
+[19:59] e remover os letters no fundo também deixa só o nome esse serviço eu já aprirei fazer a
+[20:10] versão vertical também colhei ó e tempo depois aqui já gerou o vídeo na horizontal
+[20:30] na vertical o que que eu peguei pra ver a vertical antes pra ele fez várias alterações aqui
+[20:36] no horizontal e se ele fosse fazer sua alteração em horizontal e no vertical e a gastar muito
+[20:41] aqui vou colocar aqui ponto de uso que a gente ainda tem só pouquíssimo fazendo essas alterações
+[20:47] sabe claro que no fazendo o vídeo ele gasta bem mais só como passa um tempo e já voltou aqui só
+[20:54] a alteração de resto pouco pra fazer esse vertical aqui gastou pouco também porque ele já tinha
+[20:58] as coisas da horizontal então sempre que eu for fazer um vertical horizontal faz primeiro
+[21:02] horizontal depois que finalizou fez as alterações lá e tudo mais aí faz o outra versão
+[21:10] aí bora ver como é que ficou agora o bem melhor o que passa um salve assim
+[21:57] escotope maravés e assim era que finaliza essa primeira parte daqui claro que o seu
+[23:22] se você quiser fazer mais alterações você possui pedir aqui pra ele fazer também lembrando
+[23:26] que isso daqui vai passar no telão então propositamente as coisas estão bem mais
+[23:31] lavos bem mais leitos aqui caso fosse para algum coisa de gente social a coisa de pips
+[23:36] que se abrir uma rapido e também ver um indultor que a fazer com que 30 40 segundos ali para conseguir
+[23:42] mostrar a informação de maneira mais dilâmita e mais rápida também como vai ficar no telão vai
+[23:48] ficar repetindo várias vezes então é melhor que será mais leito ler

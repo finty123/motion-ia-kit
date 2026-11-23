@@ -1,0 +1,39 @@
+# 3.1 - O que faz um motion ser bom
+
+[00:00] O que faz o moço ser bom de verdade?
+[00:03] Ele começa antes de abrir o cloud, ou seja, vai para a exigida referência, vai pensar na
+[00:09] ideia, lembra daquela exemplo que eu dei do restaurante?
+[00:14] Se tu não fala só, me vê um hambúrguer, vem qualquer coisa, né?
+[00:19] A mesma coisa.
+[00:20] Se tu chegar e falar, ó, me vê um moço bonito, vai vir qualquer coisa também.
+[00:24] Agora se tu chega, mostra a foto do prato, mostra isso.
+[00:29] O outro fala como é que quer e o negócio sai top.
+[00:32] Do motion, a gente faz o seguinte, a gente tem que entregar dois tipos de referência,
+[00:38] a referência do design e a referência da animação.
+[00:42] A referência do design, você vai catar alguma referência que você quer, pode ser do Pinterest.
+[00:49] Se tu é primeiro pegar a lei da referência para falar, ó, eu quero essa fonte, quero
+[00:53] essas cores, quero isso aqui do outro e vai mandar um dia de animação para falar, ó,
+[00:58] eu quero que tu pegue aquele design com aquelas fontes, com aquilo tudo e que tu faça
+[01:04] com a animação dessa forma aqui, ó, onde tem esse efeito que aparece no minuto tal, enfim.
+[01:11] Vai falar ali com as suas palavras, mas tem que ter dois tipos de referência, a de design
+[01:16] e a de animação também.
+[01:18] Ó, o segredo é você usar as duas referências juntas, tanta de design e conta de animação
+[01:23] e falar o que é que é cada coisa, porque se você não especificar para ele,
+[01:27] ele vai acabar misturando tudo ali.
+[01:30] Então, tem que falar direito aí para ele o que é que precisa.
+[01:33] Aí tu vai pegar essas duas referências e vai pedir um prompt ainda em cima dela.
+[01:38] Teu prompt é o pedido.
+[01:41] Então, resumindo, tu vai mandar dois tipos de referência para ele, a de design
+[01:46] e a de animação e vai pedir um prompt específico.
+[01:50] Para pedir esse prompt mais específico, você vai ter a ajuda dessa esquil
+[01:55] que você instalou na aula passada.
+[01:57] Se você não tivesse essa esquil, tu ia ter que descrever do zero tudo que tu ia precisar e etc.
+[02:02] Ou essa esquil vai facilitar bastante.
+[02:05] O que tu vai fazer é o seguinte, tu vai mandar a referência de design,
+[02:09] vai falar o que é que tu quer tirar dali, vai mandar a referência de animação,
+[02:14] falar o que é que tu quer tirar dali e depois eu só estou a ativar a de prompt.
+[02:19] A esquil de prompt, só colocando barra, prompt motion graphics e enter.
+[02:25] E a partir dali, ela vai fazer algumas perguntas para você
+[02:28] e montar um prompt super, super softscado já naquela ideia que você quer.
+[02:33] Isso é tudo que você precisa saber para fazer o seu primeiro moço.
+[02:38] Na próxima aula, a gente já vai fazer o seu primeiro moço.

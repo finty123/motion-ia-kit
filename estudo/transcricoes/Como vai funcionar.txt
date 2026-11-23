@@ -1,0 +1,16 @@
+# Como vai funcionar
+
+[00:00] Esse é o vídeo que a gente vai recriar.
+[00:02] Ele é de um cliente real e ele tem dois quartos.
+[01:01] A primeira mostra o clube serviço, preço e a segunda mostra como a pessoa a gente
+[01:08] serviço pelo QR Code com esse efeito aí do céu lá.
+[01:11] Cada parte a gente vai fazendo de um jeito diferente para você aprender os dois caminhos.
+[01:16] A primeira parte a gente vai fazer sem referência nenhum usando só o site do cliente como base.
+[01:23] E a segunda a gente vai fazer usando um vídeo de referência e é de lá que vem esse efeito
+[01:28] do céu lá.
+[01:29] E o último ponto sobre esse exemplo que é que esse vídeo vai passar num telão.
+[01:33] Por isso as animações são mais lentes, mais suaves.
+[01:36] Se esse vídeo fosse para a rede social teria que ser tudo mais rápido.
+[01:40] Então guarda isso porque a velocidade, o rate no vídeo sempre depende de onde ele vai
+[01:44] ser exibido e a gente vai informar isso daí para o asquio também.
+[01:47] Então na próxima aula já começo pela primeira parte do vídeo usando o site do cliente.

@@ -1,0 +1,9 @@
+# gerados pelo instalador
+/chat/
+/skills/
+/aprendizados/
+/revisoes/
+__pycache__/
+*.pyc
+# configuração pessoal (cada PC tem a sua)
+/config.json

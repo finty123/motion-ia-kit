@@ -1,0 +1,242 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #ea1d2c;
+      font-family: "Montserrat", sans-serif;
+    }
+    #co-persp {
+      position: absolute;
+      inset: 0;
+      perspective: 2000px;
+    }
+    #co-mundo {
+      position: absolute;
+      inset: 0;
+      transform-style: preserve-3d;
+    }
+    #co-trilho {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    .co-item {
+      position: absolute;
+      top: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    .co-palavra {
+      position: absolute;
+      left: 160px;
+      color: #ffffff;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 0.86;
+      white-space: nowrap;
+    }
+    .co-silaba {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.06em;
+    }
+    .co-silaba span {
+      display: block;
+    }
+    .co-foto {
+      position: absolute;
+    }
+    .co-preco {
+      position: absolute;
+      width: 400px;
+      height: 104px;
+      border-radius: 52px;
+      background: #ffffff;
+    }
+    .co-preco b {
+      position: absolute;
+      left: 42px;
+      top: 26px;
+      font-size: 46px;
+      font-weight: 600;
+      color: #6b6b6b;
+    }
+    .co-preco svg {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      width: 80px;
+      height: 80px;
+    }
+    #co-sacola {
+      position: absolute;
+      left: 400px;
+      top: 820px;
+      width: 1120px;
+      height: 300px;
+      border-radius: 44px 44px 0 0;
+      background: #ffffff;
+    }
+    #co-sacola small {
+      position: absolute;
+      left: 64px;
+      top: 54px;
+      font-size: 32px;
+      font-weight: 600;
+      color: #9a9a9a;
+    }
+    #co-sacola strong {
+      position: absolute;
+      left: 64px;
+      top: 100px;
+      font-size: 52px;
+      font-weight: 800;
+      color: #3e3e3e;
+    }
+    #co-botao {
+      position: absolute;
+      left: 620px;
+      top: 72px;
+      width: 440px;
+      height: 116px;
+      border-radius: 26px;
+      background: #ea1d2c;
+    }
+    #co-botao span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 30px;
+      text-align: center;
+      font-size: 46px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    #co-beleza {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 70px;
+      text-align: center;
+      font-size: 210px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: #ffffff;
+    }
+    #co-cursor {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 96px;
+      height: 112px;
+    }
+  </style>
+  <div id="root" data-composition-id="comidas" data-width="1920" data-height="1080">
+    <div id="co-persp">
+      <div id="co-mundo">
+        <div id="co-trilho">
+          <!-- 0 · Pizza -->
+          <div class="co-item" style="left: 0px; top: 0px">
+            <div class="co-palavra" style="top: 432px; font-size: 250px"><div class="co-silaba"><span>Pizza</span></div></div>
+            <img class="co-foto" src="assets/img/comidas/pizza.png" style="left: 880px; top: 289px; width: 820px" alt="" />
+            <div class="co-preco" style="left: 1260px; top: 790px"><b>R$ 44,90</b><svg viewBox="-40 -40 80 80"><circle r="40" fill="#ea1d2c" /><g fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><path d="M -22 -16 L -14 -16 L -7 11 L 17 11 L 22 -8 L -11 -8" /></g><circle cx="-4" cy="19" r="4" fill="#fff" /><circle cx="14" cy="19" r="4" fill="#fff" /></svg></div>
+          </div>
+          <!-- 1 · Hambúrguer -->
+          <div class="co-item" style="left: 1400px; top: 820px">
+            <div class="co-palavra" style="top: 320px; font-size: 175px"><div class="co-silaba"><span>Ham</span></div><div class="co-silaba"><span>búr</span></div><div class="co-silaba"><span>guer</span></div></div>
+            <img class="co-foto" src="assets/img/comidas/burger.png" style="left: 940px; top: 277px; width: 700px" alt="" />
+            <div class="co-preco" style="left: 1240px; top: 800px"><b>R$ 32,90</b><svg viewBox="-40 -40 80 80"><circle r="40" fill="#ea1d2c" /><g fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><path d="M -22 -16 L -14 -16 L -7 11 L 17 11 L 22 -8 L -11 -8" /></g><circle cx="-4" cy="19" r="4" fill="#fff" /><circle cx="14" cy="19" r="4" fill="#fff" /></svg></div>
+          </div>
+          <!-- 2 · Açaí -->
+          <div class="co-item" style="left: 2800px; top: 1640px">
+            <div class="co-palavra" style="left: 540px; top: 368px; font-size: 200px"><div class="co-silaba"><span>A</span></div><div class="co-silaba"><span>çaí</span></div></div>
+            <img class="co-foto" src="assets/img/comidas/acai.png" style="left: 900px; top: 289px; width: 760px" alt="" />
+            <div class="co-preco" style="left: 1250px; top: 790px"><b>R$ 19,90</b><svg viewBox="-40 -40 80 80"><circle r="40" fill="#ea1d2c" /><g fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><path d="M -22 -16 L -14 -16 L -7 11 L 17 11 L 22 -8 L -11 -8" /></g><circle cx="-4" cy="19" r="4" fill="#fff" /><circle cx="14" cy="19" r="4" fill="#fff" /></svg></div>
+          </div>
+          <!-- 3 · Pastel -->
+          <div class="co-item" style="left: 4200px; top: 2460px">
+            <div class="co-palavra" style="left: 470px; top: 368px; font-size: 200px"><div class="co-silaba"><span>Pas</span></div><div class="co-silaba"><span>tel</span></div></div>
+            <img class="co-foto" src="assets/img/comidas/pastel.png" style="left: 900px; top: 300px; width: 800px" alt="" />
+            <div class="co-preco" style="left: 1250px; top: 780px"><b>R$ 9,90</b><svg viewBox="-40 -40 80 80"><circle r="40" fill="#ea1d2c" /><g fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"><path d="M -22 -16 L -14 -16 L -7 11 L 17 11 L 22 -8 L -11 -8" /></g><circle cx="-4" cy="19" r="4" fill="#fff" /><circle cx="14" cy="19" r="4" fill="#fff" /></svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sacolinha com o botão "Fazer pedido" -->
+    <div id="co-sacola">
+      <small>Sua sacola</small>
+      <strong>4 itens · R$ 107,60</strong>
+      <div id="co-botao"><span>Fazer pedido</span></div>
+    </div>
+    <div id="co-beleza">beleza.</div>
+    <svg id="co-cursor" viewBox="0 0 48 56">
+      <path d="M 4 3 L 4 44 L 14.5 34.5 L 21.5 51 L 29 47.5 L 22 31.5 L 36.5 31.5 Z" fill="#3e3e3e" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+      var DX = 1400, DY = 820;
+      var itens = gsap.utils.toArray(".co-item");
+      // 0 = 19,28 abs. Palavras na batida: Pizza 0,27 · Hambúrguer 0,78 · Açaí 2,44 · Pastel 4,08 · beleza 5,17
+      var PALAVRA = [0.27, 0.78, 2.44, 4.08];
+      var TROCA = [null, 0.61, 2.27, 3.91];
+
+      gsap.set("#co-cursor", { x: 1700, y: 1150, transformOrigin: "8% 5%" });
+      tl.fromTo("#co-sacola", { y: 420 }, { y: 420, duration: 0.01 }, 0);
+      // a câmera entra no 3D: o plano inclina
+      tl.fromTo("#co-mundo", { rotationY: 0, rotationX: 0, scale: 1 }, { rotationY: -10, rotationX: 6, scale: 0.96, duration: 0.9, ease: "power2.inOut" }, 0.05);
+
+      itens.forEach(function (item, i) {
+        var foto = item.querySelector(".co-foto");
+        var silabas = item.querySelectorAll(".co-silaba span");
+        var preco = item.querySelector(".co-preco");
+        var tp = PALAVRA[i];
+        if (i > 0) {
+          var tt = TROCA[i];
+          // troca diagonal com desfoque (0,27 s)
+          tl.to("#co-trilho", { x: -i * DX, y: -i * DY, duration: 0.27, ease: "power3.inOut" }, tt);
+          tl.fromTo("#co-trilho", { filter: "blur(0px)" }, { filter: "blur(9px)", duration: 0.13, ease: "power2.in", immediateRender: false }, tt);
+          tl.to("#co-trilho", { filter: "blur(0px)", duration: 0.14, ease: "power2.out" }, tt + 0.13);
+          // a comida vem da profundidade
+          tl.fromTo(foto, { scale: 0.6, rotation: 16 }, { scale: 1, rotation: 0, duration: 0.42, ease: "back.out(1.7)" }, tt + 0.08);
+        }
+        // sílabas sobem por máscara
+        silabas.forEach(function (s, k) {
+          tl.fromTo(s, { yPercent: 100 }, { yPercent: 0, duration: 0.32, ease: "expo.out" }, tp + k * 0.07);
+        });
+        // pílula de preço desliza
+        tl.fromTo(preco, { x: 140, opacity: 0, scale: 0.8 }, { x: 0, opacity: 1, scale: 1, duration: 0.36, ease: "back.out(2)" }, tp + 0.2);
+        // parado: a comida gira devagar
+        var fim = i < 3 ? TROCA[i + 1] : 4.6;
+        tl.to(foto, { rotation: "+=5", duration: Math.max(0.3, fim - tp - 0.3), ease: "sine.inOut" }, tp + 0.3);
+      });
+      // deriva da câmera no último
+      tl.to("#co-mundo", { scale: 1.0, duration: 0.9, ease: "sine.inOut" }, 4.2);
+
+      // ── 5,0 (28,25): sobe a sacolinha; cursor clica em "Fazer pedido" no "beleza" (28,76) ──
+      tl.to("#co-sacola", { y: 0, duration: 0.42, ease: "expo.out" }, 4.62);
+      tl.to("#co-cursor", { x: 1260, duration: 0.42, ease: "power3.out" }, 4.72);
+      tl.to("#co-cursor", { y: 960, duration: 0.42, ease: "power2.out" }, 4.72);
+      tl.to("#co-cursor", { scale: 0.82, duration: 0.06 }, 5.17);
+      tl.to("#co-cursor", { scale: 1, opacity: 0, duration: 0.25 }, 5.23);
+      tl.to("#co-botao", { scaleX: 0.94, scaleY: 0.88, duration: 0.06, ease: "power2.out" }, 5.17);
+      // "beleza." na tela, na fala (24,45 abs)
+      tl.fromTo("#co-beleza", { scale: 0, rotation: -8, y: 30 }, { scale: 1.12, rotation: 3, y: 0, duration: 0.16, ease: "power3.out" }, 5.1);
+      tl.to("#co-beleza", { scale: 1, rotation: 0, duration: 0.4, ease: "elastic.out(1, 0.4)" }, 5.26);
+      tl.to("#co-beleza", { y: -320, opacity: 0, duration: 0.25, ease: "power3.in" }, 5.62);
+      // o botão sobe e cresce até virar a tela inteira (mesma cor)
+      var bx = 400 + 620 + 220, by = 820 + 72 + 58; // centro do botão na tela
+      tl.to("#co-botao span", { opacity: 0, duration: 0.12 }, 5.23);
+      tl.to("#co-botao", { x: 960 - bx, y: 540 - by, scaleX: 4.8, scaleY: 10.4, borderRadius: 4, duration: 0.5, ease: "power3.inOut" }, 5.23);
+
+      window.__timelines["comidas"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,7 @@
+{
+  "_ajuda": "Copie este arquivo como config.json e troque os valores. Use barras normais (/) nos caminhos. pasta_sfx vazia = usa a pasta sfx do kit. assinatura vazia = a skill pergunta o @ em cada vídeo.",
+  "pasta_projetos": "",
+  "pasta_resultados": "",
+  "pasta_sfx": "",
+  "assinatura": ""
+}

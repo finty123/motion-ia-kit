@@ -1,0 +1,146 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    #ce-canvas {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+  </style>
+  <div id="root" data-composition-id="celular" data-width="1920" data-height="1080">
+    <canvas id="ce-canvas" width="1920" height="1080"></canvas>
+  </div>
+  <script>
+    (function () {
+      var W = 1920, H = 1080, PI = Math.PI;
+      var DUR = 2.85; // 6,50 → 9,35 abs. Batidas: 6,53 · 7,07 · 7,62 · 8,15 (entrada forte) · 8,69 · 9,25
+
+      var renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("ce-canvas"), antialias: true, alpha: true, preserveDrawingBuffer: true });
+      renderer.setSize(W, H, false);
+      renderer.setPixelRatio(1);
+      renderer.setClearColor(0x000000, 0);
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.1;
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(30, W / H, 0.05, 100);
+
+      var eC = document.createElement("canvas"); eC.width = 1024; eC.height = 512;
+      var ec = eC.getContext("2d");
+      var eg = ec.createLinearGradient(0, 0, 1024, 512);
+      eg.addColorStop(0, "#2a1a08"); eg.addColorStop(0.22, "#7a5a1a"); eg.addColorStop(0.32, "#ffffff");
+      eg.addColorStop(0.42, "#3a2a0c"); eg.addColorStop(0.62, "#fff2d6"); eg.addColorStop(0.72, "#5a3f10"); eg.addColorStop(1, "#2a1a08");
+      ec.fillStyle = eg; ec.fillRect(0, 0, 1024, 512);
+      var eT = new THREE.CanvasTexture(eC); eT.mapping = THREE.EquirectangularReflectionMapping;
+      var pm = new THREE.PMREMGenerator(renderer);
+      scene.environment = pm.fromEquirectangular(eT).texture;
+      eT.dispose(); pm.dispose();
+      scene.add(new THREE.AmbientLight(0x554433, 0.7));
+      var key = new THREE.DirectionalLight(0xfff1e6, 2.1); key.position.set(-3, 4, 5); scene.add(key);
+      var fill = new THREE.PointLight(0xffd8b0, 1.3, 12); fill.position.set(3, -1, 4); scene.add(fill);
+
+      // ── tela: branca com o logo vermelho montando letra por letra ──
+      var SW = 600, SH = 1300;
+      var tela = document.createElement("canvas"); tela.width = SW; tela.height = SH;
+      var tc = tela.getContext("2d");
+      var telaTex = new THREE.CanvasTexture(tela);
+      telaTex.encoding = THREE.sRGBEncoding; telaTex.minFilter = THREE.LinearFilter; telaTex.generateMipmaps = false;
+      // peças do logo oficial (mesmos traços do SVG, separados por letra) e o centro de cada uma
+      var PECAS = [
+        { d: "M-4,529.31H72.41l42.46-211.2H38.45ZM42.66,292.92h76.73L132,229.73H55.3Z", c: [64, 155], t: 1.65 },
+        { d: "M102.13,588.74h76.42l46.69-228.18h57.31L291,318.11H234.79l2.13-9.55c3.18-18,9.55-38.21,38.2-38.21,17,0,32.91,1.06,48.82,8.49l8.5-44.57a167.8,167.8,0,0,0-55.19-9.56c-61.56,0-104,36.09-119.93,93.4H130.79l-8.49,42.45h26.53Z", c: [219, 195], t: 1.72 },
+        { d: "M344.11,533.56c90.21,0,152.83-81.73,152.83-148.59,0-49.88-45.64-71.11-90.21-71.11C308,313.86,253.9,402,253.9,462.45c0,49.88,46.7,71.11,90.21,71.11Z", c: [379, 199], t: 1.79 },
+        { d: "M586.11,533.56c90.21,0,152.83-81.73,152.83-148.59,0-49.88-46.7-71.11-91.28-71.11-98.7,0-152.82,88.09-152.82,148.59,0,49.88,47.76,71.11,91.27,71.11Z", c: [621, 199], t: 1.86 },
+        { d: "M863.11,529.31h75.35L1000,229H923.59l-18.05,89.15-31.84-3.18c-74.29,0-142.21,95.51-142.21,163.44,0,27.59,18,55.19,48.82,55.19,43.51,0,74.29-21.23,87-42.46h4.24Z", c: [869, 181], t: 1.93 },
+        { d: "M627.48,687.45a295,295,0,0,1-212.26,66.86c-100.83-6.37-173-83.85-185.73-165.57h4.24c23.35,51,79.6,98.71,148.59,106.13,70,8.49,153.89-23.34,199.52-66.86L530.9,588.74H684.79l-34,163.45-22.29-63.68Z", c: [461, 445], t: 2.02, sorriso: true }
+      ].map(function (p) { p.path = new Path2D(p.d); return p; });
+      function clamp01(v) { return Math.max(0, Math.min(1, v)); }
+      function backOut(p, s) { p = p - 1; return p * p * ((s + 1) * p + s) + 1; }
+      function desenharTela(t) {
+        var acende = clamp01((t - 1.06) / 0.08);
+        tc.fillStyle = "#050507"; tc.fillRect(0, 0, SW, SH);
+        if (acende > 0) {
+          tc.globalAlpha = acende; tc.fillStyle = "#FFFFFF"; tc.fillRect(0, 0, SW, SH); tc.globalAlpha = 1;
+          var LW = SW * 0.66, esc = LW / 1004, lx = SW / 2 - LW / 2, ly = SH * 0.40 - (530.58 * esc) / 2;
+          tc.save(); tc.translate(lx, ly); tc.scale(esc, esc);
+          PECAS.forEach(function (p) {
+            var k = clamp01((t - p.t) / (p.sorriso ? 0.32 : 0.24));
+            if (k <= 0) return;
+            var s = backOut(k, p.sorriso ? 1.6 : 2.6);
+            tc.save(); tc.translate(p.c[0], p.c[1]);
+            if (p.sorriso) tc.rotate((1 - k) * -0.5);
+            tc.scale(s, s); tc.translate(-p.c[0], -p.c[1]);
+            tc.translate(4, -224.71); tc.fillStyle = "#EA1D2C"; tc.fill(p.path);
+            tc.restore();
+          });
+          tc.restore();
+        }
+        tc.fillStyle = "#000"; tc.beginPath();
+        if (tc.roundRect) tc.roundRect(SW / 2 - 70, 26, 140, 40, 20); else tc.rect(SW / 2 - 70, 26, 140, 40);
+        tc.fill();
+        telaTex.needsUpdate = true;
+      }
+      function planarUv(mesh) {
+        var g = mesh.geometry; g.computeBoundingBox();
+        var bb = g.boundingBox, pos = g.attributes.position;
+        var w = bb.max.x - bb.min.x || 1, h = bb.max.y - bb.min.y || 1;
+        var uv = new Float32Array(pos.count * 2);
+        for (var i = 0; i < pos.count; i++) { uv[i * 2] = (pos.getX(i) - bb.min.x) / w; uv[i * 2 + 1] = (pos.getY(i) - bb.min.y) / h; }
+        g.setAttribute("uv", new THREE.BufferAttribute(uv, 2));
+      }
+
+      var grupo = new THREE.Group(); scene.add(grupo);
+      var S = { y: -6.5, giro: -2 * PI - 0.5, rx: 0.45, rz: -0.3, camZ: 15, camY: 0.05, alvoY: 0 };
+      function render() {
+        var t = tl.time();
+        desenharTela(t);
+        var f = Math.max(0, t - 1.12);
+        grupo.position.set(0, S.y + Math.sin(f * 2.4) * 0.025, 0);
+        grupo.rotation.set(S.rx + Math.sin(f * 1.9) * 0.02, PI + S.giro + Math.sin(f * 1.4) * 0.04, S.rz);
+        camera.position.set(0, S.camY, S.camZ);
+        camera.lookAt(0, S.alvoY, 0);
+        renderer.render(scene, camera);
+      }
+
+      var tl = gsap.timeline({ paused: true });
+      tl.to(S, { duration: DUR }, 0);
+      tl.eventCallback("onUpdate", render);
+      // sobe, gira 360° e aproxima AO MESMO TEMPO (6,53 → 7,62, na batida)
+      tl.to(S, { y: 0, duration: 1.09, ease: "power3.out" }, 0.03);
+      tl.to(S, { giro: 0, duration: 1.09, ease: "power2.out" }, 0.03);
+      tl.to(S, { camZ: 7.7, duration: 1.09, ease: "power3.out" }, 0.03);
+      tl.to(S, { rx: 0, rz: 0, duration: 1.09, ease: "power2.out" }, 0.03);
+      // mergulho no branco da tela, abaixo do logo (8,69 → 9,25)
+      tl.to(S, { camZ: 0.9, camY: -0.62, alvoY: -0.62, duration: 0.56, ease: "power3.in" }, 2.19);
+
+      function pronto() { render(); window.__timelines["celular"] = tl; }
+      new THREE.GLTFLoader().load("assets/models/iphone.glb", function (gltf) {
+        var m = gltf.scene;
+        var box = new THREE.Box3().setFromObject(m);
+        m.scale.setScalar(3.2 / box.getSize(new THREE.Vector3()).y);
+        box.setFromObject(m);
+        m.position.sub(box.getCenter(new THREE.Vector3()));
+        m.traverse(function (ch) {
+          if (!ch.isMesh) return;
+          if (ch.name.indexOf("front-glass") === 0) { planarUv(ch); ch.material = new THREE.MeshBasicMaterial({ map: telaTex, toneMapped: false }); }
+          if (ch.name.indexOf("apple-logo") === 0) ch.visible = false; // sem marca de terceiro
+          var mn = (ch.material && ch.material.name) || "";
+          if (mn.indexOf("aluminium") >= 0 || mn.indexOf("antenna") >= 0 || mn.indexOf("lens-bezel") >= 0 || mn.indexOf("lens-ring") >= 0) { ch.material = ch.material.clone(); ch.material.color = new THREE.Color(0x2a2a30); ch.material.metalness = 0.85; ch.material.roughness = 0.32; }
+          if (mn.indexOf("ceramic-shield-back") >= 0) { ch.material = ch.material.clone(); ch.material.color = new THREE.Color(0x1c1c21); }
+        });
+        m.updateWorldMatrix(true, true);
+        var fr = m.getObjectByName("front-glass"), bk = m.getObjectByName("rear-window");
+        if (fr && bk) { var a = new THREE.Vector3(), b = new THREE.Vector3(); fr.getWorldPosition(a); bk.getWorldPosition(b); if (a.z > b.z) m.rotation.y += PI; }
+        grupo.add(m);
+        pronto();
+      });
+    })();
+  </script>
+</template>

@@ -1,0 +1,71 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #re-all { position: absolute; inset: 0; }
+    #re-bars { position: absolute; left: 0; right: 0; bottom: 0; height: 560px; display: flex; align-items: flex-end; gap: 22px; padding: 0 40px; }
+    .re-b { flex: 1; height: 100%; border-radius: 26px 26px 0 0; transform-origin: 50% 100%;
+      background: linear-gradient(0deg, #e58bff 0%, #b06bff 35%, #820ad1 70%, #6a12b8 100%); filter: blur(1.5px); box-shadow: 0 -10px 40px rgba(176,107,255,.45); }
+    #re-veil { position: absolute; left: 0; right: 0; bottom: 0; height: 560px; background: linear-gradient(0deg, rgba(246,244,249,0) 0%, rgba(246,244,249,.0) 60%, rgba(246,244,249,.9) 100%); }
+    #re-num { position: absolute; left: 0; right: 0; top: 330px; display: flex; justify-content: center; font: 700 230px/1 Outfit, sans-serif; letter-spacing: -6px; color: var(--ink); }
+    #re-num .col { position: relative; width: 0.6em; height: 1.05em; overflow: hidden; text-align: center; -webkit-mask-image: linear-gradient(transparent, #000 32%, #000 68%, transparent); mask-image: linear-gradient(transparent, #000 32%, #000 68%, transparent); }
+    #re-num .col .strip { position: absolute; left: 0; right: 0; top: 0; }
+    #re-num .col .strip div { height: 1.05em; line-height: 1.05em; }
+    #re-num .fx { padding: 0 0.04em; line-height: 1.05em; }
+    #re-num .rs { font-size: 0.5em; line-height: 2.1em; margin-right: 0.18em; color: #6c6578; letter-spacing: -2px; }
+    #re-notif { left: 610px; top: 150px; width: 720px; height: 120px; border-radius: 34px; display: flex; align-items: center; gap: 22px; padding: 0 28px; font-family: Inter, sans-serif; }
+    #re-notif .ic { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; color: #fff; font: 700 36px Outfit; background: linear-gradient(135deg, #9d3cf0, #4a0a8c); }
+    #re-notif .tt { font: 700 28px Inter; color: var(--ink); } #re-notif .bd { font: 500 28px Inter; color: #1a9e4a; margin-top: 2px; }
+  </style>
+  <div id="root" data-composition-id="rende" data-width="1920" data-height="1080">
+    <div id="re-all">
+      <div id="re-bars"><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div><div class="re-b"></div></div>
+      <div id="re-veil"></div>
+      <div id="re-num" data-layout-allow-overflow></div>
+      <div id="re-notif" class="glass"><div class="ic">$</div><div><div class="tt">Seu dinheiro rendeu hoje</div><div class="bd">+ R$ 0,47 · rendendo todo dia</div></div></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      // odômetro: R$ 12.476,80 → R$ 12.480,00; cada casa rola quando a de baixo passa do 9
+      const places = [10000, 1000, 100, 10, 1, 0.1, 0.01], num = document.getElementById("re-num");
+      let html = '<div class="fx rs">R$</div>';
+      places.forEach((p, i) => {
+        html += `<div class="col" data-p="${p}"><div class="strip">${[0,1,2,3,4,5,6,7,8,9,0].map((d) => `<div>${d}</div>`).join("")}</div></div>`;
+        if (p === 1000) html += '<div class="fx">.</div>';
+        if (p === 1) html += '<div class="fx">,</div>';
+      });
+      num.innerHTML = html;
+      const cols = [...num.querySelectorAll(".col")];
+      const V = { v: 12476.8 };
+      function odo() {
+        // em centavos inteiros pra não errar casa por arredondamento de ponto flutuante
+        const tot = Math.round(V.v * 100 * 1000) / 1000;
+        cols.forEach((c) => {
+          const q = Math.round(+c.dataset.p * 100), r = tot / q, base = Math.floor(r + 1e-6) % 10;
+          let pos = base;
+          if (q === 1) pos = r % 10;
+          else pos = base + Math.max(0, Math.min(1, (tot % q) - (q - 1))); // só rola no último centavo antes da virada
+          const s = c.firstChild;
+          s.style.transform = `translateY(${(-pos * 1.05).toFixed(4)}em)`;
+          const moving = Math.abs(pos - Math.round(pos)) > 0.02;
+          s.style.color = moving ? "#820ad1" : "";
+          s.style.filter = moving ? "blur(2px)" : "none";
+        });
+      }
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#re-all", { y: 0, opacity: 1 }, { y: 0, opacity: 1, duration: 0.01 }, 0);
+      tl.fromTo("#re-num", { opacity: 0, filter: "blur(14px)", scale: 1.08 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.4, ease: "expo.out" }, 0.04);
+      tl.fromTo(V, { v: 12476.8 }, { v: 12479.53, duration: 1.1, ease: "power2.out", onUpdate: odo }, 0.1);
+      tl.to(V, { v: 12480.0, duration: 0.55, ease: "expo.out", onUpdate: odo }, 1.9);
+      gsap.utils.toArray("#re-bars .re-b").forEach((b, i) => {
+        const h = 0.22 + 0.07 * i + 0.04 * Math.sin(i * 1.7);
+        tl.fromTo(b, { scaleY: 0 }, { scaleY: h, duration: 0.9, ease: "back.out(1.6)" }, 0.08 + i * 0.05);
+        tl.to(b, { scaleY: h + 0.1 + 0.02 * i, duration: 0.6, ease: "back.out(2)" }, 1.9 + i * 0.03);
+      });
+      tl.fromTo("#re-notif", { y: -40, opacity: 0, filter: "blur(10px)", scale: 0.94 }, { y: 0, opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.5, ease: "expo.out" }, 1.18);
+      tl.to("#re-all", { y: 380, opacity: 0, filter: "blur(10px)", duration: 0.3, ease: "power3.in" }, 2.48);
+      odo();
+      window.__timelines["rende"] = tl;
+    })();
+  </script>
+</template>

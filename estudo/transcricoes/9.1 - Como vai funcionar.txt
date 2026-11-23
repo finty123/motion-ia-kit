@@ -1,0 +1,6 @@
+# 9.1 - Como vai funcionar
+
+[00:00] Nessa aula aqui, tu vai aprender a fazer esse Motion 3D do zero pelo cloud.
+[00:05] Esse é o mesmo processo que eu utilizei para fazer esse outro aqui também.
+[00:09] Aí eu fiz uma variação justamente para te mostrar que dá para fazer com qualquer outra marca também.
+[00:14] É só você seguir o mesmo passo a passo que eu vou te mostrar.

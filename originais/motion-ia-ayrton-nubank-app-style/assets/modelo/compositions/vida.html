@@ -1,0 +1,80 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #vi-cloud { position: absolute; left: 960px; top: 540px; perspective: 1100px; }
+    #vi-world { position: absolute; left: 0; top: 0; transform-style: preserve-3d; }
+    .vi-chip { position: absolute; height: 92px; padding: 0 34px; display: flex; align-items: center; gap: 14px; font: 600 34px Inter, sans-serif; color: #2a0b4d; white-space: nowrap; }
+    .vi-chip .em { font-size: 40px; }
+    .vi-line { position: absolute; left: 0; right: 0; top: 50%; text-align: center; font: 600 88px/1 Outfit, sans-serif; letter-spacing: -2px; white-space: nowrap; }
+    #vi-l1 { margin-top: -48px; }
+    #vi-l2 { margin-top: -60px; font-size: 100px; display: flex; justify-content: center; align-items: center; }
+    .vi-line .w { display: inline-block; margin: 0 12px; }
+    .vi-line .w.gw { background: var(--grad); background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; }
+    #vi-coin { width: 190px; height: 190px; margin: 0 4px; }
+    #vi-blob { position: absolute; left: 50%; top: 50%; width: 1300px; height: 560px; margin: -280px 0 0 -650px; border-radius: 50%; filter: blur(80px); opacity: .55;
+      background: radial-gradient(circle at 40% 50%, #e58bff 0, rgba(229,139,255,0) 45%), radial-gradient(circle at 62% 50%, #b06bff 0, rgba(176,107,255,0) 55%); }
+  </style>
+  <div id="root" data-composition-id="vida" data-width="1920" data-height="1080">
+    <div id="vi-blob"></div>
+    <div id="vi-cloud" data-layout-allow-overflow><div id="vi-world">
+      <div class="vi-chip glass"><span class="em">✈️</span>Viagem</div>
+      <div class="vi-chip glass lilas"><span class="em">☕</span>Café da manhã</div>
+      <div class="vi-chip glass"><span class="em">🏖️</span>Praia no sábado</div>
+      <div class="vi-chip glass"><span class="em">🎓</span>Faculdade</div>
+      <div class="vi-chip glass lilas"><span class="em">🏋️</span>Treino</div>
+      <div class="vi-chip glass"><span class="em">👨‍👩‍👧</span>Família</div>
+      <div class="vi-chip glass"><span class="em">🐶</span>Passeio com o Thor</div>
+      <div class="vi-chip glass lilas"><span class="em">🍕</span>Pizza de sexta</div>
+      <div class="vi-chip glass"><span class="em">🎬</span>Cinema</div>
+      <div class="vi-chip glass"><span class="em">🎂</span>Aniversário</div>
+    </div></div>
+    <div id="vi-l1" class="vi-line"><span class="w">Então,</span><span class="w">enquanto</span><span class="w">você</span><span class="w">cuida</span><span class="w">da</span><span class="w">sua</span><span class="w gw">vida,</span></div>
+    <div id="vi-l2" class="vi-line"><span class="w">o</span><span class="w gw">roxinho</span><canvas id="vi-coin" width="380" height="380"></canvas><span class="w">cuida</span><span class="w">do</span><span class="w">seu</span><span class="w">dinheiro.</span></div>
+  </div>
+  <script type="module">
+    import "https://cdn.jsdelivr.net/npm/three@0.181.2/+esm";
+    import { THREE, makeStage, makeCoin, ready, seg, ease, lerp } from "./compositions/kit3d.js";
+    await ready();
+    const st = makeStage(document.getElementById("vi-coin"), { w: 380, h: 380, fov: 30, shadow: false });
+    const coin = makeCoin({ R: 1, T: 0.17 });
+    st.scene.add(coin);
+    st.camera.position.set(0, 0, 5.4);
+    function render3d(t) {
+      const spin = t < 2.9 ? 0 : (t - 2.9) * 2.6 + 6 * ease.outQuart(seg(t, 2.9, 3.6));
+      coin.rotation.set(0.12, -Math.PI * 0.5 + spin, 0.08);
+      st.render();
+    }
+    const tl = gsap.timeline({ paused: true });
+    // nuvem de chips de vidro em profundidade, câmera derivando
+    const chips = gsap.utils.toArray("#vi-world .vi-chip");
+    const spots = [[-700, -330, -200], [430, -360, -80], [-560, 300, 40], [520, 290, -260], [-150, -420, -420], [700, -200, -520], [-820, 200, -560], [180, 400, -140], [-330, -250, 160], [300, -170, 220]];
+    chips.forEach((c, i) => {
+      const [x, y, z] = spots[i];
+      tl.fromTo(c, { x: x * 0.4 - 120, y: y * 0.4 - 46, z: z - 900, opacity: 0, filter: "blur(12px)" }, { x: x - 120, y: y - 46, z, opacity: 1, filter: "blur(0px)", duration: 1.0, ease: "back.out(1.3)" }, 0.1 + i * 0.09);
+      tl.to(c, { x: -120, y: -46, z: -300, scale: 0.2, opacity: 0, filter: "blur(10px)", duration: 0.28, ease: "power3.in" }, 2.26 + (i % 5) * 0.015);
+    });
+    tl.fromTo("#vi-world", { rotationY: -8, rotationX: 4, z: -100 }, { rotationY: 8, rotationX: -3, z: 60, duration: 2.5, ease: "none" }, 0);
+    tl.fromTo("#vi-blob", { opacity: 0, scale: 0.7 }, { opacity: 0.55, scale: 1, duration: 1.2, ease: "power2.out" }, 0);
+    // linha 1: cada palavra acende do cinza pra tinta
+    const w1 = gsap.utils.toArray("#vi-l1 .w"), t1 = [0.13, 0.77, 1.05, 1.41, 1.77, 1.91, 2.07];
+    w1.forEach((w, i) => {
+      const g = w.classList.contains("gw");
+      tl.fromTo(w, g ? { opacity: 0, filter: "blur(6px)" } : { opacity: 0, color: "#cfc8d8", filter: "blur(6px)" }, g ? { opacity: 1, filter: "blur(0px)", duration: 0.14 } : { opacity: 1, color: "#17121f", filter: "blur(0px)", duration: 0.14 }, t1[i] - 0.03);
+    });
+    tl.to(w1, { opacity: 0, filter: "blur(10px)", duration: 0.18, ease: "power2.in", stagger: 0.02 }, 2.28);
+    // linha 2: entra em gradiente e assenta na tinta; "roxinho" fica roxo; a moeda gira entre as palavras
+    const w2 = gsap.utils.toArray("#vi-l2 .w"), t2 = [2.43, 2.83, 3.33, 3.73, 3.85, 4.01];
+    w2.forEach((w, i) => {
+      const g = w.classList.contains("gw");
+      tl.fromTo(w, { opacity: 0, filter: "blur(8px)", color: g ? "transparent" : "#b06bff" }, { opacity: 1, filter: "blur(0px)", color: g ? "transparent" : "#b06bff", duration: 0.16, ease: "power2.out" }, t2[i] - 0.03);
+      if (!g) tl.to(w, { color: "#17121f", duration: 0.35, ease: "power1.out" }, t2[i] + 0.16);
+    });
+    tl.fromTo("#vi-coin", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.6)" }, 2.9);
+    tl.to("#vi-l2", { opacity: 0, filter: "blur(12px)", scale: 0.96, duration: 0.2, ease: "power2.in" }, 4.46);
+    tl.to("#vi-blob", { opacity: 0, duration: 0.3 }, 4.35);
+    const clock = { t: 0 };
+    tl.to(clock, { t: 4.65, duration: 4.65, ease: "none", onUpdate: () => render3d(clock.t) }, 0);
+    render3d(0);
+    window.__timelines["vida"] = tl;
+  </script>
+</template>

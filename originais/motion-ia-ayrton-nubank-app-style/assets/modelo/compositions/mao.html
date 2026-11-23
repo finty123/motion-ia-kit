@@ -1,0 +1,135 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #ma-all { position: absolute; inset: 0; }
+    /* plano 1: mão segurando o celular, "mês inteiro" atrás (fundo roxo, como a referência) */
+    #ma-hand { position: absolute; inset: 0; overflow: hidden; }
+    #ma-hbg { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 55%, #ffffff 0%, #f7f5fa 60%, #ece7f3 100%); }
+    .ma-hb { position: absolute; border-radius: 50%; filter: blur(90px); }
+    #ma-hb1 { left: -100px; top: 420px; width: 900px; height: 700px; background: #e9d6ff; opacity: .5; }
+    #ma-hb2 { left: 1150px; top: -150px; width: 900px; height: 700px; background: #f1e4ff; opacity: .6; }
+    #ma-big { position: absolute; left: 0; right: 0; top: 170px; text-align: center; font: 700 270px/1 Outfit, sans-serif; letter-spacing: -11px; color: var(--ink); white-space: nowrap; }
+    #ma-big .w { display: inline-block; margin: 0 22px; }
+    #ma-cut, #ma-shot { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    #ma-cut { object-fit: cover; }
+    /* a tela da foto (em inglês) é trocada pela tela do app em português, na mesma perspectiva */
+    #ma-scr { position: absolute; left: 0; top: 0; width: 600px; height: 1278px; border-radius: 70px; transform-origin: 0 0;
+      transform: matrix3d(0.55546875,0,0,0,-0.27777129,0.17583452,0,-0.00029057338,0,0,1,0,794.0625,423.28125,0,1); }
+    .ma-ic { position: absolute; width: 118px; height: 118px; border-radius: 32px; display: grid; place-items: center; font: 700 52px Outfit, sans-serif; color: #820ad1; }
+    .ma-ic .nu { width: 70px; height: 40px; background: #820ad1; -webkit-mask: url(assets/nu-branco.png) center / contain no-repeat; mask: url(assets/nu-branco.png) center / contain no-repeat; }
+    /* plano 2: o celular 3D à esquerda, frase em cima, notificações à direita */
+    #ma-scene { position: absolute; inset: 0; }
+    #ma-sbg { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, #ffffff 0%, #f6f4f9 55%, #ece7f3 100%); }
+    #ma-3d { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    #ma-head { position: absolute; left: 860px; width: 860px; top: 150px; height: 130px; }
+    .ma-line { position: absolute; left: 0; right: 0; top: 0; text-align: center; font: 600 98px/1.15 Outfit, sans-serif; letter-spacing: -3px; color: var(--ink); white-space: nowrap; }
+    .ma-line .w { display: inline-block; margin: 0 12px; }
+    #ma-stack { position: absolute; left: 950px; top: 0; width: 680px; height: 1080px; }
+    .ma-card { position: absolute; left: 0; top: 450px; width: 680px; height: 132px; border-radius: 38px; display: flex; align-items: center; padding: 0 30px; gap: 24px; font-family: Inter, sans-serif; }
+    .ma-card .ic { width: 76px; height: 76px; border-radius: 20px; flex: none; display: grid; place-items: center; color: #fff; font: 700 40px Outfit, sans-serif; background: linear-gradient(135deg, #9d3cf0, #4a0a8c); box-shadow: inset 0 1px 0 rgba(255,255,255,.4); }
+    .ma-card .tt { font-weight: 700; font-size: 30px; color: var(--ink); }
+    .ma-card .bd { font-weight: 500; font-size: 28px; color: #5d566a; margin-top: 4px; }
+    .ma-card .ag { margin-left: auto; align-self: flex-start; margin-top: 28px; font-size: 28px; color: #7b7488; }
+    #ma-c1 { z-index: 1; } #ma-c2 { z-index: 2; } #ma-c3 { z-index: 3; }
+  </style>
+  <div id="root" data-composition-id="mao" data-width="1920" data-height="1080">
+    <div id="ma-all">
+      <div id="ma-scene">
+        <div id="ma-sbg"></div>
+        <canvas id="ma-3d" width="1920" height="1080"></canvas>
+        <div id="ma-head">
+          <div id="ma-l1" class="ma-line"><span class="w">Pagou</span><span class="w gtext">conta.</span></div>
+          <div id="ma-l2" class="ma-line"><span class="w">Bateu</span><span class="w gtext">meta.</span></div>
+          <div id="ma-l3" class="ma-line"><span class="w">Juntou</span><span class="w">cada</span><span class="w gtext">real.</span></div>
+        </div>
+        <div id="ma-stack">
+          <div id="ma-c3" class="ma-card glass"><div class="ic">+</div><div><div class="tt">R$ 50,00 guardados</div><div class="bd">Cada real conta.</div></div><div class="ag">agora</div></div>
+          <div id="ma-c2" class="ma-card glass"><div class="ic">✓</div><div><div class="tt">Meta batida</div><div class="bd">100% do objetivo do mês</div></div><div class="ag">agora</div></div>
+          <div id="ma-c1" class="ma-card glass"><div class="ic">$</div><div><div class="tt">Conta de luz paga</div><div class="bd">R$ 187,40 · confirmado</div></div><div class="ag">agora</div></div>
+        </div>
+      </div>
+      <div id="ma-hand">
+        <div id="ma-hbg"><div id="ma-hb1" class="ma-hb"></div><div id="ma-hb2" class="ma-hb"></div></div>
+        <div id="ma-big" data-layout-allow-overflow><span class="w">mês</span><span class="w gtext">inteiro</span></div>
+        <div id="ma-back">
+          <div class="ma-ic glass" style="left:330px;top:500px">◆</div>
+          <div class="ma-ic glass" style="left:1480px;top:520px">$</div>
+          <div class="ma-ic glass lilas" style="left:250px;top:820px">⇄</div>
+        </div>
+        <div id="ma-shot"><img id="ma-cut" src="assets/mao-recorte.png" alt="" /><canvas id="ma-scr" width="600" height="1278"></canvas></div>
+        <div id="ma-front">
+          <div class="ma-ic glass" style="left:1560px;top:810px">▤</div>
+          <div class="ma-ic glass lilas" style="left:520px;top:700px"><div class="nu"></div></div>
+          <div class="ma-ic glass" style="left:1270px;top:700px">✓</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    import "https://cdn.jsdelivr.net/npm/three@0.181.2/+esm";
+    import { THREE, makeStage, makePhone, makeCoin, ready, seg, ease, lerp } from "./compositions/kit3d.js";
+    import { drawHome2 } from "./compositions/kit3d-extra.js";
+    await ready();
+    drawHome2(document.getElementById("ma-scr").getContext("2d"));
+    const st = makeStage(document.getElementById("ma-3d"));
+    st.ground.visible = true; st.ground.position.y = -2.45;
+    st.key.position.set(2, 7, 6); st.key.target.position.set(3.5, -2, 0);
+    const ph = makePhone();
+    drawHome2(ph.ctx); ph.update();
+    st.scene.add(ph.group);
+    const coins = [];
+    for (let i = 0; i < 7; i++) { const c = makeCoin({ R: 0.5, T: 0.12 }); st.scene.add(c); coins.push(c); }
+    function render3d(t) {
+      // celular 3D à esquerda, já virando pra frente enquanto a câmera chega
+      const arrive = ease.outQuart(seg(t, 0.95, 1.7)), sp = ease.spring(seg(t, 1.05, 2.0)), idle = seg(t, 1.6, 2.3);
+      ph.group.position.set(-0.95 - 0.9 * (1 - sp), -0.08 + idle * 0.04 * Math.sin(t * 1.7), 5.65);
+      ph.group.rotation.set(lerp(0.25, 0.04, arrive), lerp(0.9, 0.34, arrive) + idle * 0.05 * Math.sin(t * 1.2), lerp(0.3, -0.04, sp));
+      coins.forEach((c, i) => {
+        const t0 = 3.68 + i * 0.1, kk = seg(t, t0, t0 + 0.45), fall = 1 - Math.pow(1 - kk, 2.2);
+        c.visible = t >= t0;
+        c.position.set(3.97 + Math.sin(i * 2.3) * 0.05 + (1 - fall) * (0.4 - (i % 3) * 0.4), lerp(3.6, -2.35 + i * 0.13, ease.outQuart(kk)), Math.sin(i) * 0.1);
+        c.rotation.set(lerp(-Math.PI / 2 + 2.4 + i, -Math.PI / 2, ease.outQuart(kk)), 0, lerp(1.2 * (i % 2 ? 1 : -1), i * 0.4, kk));
+      });
+      st.render();
+    }
+    const tl = gsap.timeline({ paused: true });
+    // corte seco pra mão: zoom out contínuo que começa acelerado, "mês inteiro" atrás com parallax
+    tl.fromTo("#ma-shot", { scale: 1.85, transformOrigin: "960px 640px" }, { scale: 1, duration: 0.95, ease: "expo.out" }, 0);
+    tl.to("#ma-shot", { scale: 0.95, duration: 0.5, ease: "none" }, 0.95);
+    tl.fromTo("#ma-big", { scale: 1.35 }, { scale: 1, duration: 0.95, ease: "expo.out" }, 0);
+    tl.to("#ma-big", { scale: 0.97, duration: 0.5, ease: "none" }, 0.95);
+    tl.fromTo("#ma-big .w", { opacity: 0, filter: "blur(16px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power2.out", stagger: 0.2 }, 0.04);
+    tl.fromTo("#ma-back", { scale: 1.5, transformOrigin: "960px 600px" }, { scale: 0.96, duration: 1.45, ease: "expo.out" }, 0);
+    tl.fromTo("#ma-front", { scale: 2.2, transformOrigin: "960px 600px" }, { scale: 0.94, duration: 1.45, ease: "expo.out" }, 0);
+    tl.fromTo("#ma-hb1", { x: 0, y: 0 }, { x: 200, y: -80, duration: 1.45, ease: "none" }, 0);
+    tl.fromTo("#ma-hb2", { x: 0, y: 0 }, { x: -220, y: 100, duration: 1.45, ease: "none" }, 0);
+    gsap.utils.toArray("#ma-hand .ma-ic").forEach((el, i) => {
+      tl.fromTo(el, { rotation: -12 + i * 5, y: 0 }, { rotation: 8 - i * 3, y: -26 + (i % 2) * 40, duration: 1.45, ease: "sine.inOut" }, 0);
+    });
+    // a câmera vai pra esquerda, onde está o celular 3D (desfoque de movimento no meio do caminho)
+    tl.fromTo("#ma-hand", { x: 0 }, { x: 1920, duration: 0.5, ease: "power3.inOut" }, 0.95);
+    tl.fromTo("#ma-scene", { x: -1920 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 0.95);
+    // parallax + arrasto: o texto fica pra trás, a mão inclina com o movimento, os ícones da frente correm mais
+    tl.to("#ma-big", { x: -380, skewX: 8, duration: 0.5, ease: "power3.inOut" }, 0.95);
+    tl.to("#ma-shot", { rotation: 7, x: 160, duration: 0.5, ease: "power2.in" }, 0.95);
+    tl.to("#ma-front", { x: 900, rotation: 10, duration: 0.5, ease: "power3.in" }, 0.95);
+    tl.to("#ma-back", { x: -260, duration: 0.5, ease: "power2.inOut" }, 0.95);
+    tl.fromTo("#ma-all", { filter: "blur(0px)" }, { filter: "blur(10px)", duration: 0.25, ease: "power2.in", yoyo: true, repeat: 1 }, 0.95);
+    const lines = [["#ma-l1", 1.36, 2.48], ["#ma-l2", 2.52, 3.58], ["#ma-l3", 3.62, 9]];
+    for (const [sel, a, b] of lines) {
+      tl.fromTo(`${sel} .w`, { opacity: 0, filter: "blur(8px)", y: 22 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.32, ease: "expo.out", stagger: 0.08 }, a);
+      if (b < 9) tl.to(`${sel} .w`, { opacity: 0, filter: "blur(8px)", y: -16, duration: 0.18, ease: "power2.in", stagger: 0.03 }, b);
+    }
+    // notificações de vidro saem da tela do celular e empilham à direita
+    const cards = ["#ma-c1", "#ma-c2", "#ma-c3"], at = [1.42, 2.56, 3.66];
+    cards.forEach((c, i) => {
+      tl.fromTo(c, { x: -700, y: 40, scale: 0.3, rotation: -6, opacity: 0, filter: "blur(10px)" }, { x: 0, y: 0, scale: 1, rotation: 0, opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "back.out(1.4)" }, at[i]);
+      for (let j = i + 1; j < cards.length; j++) tl.to(c, { y: 152 * (j - i), scale: 1 - 0.05 * (j - i), opacity: 1 - 0.22 * (j - i), duration: 0.6, ease: "expo.out" }, at[j]);
+    });
+    tl.to("#ma-all", { scale: 1.45, opacity: 0, duration: 0.45, ease: "power3.in" }, 4.76);
+    const clock = { t: 0 };
+    tl.to(clock, { t: 5.21, duration: 5.21, ease: "none", onUpdate: () => render3d(clock.t) }, 0);
+    render3d(0);
+    window.__timelines["mao"] = tl;
+  </script>
+</template>

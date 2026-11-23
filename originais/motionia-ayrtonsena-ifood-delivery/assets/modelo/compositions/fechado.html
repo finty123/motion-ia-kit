@@ -1,0 +1,230 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    .fe-cor {
+      position: absolute;
+      inset: 0;
+    }
+    #fe-vinho {
+      background: #8c1a2e;
+    }
+    #fe-mostarda {
+      background: #f5b21b;
+    }
+    #fe-cam {
+      position: absolute;
+      inset: 0;
+    }
+    .fe-linha {
+      position: absolute;
+      inset: 0;
+    }
+    .fe-caixa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: visible;
+    }
+    .fe-letra {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      color: #f8f1e7;
+      line-height: 1;
+      white-space: pre;
+    }
+    #fe-risco {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1920px;
+      height: 1080px;
+      overflow: visible;
+    }
+    #fe-risco path {
+      fill: none;
+      stroke: #f5b21b;
+      stroke-width: 26;
+      stroke-linecap: round;
+    }
+    .fe-brinc {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 150px;
+      letter-spacing: -0.035em;
+      line-height: 1;
+      color: #f8f1e7;
+      white-space: nowrap;
+    }
+    .fe-brinc span {
+      display: inline-block;
+      margin: 0 0.12em;
+    }
+    #fe-brinc1 {
+      top: 120px;
+    }
+    #fe-brinc2 {
+      top: 800px;
+    }
+  </style>
+  <div id="root" data-composition-id="fechado" data-width="1920" data-height="1080">
+    <!-- trocas de cor: sobem de baixo como uma onda -->
+    <div id="fe-vinho" class="fe-cor"></div>
+    <div id="fe-mostarda" class="fe-cor"></div>
+    <div id="fe-cam">
+      <!-- as letras são posicionadas no build medindo a fonte; o texto fica aqui pra edição -->
+      <div id="fe-a" class="fe-linha" data-texto="tudo fechado."></div>
+      <div id="fe-b" class="fe-linha" data-texto="quase tudo."></div>
+      <!-- "tudo fechado." riscado e "tá de brincadeira comigo, né?" escrito junto com a fala -->
+      <svg id="fe-risco" viewBox="0 0 1920 1080"><path id="fe-risco-linha" d="M 0 0" /></svg>
+      <div id="fe-brinc1" class="fe-brinc" data-layout-allow-overlap><span id="fe-b1">tá</span><span id="fe-b2">de</span><span id="fe-b3">brincadeira</span></div>
+      <div id="fe-brinc2" class="fe-brinc" data-layout-allow-overlap><span id="fe-b4">comigo,</span><span id="fe-b5" style="color: #f5b21b">né?</span></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      function mulberry32(a) {
+        return function () {
+          a |= 0;
+          a = (a + 0x6d2b79f5) | 0;
+          var t = Math.imul(a ^ (a >>> 15), 1 | a);
+          t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+          return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+        };
+      }
+      var BASE = 610; // linha de base comum das duas frases
+      var FA = 200, FB = 210; // tamanho da fonte
+      var TRACK = -0.035; // entreletra em em
+      var VAO = 400; // espaço no meio de "quase  tudo." onde o celular passa
+
+      // mede cada letra com o canvas (pega o kerning real da Montserrat 900)
+      function medir(texto, fs, vao) {
+        var c = document.createElement("canvas").getContext("2d");
+        c.font = "900 " + fs + "px Montserrat";
+        var xs = [], extra = 0;
+        for (var i = 0; i < texto.length; i++) {
+          if (texto[i] === " " && vao) extra += vao - c.measureText(" ").width;
+          xs.push(c.measureText(texto.slice(0, i)).width + i * TRACK * fs + extra);
+        }
+        var w = c.measureText(texto).width + (texto.length - 1) * TRACK * fs + extra;
+        return { xs: xs, w: w };
+      }
+      function montar(id, fs, vao) {
+        var el = document.querySelector(id);
+        var texto = el.getAttribute("data-texto");
+        var m = medir(texto, fs, vao);
+        var x0 = 960 - m.w / 2;
+        var letras = [];
+        for (var i = 0; i < texto.length; i++) {
+          if (texto[i] === " ") { letras.push(null); continue; }
+          var caixa = document.createElement("div");
+          caixa.className = "fe-caixa";
+          caixa.style.left = (x0 + m.xs[i]) + "px";
+          caixa.style.top = (BASE - 0.8 * fs) + "px";
+          caixa.style.height = (1.02 * fs) + "px";
+          var letra = document.createElement("span");
+          letra.className = "fe-letra";
+          letra.style.fontSize = fs + "px";
+          letra.textContent = texto[i];
+          caixa.appendChild(letra);
+          el.appendChild(caixa);
+          letras.push({ caixa: caixa, letra: letra, x: x0 + m.xs[i] });
+        }
+        return letras;
+      }
+
+      function construir() {
+        var A = montar("#fe-a", FA, 0);
+        var B = montar("#fe-b", FB, VAO);
+        var aTudo = A.slice(0, 4), aFech = A.slice(5, 12), aPonto = A[12];
+        var bQuase = B.slice(0, 5), bTudo = B.slice(6, 10), bPonto = B[10];
+        var tl = gsap.timeline({ paused: true });
+        var Q = 1 / 30;
+        var todasA = A.filter(Boolean), todasB = B.filter(Boolean);
+        todasA.forEach(function (l) { gsap.set(l.caixa, { clipPath: "inset(-60% -30% 0% -30%)" }); });
+        todasA.concat(todasB).forEach(function (l) { gsap.set(l.letra, { transformOrigin: "0% 80%" }); });
+        // risco à mão por cima de "tudo fechado." (medido no build)
+        var xa = A[0].x - 40, xb = aPonto.x + 90, yr = BASE - 0.36 * FA;
+        document.getElementById("fe-risco-linha").setAttribute("d", "M " + xa + " " + (yr + 14) + " C " + (xa + 400) + " " + (yr - 10) + " " + (xb - 500) + " " + (yr + 22) + " " + xb + " " + (yr - 8));
+        var compRisco = document.getElementById("fe-risco-linha").getTotalLength();
+        document.getElementById("fe-a").appendChild(document.getElementById("fe-risco")); // entorta junto com o texto
+
+        // ── 0 (7,1 abs): o vinho sobe de baixo e "tudo fechado." sobe por máscara ──
+        tl.fromTo("#fe-vinho", { clipPath: "circle(0% at 50% 115%)" }, { clipPath: "circle(130% at 50% 115%)", duration: 0.45, ease: "power2.inOut" }, 0.02);
+        tl.fromTo("#fe-mostarda", { clipPath: "circle(0% at 50% 115%)" }, { clipPath: "circle(0% at 50% 115%)", duration: 0.01 }, 0);
+        tl.fromTo("#fe-b", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+        tl.fromTo("#fe-cam", { scale: 1 }, { scale: 1.035, duration: 2.6, ease: "sine.inOut" }, 0.1);
+        aTudo.concat(aFech).forEach(function (l, i) {
+          tl.fromTo(l.letra, { yPercent: 105, rotation: 8 }, { yPercent: 0, rotation: 0, duration: 0.45, ease: "back.out(1.6)" }, 0.06 + i * 0.025);
+        });
+        // o ponto final bate por último, como uma trava (8,15 abs)
+        tl.fromTo(aPonto.letra, { yPercent: -260, scaleY: 1.4, opacity: 0 }, { yPercent: 0, scaleY: 1.4, opacity: 1, duration: 0.14, ease: "power3.in" }, 0.4);
+        tl.to(aPonto.letra, { scaleY: 0.55, scaleX: 1.35, duration: 0.05, ease: "power2.out" }, 0.54);
+        tl.to(aPonto.letra, { scaleY: 1, scaleX: 1, duration: 0.4, ease: "elastic.out(1, 0.4)" }, 0.59);
+        tl.set(todasA.map(function (l) { return l.caixa; }), { clipPath: "inset(-200% -200% -2000% -200%)" }, 0.5);
+
+        // ── "Tá de brincadeira comigo, né?" (8,4–10,1 abs): o texto entorta de raiva ──
+        tl.to("#fe-a", { rotation: -3.5, y: 6, duration: 0.25, ease: "back.out(2.5)", transformOrigin: "50% 56%" }, 1.62);
+        // risca "tudo fechado." na batida (4,80 abs) e escreve a fala palavra por palavra
+        tl.fromTo("#fe-risco-linha", { strokeDasharray: compRisco, strokeDashoffset: compRisco }, { strokeDashoffset: 0, duration: 0.28, ease: "power2.out" }, 1.0);
+        [["#fe-b1", 1.06], ["#fe-b2", 1.2], ["#fe-b3", 1.33], ["#fe-b4", 1.94], ["#fe-b5", 2.34]].forEach(function (w) {
+          tl.fromTo(w[0], { scale: 0, y: 40, rotation: -8 }, { scale: 1, y: 0, rotation: 0, duration: 0.3, ease: "back.out(2.4)" }, w[1]);
+        });
+        tl.to("#fe-b5", { scale: 1.2, rotation: 6, duration: 0.1, ease: "power2.out" }, 2.6);
+        tl.to("#fe-b5", { scale: 1, rotation: 0, duration: 0.3, ease: "elastic.out(1, 0.4)" }, 2.7);
+        var r = mulberry32(17);
+        for (var k = 0; k < 26; k++) {
+          tl.to("#fe-a", { x: (r() * 2 - 1) * 5, rotation: -3.5 + (r() * 2 - 1) * 0.8, duration: Q, ease: "none" }, 1.9 + k * Q);
+        }
+        aFech.forEach(function (l, i) {
+          var rr = mulberry32(40 + i);
+          for (var k2 = 0; k2 < 20; k2++) {
+            tl.to(l.letra, { y: (rr() * 2 - 1) * 7, rotation: (rr() * 2 - 1) * 4, duration: Q, ease: "none" }, 2.0 + k2 * Q);
+          }
+        });
+        tl.to("#fe-a", { rotation: 0, x: 0, y: 0, duration: 0.05, ease: "power2.out" }, 2.68);
+
+        // ── 10,15 abs (3,05): "fechado" despenca, o mostarda sobe com o celular, vira "quase tudo." ──
+        var rq = mulberry32(5);
+        aFech.forEach(function (l, i) {
+          tl.to(l.letra, { y: 950, rotation: (rq() * 2 - 1) * 45, duration: 0.5, ease: "power2.in" }, 2.73 + i * 0.03);
+        });
+        tl.to("#fe-mostarda", { clipPath: "circle(130% at 50% 115%)", duration: 0.5, ease: "power2.inOut" }, 2.76);
+        // a frase e o risco caem junto com o "fechado"
+        tl.to(["#fe-brinc1", "#fe-brinc2", "#fe-risco"], { y: 1000, rotation: 6, duration: 0.45, ease: "power2.in", stagger: 0.04 }, 2.7);
+        tl.to("#fe-cam", { scale: 1, duration: 0.6, ease: "power2.inOut" }, 2.73);
+        // troca de A pra B: "tudo" e o ponto de B começam onde estavam em A e deslizam pro lugar novo
+        tl.set("#fe-a", { opacity: 0 }, 2.86);
+        tl.set("#fe-b", { opacity: 1 }, 2.86);
+        var escala = FA / FB;
+        aTudo.forEach(function (la, i) {
+          var lb = bTudo[i];
+          tl.fromTo(lb.letra, { x: la.x - lb.x, scale: escala }, { x: 0, scale: 1, duration: 0.55, ease: "expo.out" }, 2.86 + i * 0.02);
+        });
+        tl.fromTo(bPonto.letra, { x: aPonto.x - bPonto.x, scale: escala }, { x: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 2.86);
+        // o texto passa de creme pra vinho junto com a onda mostarda
+        tl.fromTo(todasB.map(function (l) { return l.letra; }), { color: "#F8F1E7" }, { color: "#8C1A2E", duration: 0.35, ease: "power2.inOut" }, 2.95);
+        bQuase.forEach(function (l, i) {
+          // a última letra chega primeiro: as letras abrem espaço em vez de se atropelar
+          tl.fromTo(l.letra, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "back.out(1.4)" }, 2.93 + (bQuase.length - 1 - i) * 0.045);
+        });
+
+        // ── 12,75 abs (5,65): a câmera mergulha no celular ──
+        tl.to("#fe-cam", { scale: 1.7, duration: 0.45, ease: "power3.in" }, 4.89);
+        tl.to("#fe-b", { opacity: 0, duration: 0.3, ease: "power3.in" }, 5.0);
+
+        window.__timelines["fechado"] = tl;
+      }
+
+      document.fonts.load("900 200px Montserrat").then(construir);
+    })();
+  </script>
+</template>

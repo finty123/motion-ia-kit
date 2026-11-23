@@ -1,0 +1,154 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      font-family: "Montserrat", sans-serif;
+    }
+    #fi-fundo {
+      position: absolute;
+      inset: 0;
+      background: #ea1d2c;
+    }
+    .fi-linha {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 220px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1;
+      color: #f8f1e7;
+      white-space: nowrap;
+    }
+    .fi-linha span {
+      display: inline-block;
+      margin: 0 0.1em;
+    }
+    #fi-l1 {
+      top: 250px;
+    }
+    #fi-l2 {
+      top: 510px;
+    }
+    #fi-logo {
+      position: absolute;
+      left: 540px;
+      top: 290px;
+      width: 840px;
+      height: 444px;
+      overflow: visible;
+    }
+    #fi-branco {
+      position: absolute;
+      inset: 0;
+      background: #ffffff;
+    }
+    #fi-arroba {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 440px;
+      height: 190px;
+      overflow: hidden;
+      text-align: center;
+      font-size: 150px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+      color: #111111;
+      white-space: nowrap;
+    }
+    #fi-arroba span {
+      display: inline-block;
+    }
+    #fi-nota {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 650px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      color: #8a8a8a;
+    }
+    #fi-credito {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 900px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: #f8f1e7;
+      letter-spacing: 0.01em;
+    }
+    #fi-credito small {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 26px;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+  </style>
+  <div id="root" data-composition-id="final" data-width="1920" data-height="1080">
+    <div id="fi-fundo"></div>
+    <div id="fi-l1" class="fi-linha"><span>Fome</span><span>não</span></div>
+    <div id="fi-l2" class="fi-linha"><span>tem</span><span>hora.</span></div>
+    <!-- logo oficial separado por letra (mesmos traços do SVG) pra montar uma a uma e piscar o "olho" -->
+    <svg id="fi-logo" viewBox="0 0 1004 530.58">
+      <g transform="translate(4 -224.71)" fill="#ffffff">
+        <path id="fi-i" d="M-4,529.31H72.41l42.46-211.2H38.45ZM42.66,292.92h76.73L132,229.73H55.3Z" />
+        <path id="fi-f" d="M102.13,588.74h76.42l46.69-228.18h57.31L291,318.11H234.79l2.13-9.55c3.18-18,9.55-38.21,38.2-38.21,17,0,32.91,1.06,48.82,8.49l8.5-44.57a167.8,167.8,0,0,0-55.19-9.56c-61.56,0-104,36.09-119.93,93.4H130.79l-8.49,42.45h26.53Z" />
+        <path id="fi-o1" d="M344.11,533.56c90.21,0,152.83-81.73,152.83-148.59,0-49.88-45.64-71.11-90.21-71.11C308,313.86,253.9,402,253.9,462.45c0,49.88,46.7,71.11,90.21,71.11Z" />
+        <path id="fi-o2" d="M586.11,533.56c90.21,0,152.83-81.73,152.83-148.59,0-49.88-46.7-71.11-91.28-71.11-98.7,0-152.82,88.09-152.82,148.59,0,49.88,47.76,71.11,91.27,71.11Z" />
+        <path id="fi-d" d="M863.11,529.31h75.35L1000,229H923.59l-18.05,89.15-31.84-3.18c-74.29,0-142.21,95.51-142.21,163.44,0,27.59,18,55.19,48.82,55.19,43.51,0,74.29-21.23,87-42.46h4.24Z" />
+        <path id="fi-sorriso" d="M627.48,687.45a295,295,0,0,1-212.26,66.86c-100.83-6.37-173-83.85-185.73-165.57h4.24c23.35,51,79.6,98.71,148.59,106.13,70,8.49,153.89-23.34,199.52-66.86L530.9,588.74H684.79l-34,163.45-22.29-63.68Z" />
+      </g>
+    </svg>
+    <!-- depois da piscadinha: troca de take, fundo branco e o @ no meio -->
+    <div id="fi-branco"></div>
+    <div id="fi-arroba"><span>@</span><span>a</span><span>y</span><span>r</span><span>t</span><span>o</span><span>n</span><span>s</span><span>e</span><span>n</span><span>a</span><span>.</span><span>s</span><span>t</span><span>g</span></div>
+    <div id="fi-nota">comercial não oficial</div>
+  </div>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+      // 0 = 39,25 abs · batidas: 39,66 · 40,19 · 40,74 · 41,28 · 41,82 · 42,38 · 42,93 (pisca) · 43,44 (@) · 43,97 · 45,09 · fim 46,2
+      tl.fromTo("#fi-fundo", { clipPath: "circle(0% at 50% 85%)" }, { clipPath: "circle(130% at 50% 85%)", duration: 0.4, ease: "power2.inOut" }, 0);
+      tl.fromTo(["#fi-branco", "#fi-arroba", "#fi-nota"], { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+      // "Fome não tem hora." em meias batidas
+      gsap.utils.toArray(".fi-linha span").forEach(function (s, i) {
+        tl.fromTo(s, { y: 120, scale: 0.7, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.36, ease: "back.out(2)" }, 0.41 + i * 0.27);
+        tl.to(s, { y: -160, opacity: 0, scale: 1.1, duration: 0.2, ease: "power3.in" }, 1.49 + i * 0.04);
+      });
+      // logo: uma letra a cada quarto de batida (41,28 → 41,82), sorriso girando por último
+      ["#fi-i", "#fi-f", "#fi-o1", "#fi-o2", "#fi-d"].forEach(function (id, i) {
+        tl.fromTo(id, { scale: 0, y: 60, transformOrigin: "50% 80%" }, { scale: 1, y: 0, duration: 0.32, ease: "back.out(2.6)" }, 2.03 + i * 0.135);
+      });
+      tl.fromTo("#fi-sorriso", { scale: 0, rotation: -40, transformOrigin: "50% 30%" }, { scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, 2.57);
+      tl.fromTo("#fi-logo", { scale: 1 }, { scale: 1.06, duration: 0.1, ease: "power2.out" }, 2.6);
+      tl.to("#fi-logo", { scale: 1, duration: 0.5, ease: "elastic.out(1, 0.4)" }, 2.7);
+      // piscadinha do "olho" da direita (42,93) e o sorriso sobe
+      tl.fromTo("#fi-o2", { scaleY: 1 }, { scaleY: 0.1, duration: 0.08, ease: "power2.in", transformOrigin: "50% 60%", immediateRender: false }, 3.68);
+      tl.to("#fi-o2", { scaleY: 1, duration: 0.2, ease: "back.out(2.5)" }, 3.8);
+      tl.to("#fi-sorriso", { y: -14, scale: 1.05, duration: 0.12, ease: "power2.out" }, 3.68);
+      tl.to("#fi-sorriso", { y: 0, scale: 1, duration: 0.35, ease: "elastic.out(1, 0.4)" }, 3.82);
+      // sai o logo: corte seco na batida (43,44) pro take branco com o @ subindo letra por letra
+      tl.set(["#fi-branco", "#fi-arroba"], { opacity: 1 }, 4.19);
+      gsap.utils.toArray("#fi-arroba span").forEach(function (l, i) {
+        tl.fromTo(l, { yPercent: 110, rotation: 12 }, { yPercent: 0, rotation: 0, duration: 0.42, ease: "back.out(1.8)" }, 4.19 + i * 0.03);
+        // pulinho em onda nas batidas seguintes (43,97 · 45,09)
+        [4.72, 5.84].forEach(function (b) {
+          tl.to(l, { y: -22, duration: 0.09, ease: "power2.out" }, b + i * 0.02);
+          tl.to(l, { y: 0, duration: 0.3, ease: "bounce.out" }, b + 0.09 + i * 0.02);
+        });
+      });
+      tl.fromTo("#fi-nota", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 4.72);
+      tl.fromTo("#fi-arroba", { scale: 1 }, { scale: 1.04, duration: 2.0, ease: "sine.inOut" }, 4.8);
+      window.__timelines["final"] = tl;
+    })();
+  </script>
+</template>

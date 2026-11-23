@@ -1,0 +1,119 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #e6e2ee;
+      font-family: "Montserrat", sans-serif;
+    }
+    #ma-mundo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2600px;
+      height: 1800px;
+      transform-origin: 0 0;
+    }
+    .ma-quadra {
+      position: absolute;
+      width: 300px;
+      height: 220px;
+      border-radius: 46px;
+      background: #fbf6e6;
+    }
+    #ma-rota {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2600px;
+      height: 1800px;
+      overflow: visible;
+    }
+    #ma-moto {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 70px;
+      height: 148px;
+    }
+    #ma-pin {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 90px;
+      height: 120px;
+    }
+    #ma-card {
+      position: absolute;
+      left: 50%;
+      top: 60px;
+      height: 150px;
+      padding: 0 70px;
+      border-radius: 75px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      font-size: 84px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: #8c1a2e;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="mapa" data-width="1920" data-height="1080">
+    <div id="ma-mundo">
+      <div id="ma-quadras"></div>
+      <svg id="ma-rota" viewBox="0 0 2600 1800">
+        <path id="ma-rota-linha" d="M 705 1125 L 705 545 L 1445 545" fill="none" stroke="#ea1d2c" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="705" cy="1125" r="34" fill="#ea1d2c" />
+        <circle cx="705" cy="1125" r="12" fill="#ffffff" />
+      </svg>
+      <svg id="ma-pin" viewBox="0 0 90 120">
+        <path d="M 45 4 C 22 4 6 21 6 42 C 6 70 45 116 45 116 C 45 116 84 70 84 42 C 84 21 68 4 45 4 Z" fill="#8c1a2e" />
+        <circle cx="45" cy="42" r="15" fill="#ffffff" />
+      </svg>
+      <img id="ma-moto" src="assets/ilustracoes/moto-cima.svg" alt="" />
+    </div>
+    <div id="ma-card">dá pra acompanhar tudo.</div>
+  </div>
+  <script>
+    (function () {
+      var q = document.getElementById("ma-quadras");
+      for (var c = 0; c < 7; c++) for (var r = 0; r < 6; r++) {
+        var d = document.createElement("div"); d.className = "ma-quadra";
+        d.style.left = (c * 370) + "px"; d.style.top = (r * 290) + "px"; q.appendChild(d);
+      }
+      // rota: sobe 580, vira à direita 740 (total 1320)
+      function ponto(dist) {
+        if (dist <= 580) return { x: 705, y: 1125 - dist };
+        return { x: 705 + (dist - 580), y: 545 };
+      }
+      function angulo(dist) { return Math.max(0, Math.min(90, (dist - 545) / 70 * 90)); }
+      var P = { p: 0, s: 2.4, foco: 0 };
+      var MOTO_W = 70, MOTO_H = 148;
+      function render() {
+        var d = P.p * 1300;
+        var m = ponto(d);
+        gsap.set("#ma-moto", { x: m.x - MOTO_W / 2, y: m.y - MOTO_H / 2, rotation: angulo(d) });
+        // câmera segue a moto com atraso; no fim vai pro pin
+        var c = ponto(Math.max(0, d - 70));
+        var cx = c.x + (1445 - c.x) * P.foco, cy = c.y + (520 - c.y) * P.foco;
+        gsap.set("#ma-mundo", { x: 960 - cx * P.s, y: 600 - cy * P.s, scale: P.s });
+      }
+      var tl = gsap.timeline({ paused: true });
+      tl.eventCallback("onUpdate", render);
+      // 0 = 35,8 abs
+      tl.fromTo(P, { s: 2.4 }, { s: 1.15, duration: 0.7, ease: "power2.out" }, 0);
+      tl.fromTo(P, { p: 0 }, { p: 1, duration: 1.92, ease: "power1.inOut" }, 0.25);
+      tl.fromTo("#ma-rota-linha", { strokeDasharray: 1330, strokeDashoffset: 1330 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.fromTo("#ma-pin", { x: 1400, y: 300, scale: 0, transformOrigin: "50% 100%" }, { y: 428, scale: 1, duration: 0.45, ease: "bounce.out" }, 0.64);
+      tl.fromTo("#ma-card", { xPercent: -50, scale: 0, y: -40 }, { xPercent: -50, scale: 1, y: 0, duration: 0.45, ease: "back.out(2.2)" }, 0.5);
+      // a moto chega (38,15) e a câmera mergulha no pin
+      tl.to(P, { foco: 1, s: 3.6, duration: 0.42, ease: "power3.in" }, 2.17);
+      tl.to("#ma-card", { y: -260, duration: 0.3, ease: "power3.in" }, 2.22);
+      tl.to(P, { duration: 0.01 }, 2.62);
+      window.__timelines["mapa"] = tl;
+    })();
+  </script>
+</template>

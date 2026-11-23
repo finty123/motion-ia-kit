@@ -1,0 +1,475 @@
+# 5.3 - Recriando na prática
+
+[00:00] Maravilha, a gente já enviou aqui pra ele a narração, a música de fundo, o vídeo de referência.
+[00:06] Então a gente vai falar aqui primeiro pra ele o que é que é cada coisa né?
+[00:11] Porque isso por exemplo, o seu tiver renomeado de outra forma, então você tem que falar.
+[00:15] Aí isso daqui que é o da referência, eu vou copiar o título dele né, pra colocar aqui.
+[00:22] Porque a gente vai explicar agora pro caldo como é que ele quer, ele vai falar sobre narração, sobre música.
+[00:27] Então a gente já mostrando pra ele que narração, essa aqui música, essa aqui já previne de embolar as coisas.
+[00:34] Agora bora a primeira parte onde fala tu é do do rapaz.
+[00:39] Eu quero que você coloque uma animação a parte do tu é do do, vários olhos assim mostrando.
+[00:46] Aí rapaz tu coloca uma letra pequenininha assim perto pra ficar imaginando que então tu é do do rapaz.
+[00:52] Aí a câmera vai meio que entrar assim na letra do do último ó e vai ficar com a mesma cor.
+[00:59] Aí vai descendo as coisas né, tá de brincadeira comigo né?
+[01:03] Não pô pera aí, aí sempre mudando telas, sempre alterando, sempre deixando dinâmico, sempre colocando efeitos e tudo mais.
+[01:11] Eu to acreditando a Bilalpha nenhuma vez pra fazer isso daqui.
+[01:14] Aí essa parte aqui eu quero que tu coloque como se fosse uma telinha assim de quefremos e after effects e tal.
+[01:21] Aí eu falo eu to acreditando a Bilalpha nenhuma vez e corta assim o after, sabe tipo a telinha que ele tem abrido after e dá uma cortada prepara né?
+[01:31] Isso aqui é cloud, aí mostra tipo o nome cloud em 3d assim e na preparação tem que ter impacto.
+[01:39] Então isso aqui é cloud, aí tipo sugando assim pra preparação e impacto.
+[01:44] Eu não escrevi nenhuma linha de código no presente computador da NASA, aí aqui é a partinha de código.
+[01:50] Tu coloca um hélico de código e tal, aí não precisa do computador da NASA.
+[01:54] Esse daqui tu pode pegar um 3d de um pc game é muito massa.
+[02:00] Tu coloca aquele em 3d assim meio que no espaço sabe?
+[02:04] Uma coisa que chama bastante atenção e você pode pedir pra você quiser.
+[02:07] Esse quadrado aqui tu tem que mostrar um quadrado em 2d.
+[02:11] Aí eu quero que ele vire 3d, saia voando exploda.
+[02:14] É literalmente isso daí que ele vai fazer também.
+[02:17] Aí quando ele vira um 3d assim e focoando, tu coloca umas partículas de velocidade.
+[02:22] Como você tivesse pegando velocidade pra subir assim em 3d sabe?
+[02:27] E dando esse gira em 3d e tudo mais.
+[02:29] É, você pode pedir o que você quiser.
+[02:31] É só que se você pedir o gd generico, receber do gd generico também.
+[02:35] Aí essa parte aí do gd generico, tu fala a pessoa, peda um lá pra ia.
+[02:39] Aí a gente bota uma frasezinha bem genérica da pessoa pedindo pra ia.
+[02:43] E ela é sabendo um vídeo bem ruimzinho.
+[02:48] Sei lá, alguma coisa bem genérica.
+[02:51] Aí agora porque você tá pedindo o gd generico?
+[02:56] Primeira coisa né?
+[02:57] Tá pedindo o gd generico.
+[02:58] E se você pedir pra ia do gd generico, vai dar um resultado generico também.
+[03:03] Tem pra onde?
+[03:03] Aí continua sempre sendo dinâmico.
+[03:05] Fazendo efeitos nas letras e tudo mais.
+[03:08] Ela vai dar o resultado que ela vai dar pra todo mundo.
+[03:11] Aí tu pega aquele mesmo vídeo ruimzinho que foi do primeiro.
+[03:14] Aí pega um e fica um monte daquele ali.
+[03:18] Coloca a pessoa apostando o vídeo e dando, sei lá, 3d das ações.
+[03:23] E o comentário da tia avó, a newsa dele falando que tá lindo meu filho.
+[03:29] Algum coisa assim, sabe?
+[03:31] Pra conseguir ouvir desse nível aqui, você precisa de duas coisas.
+[03:34] Tem que mostrar o número 12 assim, né?
+[03:35] Os massa.
+[03:36] Aí prontem e referência.
+[03:38] Aí mostra tipo, as duas coisas são prontem e referência.
+[03:41] Aí só pra conseguir escrever um prompt super complexo,
+[03:44] com tudo que precisa pra sair no vídeo, esse aqui é difícil.
+[03:47] Então eu tenho que mostrar tipo, um texto super gigantesco, assim complexo, tudo mais.
+[03:53] E mostrando que é difícil pra fazer um prompt desse daí, né?
+[03:56] Principalmente se a pessoa tá começando do zero,
+[03:58] o que é difícil é a pessoa escrever um prompt que é bom.
+[04:01] Por exemplo, se a pessoa tá começando agora, missão no dia.
+[04:04] E tudo isso é sendo um curso mojo que há.
+[04:06] Esse curso aqui que você tá me assistindo, eita.
+[04:08] Aí a parte aqui do, ele tá só por dois, nove e sete,
+[04:12] mas só agora nesse período de black tá saindo por apenas nove e tem sete, né?
+[04:15] Aparece o dois, nove e sete grande assim, aí risca.
+[04:19] E aparece o nove e sete assim, três D.
+[04:21] Aí começa mochon que eu vou te ver ali aqui no seu direct.
+[04:25] Aí tem que ter bem grande assim, que ele do comenta mochon.
+[04:28] Aí o mochon ele tem que tá chamando atenção.
+[04:31] Pra pessoa tá comentando o mochon lá, né?
+[04:34] Que é a pessoa ver esse meu rique no direct.
+[04:36] Ele pode colocar algum animaçãozinha, foram dar um olhado no seu direct.
+[04:40] Ou então, tu pode até colocar do lado uma simulação da pessoa comentando mochon.
+[04:45] Aí vai responder, né?
+[04:48] Pra dar um olhado no seu direct.
+[04:49] Aí a pessoa abre o direct e clica no link lá.
+[04:52] Tu pode fazer uma simulaçãozinha assim.
+[04:55] Tá aqui a ideia do vídeo.
+[04:56] Aí algumas pozinhas que a gente vai fazer pra essa aqui sair melhor também.
+[05:02] Aí a gente vai colocar aqui, ó.
+[05:04] Eu vou pegar uma paleta de cores aqui, que seja bem, bem masco, se não queria eu to usando.
+[05:09] Deixa eu ver, tem essa aqui.
+[05:11] Deixa eu colocar aqui, ó.
+[05:12] Tô procurando paleta de cores.
+[05:18] Olha isso bacana.
+[05:20] Essa daqui, meu rosa, tá boa também, que eu ia utilizar.
+[05:24] O objetivo aqui da renda pra eu é uma paleta de cores.
+[05:26] É o cores que chamem a atenção desse destaque, assim, sabe?
+[05:33] Eu tô pensando nesse preto, violeta e limão aqui.
+[05:37] Eu acho que vai ficar bacana, hein?
+[05:38] Tá me chamando aquela coisa ali, pra praita de cores eu acho que é o nosso.
+[05:41] Tá, vai ser, então.
+[05:43] Tô pegando essa paleta de cores aqui.
+[05:45] Copia aqui, e anexo.
+[05:49] Preta de cores, anexo.
+[05:51] A nação tá aqui, a música tá aqui.
+[05:54] Aí tu vai colocar esse próprio aqui, ó.
+[05:56] Esse próprio, não, esse skill.
+[05:58] Que é esse skill, vai pegar tudo isso aqui que eu conversei com o Cloud.
+[06:03] Como é que eu queria, como é que eu tava mais ou menos.
+[06:05] E vai transformar, new prompt, mais complexo.
+[06:11] Onde ele vai utilizar vários termos técnicos, tempo de moço e tudo mais.
+[06:17] Que tudo isso, a Cloud, ela vai entender melhor.
+[06:21] Ele vai dar um resultado melhor pra isso daqui, tá na aí.
+[06:23] Efeitos, sonoros.
+[06:26] Não, vou colocar pra ele não utilizar efeito sonoro infantil, que às vezes eu utilizo.
+[06:33] Vou colocar pra ele utilizar bastante.
+[06:38] Efeito sonoro cinemétrico.
+[06:43] Bastante efeito sonoro.
+[06:46] E que luz.
+[06:48] Eu não tô lembrando de alguns efeitos, mas são efeitos que eu gosto, que deixam o vídeo não pegar bacana.
+[06:55] É, qualquer que não usava efeitos sonoro infantil, utilizava outros efeitos sonoro estimado, que clique luz, etc.
+[07:03] Efe, a música de fundo mais baixa.
+[07:11] Vou colocar assim, que a narração de stack, eu vou colocar aqui na frente, é óbvio.
+[07:18] A narração da rotares de stack, seguido dos efeitos sonoros, seguido da música de fundo.
+[07:30] Ele vai criar com o sossão escamado.
+[07:32] É só primeiro a narração, depois os efeitos sonoros, e depois a música de fundo.
+[07:39] Se não ele coloca tipo a música de fundo muito alta e tal, eu coloco assim pra ele não entrar.
+[07:45] Aí outra coisa também.
+[07:47] Muito importante que a narração e palavras, sincronizadas com o motion efeitos sonoros e música.
+[08:05] E eu coloquei essa parte aqui, que eu quero que tenha bem sincronizada.
+[08:10] Quando eu falar, aí já aparecia a palavra.
+[08:13] Quando eu aparecer outra frase já aparece também, pra não ficar acabando de sincronizado.
+[08:21] Tá, a gente montou a primeira etapa aqui.
+[08:25] A segunda é transformar esse daqui em um prontem, que esse prontem vai ser mais...
+[08:31] Ah, faltou eu mandar também a logo do curso, né?
+[08:34] Se eu botar aqui.
+[08:36] Goal.
+[08:40] Bom, eu to querendo em essa bloga em 3D.
+[08:43] Aí cagou o coca aqui pra ele.
+[08:45] Utilize Go, efeitos de câmera 3D, bem dinâmico, e mudança, e pelas, cores, viaducep, etc.
+[09:00] Aí a gente vai esiar aqui pra ele e vai fazer o prontem.
+[09:03] Percebe que a maior parte é a gente dando a direção.
+[09:07] A gente gastou no cedo enquanto tempo aqui, analisando, fazendo, colocando.
+[09:13] Pra a gente mandar bem completo assim.
+[09:16] Aí ela só pegar essa direção e conseguir fazer.
+[09:20] Mas se eu tivesse mandado só a referência aqui e falar, ó, faz assim.
+[09:27] Ele ia criar um negócio bem ingenério, sabe?
+[09:32] E não é isso que a gente quer.
+[09:33] A gente quer utilizar os ferramentos do nosso favor.
+[09:37] Não que sem a ferramenta não exista nada, sabe?
+[09:41] Então essa é a mesma parte que eu acho muito importante.
+[09:45] Sempre de a direção, sempre pense.
+[09:48] O objetivo que tem aqui, por exemplo, ele tá criando aqui um anúncio pra o curso.
+[09:52] Então o objetivo que a gente tem aqui é que chama a atenção, declareça,
+[09:58] e que as pessoas consigam adquirir o curso.
+[10:01] Então a gente tem que sempre pensar no objetivo e sempre pensar no estilo também.
+[10:05] Por exemplo, esse daqui ele tem que ser um estilo bem chamativo, bem coso,
+[10:09] que é pra viralizar, que é pra o pessoal ter interesse, chamar atenção e tudo mais.
+[10:15] Fora-se pra fazer um workshop, pra apresentar um aplicativo ou oco-zotico.
+[10:20] Dependendo do aplicativo, a gente não faz esse jeito.
+[10:24] Pensar numa paleta de cores diferente, pensar no estilo diferente também.
+[10:28] Por exemplo, a Apple você nunca vai ver a utilizão.
+[10:31] Porque a Apple já tem um estilo, já tem um brand, já tem o marketing certo que eles utilizam.
+[10:37] Então a gente tem sempre pensar de forma estratégica.
+[10:41] Tem sempre pensar dessa forma.
+[10:42] Aí a gente vai esperar, agora ele montar o prompt.
+[10:46] E depois que ele montar o prompt, querendo ver se tá tudo certo no prompt que ele mandou.
+[10:51] Ou se você não tiver paciência pra olhar tudo, você só pegue e gerar o vídeo.
+[10:55] Só que como a gente tá no chat aqui, ele chega no limite, você tem que pedir pra ele continuar.
+[11:01] Você chega no limite e tem que pedir pra ele continuar.
+[11:03] E assim ele vai.
+[11:07] Ele gerou exatamente esse aqui, ó.
+[11:10] O prompt.
+[11:18] Vou falar aqui pra ele.
+[11:19] Tá ótimo.
+[11:20] Pode gerar.
+[11:21] Só que ele vai ser na versão horizontal.
+[11:24] Não faça, não pode descer.
+[11:26] Faça na versão horizontal.
+[11:28] Tem que dar um expiro maior também, não só na logo.
+[11:31] Tem que dar um expiro no sete A ali, onde fala do curso.
+[11:35] Pode gerar.
+[11:36] Agora ele vai gerar aqui e vai passar um pitinho.
+[11:39] Só que como a gente tá fazendo aqui pro chat, tem que ficar de olho que vai chegar no nível aqui que ele não vai conseguir.
+[11:46] Bom, teria atorizado o prompt aqui, tá vendo?
+[11:51] Deixa ele terminar de escrever pra não dar uma lembrança, né?
+[11:58] Aí ele só tô esperando ele terminar de escrever o prompt aqui.
+[12:01] Ele já vai enviar mensagem pra ele gerar o vídeo a partir desse prompt.
+[12:05] Aí ele vai começar primeiro gerando algumas imagens, alguns frames, vai analisando ali.
+[12:11] Caso tenha alguma coisa errada, você dá uma corrigida.
+[12:14] Mas eu vou fazer tudo junto com você aqui, você vai conseguir ver certinho aqui como ele vai funcionar.
+[12:18] Pra dividir a hack que ele vai fazer agora.
+[12:21] Ele tá tendo de montar o prompt.
+[12:23] Aí depois vai montar alguns frames e nesses frames ele já vai poder conseguir pedir alguns ajustes.
+[12:29] E depois disso ele vai montar o vídeo.
+[12:34] Quando é assim que ele voltar aqui já, ele já continua.
+[12:37] Mas eu também tô falando, tá vendo?
+[12:39] E já vai zerando aqui, ó.
+[12:48] Não tá muito bacana.
+[12:50] Tá meio que com a cara de A.
+[12:53] Que que eu vou falar aqui pra ele?
+[12:54] Ó, eu tô achando com cara de A.
+[12:57] Eu não quero que você coloque nada alinhado, certo?
+[13:03] Sempre tudo centralizado ali.
+[13:05] Algumas coisas estão ficando frente de novo,
+[13:08] principalmente a primeira parte ali, ela não pode ter esses olhos.
+[13:13] Porque a tensão tem que ser toda voltada pra o tu é doido.
+[13:18] Aí não pode ter esses olhos aí.
+[13:20] Tá uma corrigida nisso.
+[13:22] Aqui mais coisas que ele fez, as apatos que ficou bacana.
+[13:26] Use e abuse também da... de câmera 3D.
+[13:30] Tem que ser... sebre movimentos dinâmicos, sempre mudando de ângulo.
+[13:34] Destrando novas coisas e tudo mais.
+[13:37] Tem que ser bem dinâmico mesmo, drogando cores e tudo mais.
+[13:41] Manda pra ele também.
+[13:45] Agora eu vou ver como é que ele fez aqui.
+[13:47] Eu quero ver como é que ele fez aqui, gerar essas coisas aqui.
+[13:49] Aparecamente ficou bom.
+[13:51] Mas eu quero ver na prática, né?
+[13:55] Vou deixar ele gerar o vídeo lá.
+[13:56] Aí ele mudou, ele mudou a abertura, deixou tudo centralizado.
+[14:00] Nem um texto na frente.
+[14:02] Então agora a 3D é tudo, umas trocas de cores.
+[14:09] Tá, aí aqui ele atingiu o limite.
+[14:11] Lembra que ele dá pra falar aqui pelo chat?
+[14:13] Então todo o meu screen vai falando aqui pelo chat.
+[14:15] Acabei enchendo aqui o limite de mensagens que você pode consertar no chat.
+[14:19] Mas simples, essa eu sei pra estar aqui em continuar.
+[14:21] Vai sempre ter que ficar olhando o chat pra quando ele termina de falar,
+[14:26] clicar em continuar, eu tô passando pelo celular como continuar.
+[14:30] E aí vai terminar de gerar aqui o vídeo, se ele pique pra...
+[14:34] se ele parar de novo, é pra que ele continua de novo.
+[14:37] Aí nessa parte aqui do vídeo ele vai demorar, provavelmente sei lá.
+[14:40] 20, 30 minutos, às vezes é pouco mais, às vezes é pouco menos,
+[14:44] mas essa normalmente é a parte que mais demora.
+[14:46] Então, você clica na gerada e já volta daqui.
+[14:49] Pronto, acabou o gerado, vira aqui pra gente, ó.
+[14:52] Ele colocou aqui algumas imagens, sé.
+[14:55] Que a gente já tenha visto antes.
+[14:56] Talvez ele tenha feito um ajuste do outro aqui.
+[14:59] Pra ela que tenha percebido e já mudou o vídeo aqui embaixo.
+[15:02] Vamos ver, vamos conferir.
+[15:04] Já vai achar que eu vou aqui pra dar o volta e basta agora.
+[15:08] Tu é do mundo, rapaz.
+[15:11] Tá de brincar?
+[15:13] Chadeira comigo, né?
+[15:14] Não, copo, pera aí.
+[15:16] Só ver que eu abri um guapa nenhuma vez pra fazer esse vídeo aqui.
+[15:20] Isso aqui é tal de meu amigo, rapaz.
+[15:24] Eu não estrevinei nenhuma linha de colho.
+[15:27] Tu pesei um pouco da Zona NASA,
+[15:29] e tu pode pedir o que tu quiser.
+[15:31] É isso padrado aqui, quero que ele vire trevê,
+[15:34] saia voando e exploda.
+[15:36] Tu pode pedir o que tu quiser, rapaz.
+[15:39] Só que se tu pedir em um jeito genérico,
+[15:42] tu vai receber de um jeito genérico também.
+[15:44] Agora, por que se tu pedir pro clown um vídeo bom igual esse,
+[15:48] não vai sair?
+[15:49] Qualquer tu tá pedindo de um jeito genérico,
+[15:51] e se tu perde pra ir a, de um jeito genérico,
+[15:54] tu vai ter um resultado genérico também,
+[15:56] tem pra onde.
+[15:56] Ela vai dar o resultado que ela dá pra todo mundo,
+[16:00] cara de a.
+[16:01] Pra conseguir ouvir o Nace Nível,
+[16:03] tu precisando de duas coisas.
+[16:05] Pronto e referência.
+[16:07] Só que pra conseguir escrever um impronto super complexo
+[16:12] com tudo que precisa pra sair ouvir de Valhete aqui,
+[16:15] é difícil, principalmente você tá começando do zero.
+[16:18] E isso turme, eu tenho ensino no curso Bolson com Iá.
+[16:22] Ele tá com dois noves sete.
+[16:25] Mas só agora nesse período de black,
+[16:28] ele tá saindo por apenas noventa e sete reais.
+[16:31] Comenta moço, eu vou aqui enviar o Nucum no seu direio.
+[16:35] Eu gostei bastante do resultado, tá?
+[16:45] Só que ele precisa ter uma polida, sabe?
+[16:49] Porque tem um das partes aqui que ficaram um pouco travadas,
+[16:52] tudo mais.
+[16:53] Então a gente vai mandar todas essas partes pra ele.
+[16:57] Todos os rostes, é importante,
+[16:59] querem de mande todos os rostes e uma mensagem só.
+[17:02] Que isso economiza Tolkien e economiza também tempo.
+[17:06] Porque se ficar mandando ajustes pra ajustes,
+[17:08] eu vou ter que gerar de novo, vou mandar.
+[17:10] Então é importante que ele tem mando todos os ajustes
+[17:12] e uma mensagem só.
+[17:13] Ficou outro.
+[17:15] Mas tem alguns ajustes aqui em cortas pra fazer.
+[17:18] Em Valhete geral, o vídeo precisa dar uma polida a mais.
+[17:22] Eu tô sentindo falta de uma dinâmica maior.
+[17:26] Eu tô sentindo falta também de glow.
+[17:29] Eu tô sentindo falta de alguns efeitos em 3D.
+[17:31] Também tem muitos efeitos em 2D que estão esticando.
+[17:34] Tipo, poderia ser em 3D.
+[17:36] Mas eu vou aprofundar mais a partilha agora.
+[17:40] A primeira parte, ele tem que ficar no Tu é Doido.
+[17:44] Quando ele fala Tu é Doido,
+[17:46] ele fala bem mais ênfase essa parte do Doido.
+[17:51] Fala mais, eu quero que essa primeira parte seja Tu é Doido.
+[17:56] O cularizó.
+[17:57] E a câmera vai acompanhando, tipo, vários ó passando assim na tela, sabe?
+[18:01] Aí a câmera vai acompanhando até o último.
+[18:03] Aí ele foi pro último, rapaz, já vai pequenininho.
+[18:07] E vai pra...
+[18:09] E faz essa mesma transição que você fez também.
+[18:11] A segunda parte do Taribe em cadeira comigo,
+[18:14] eu senti que ela ficou muito parada também.
+[18:17] Ele tem que dar mais dinâmica, tem que fazer alguma coisa ali em 3D.
+[18:21] Talvez algum glow ali também.
+[18:23] Essa parte do fundo, o roxo,
+[18:26] tu pode deixar o roxo ele um roxo mais escuro.
+[18:30] Sabe pra esse teu contraste do glow bacana ali.
+[18:33] Essa parte aí do Aft, ele pode chegar como se fosse um 3D girando assim, né?
+[18:39] E a câmera acompanhando, sempre uma câmera 3D ali, como se ela estivesse filmando, né?
+[18:44] Aí esse sabar do Aft cheia girando assim,
+[18:48] em 3D, aí mostra a tela assim, né?
+[18:52] Do Aft com vários keyframes e tudo mais.
+[18:54] Aí vem os textos, né?
+[18:58] Pra ficar bem dinâmico assim.
+[19:00] Essa parte aqui eu não gostei.
+[19:01] Eu to acreditando a Bill Aft nenhuma vez pra fazer esse vídeo aqui.
+[19:05] Aí tu mostra como se fosse uma miniatura do vídeo, né?
+[19:09] Eu não gostei, não deixa essa parte aí.
+[19:12] Troca por um animação bem mais dinâmica, com troca de cores e tudo mais.
+[19:17] Parece que com a referência que a gente viu.
+[19:19] Outra coisa.
+[19:20] Fala mesmo um pouco mais da parte inicial.
+[19:23] A parte inicial é um gancho, certo?
+[19:25] Então ela tem que estar bem dinâmica pra chamar a atenção da pessoa que vai assistir.
+[19:30] Ela tem que estar bem, bem dinâmica mesmo.
+[19:32] Pode gastar um pouco mais de tempo nesse início, que ele é muito importante.
+[19:36] A parte inicial é muito importante, porque se a pessoa não for fisigada naquela início,
+[19:41] ela não vai ter nada de ouvir.
+[19:43] Então a gente sempre tem que gastar mais tempo no começo do vídeo.
+[19:47] Não que o resto do vídeo seja importante também, né?
+[19:49] Mas essa parte aqui do começo é a mais importante.
+[19:53] Eu não gostei dessa parte inicial também, onde as letras vão indo daquela forma.
+[20:00] Não tá dinâmico.
+[20:01] Não tá uma forma que chama atenção.
+[20:03] A parte que fez da antacipação, antes de ir pro cloud também, eu não gostei.
+[20:08] Ela tá muito pato.
+[20:10] Ela devia estar muito mais dinâmica, utilizando muito mais movimento de câmera.
+[20:14] Eu tô sentindo falta de usar um Gaussian Blur também pra dar um desfoque assim na tela, sabe?
+[20:22] Mas claro, utilizando na ongra correta.
+[20:25] A parte onde aparece o cloud, ele pode aparecer em 3D, assim, no cloud em 3D.
+[20:31] E tipo as letras iriam girando assim em 3D e passar o reflexo.
+[20:34] Eu sabe quando o errorquira espada e aparecem reflexos assim nas palaxas?
+[20:39] É mais a menos disso daí.
+[20:40] Aí a parte que aparece além de código ficou bacana, mas ela também não tava dinâmica.
+[20:45] Tem que ser, se ela aparecer em 3D, tem que aparecer com um augmento.
+[20:48] Parece girando em 3D e tudo mais.
+[20:50] E apareceu só tipo feirinho inferior.
+[20:53] O zero que aparece vai ser melhor se aparecer tipo um número diminuindo.
+[20:58] E quando chega em zero, aí tem um impacto assim, sabe?
+[21:01] Tipo, aí o zero e impacto.
+[21:03] Essa parte do computador da NASA, o computador de 3D ficou muito bom.
+[21:07] Porém, o computador tem que aparecer na tela um pouco mais de tempo.
+[21:11] E a parte do final, aí você pode fazer tipo assim, como se o computador aparecesse.
+[21:18] Aí subou, teve um buraco negro assim que sugou tudo, aí ficou com tela preta.
+[21:26] Aí até pode colocar um efeito sonoro ali de distoção de voz,
+[21:32] alguma coisa do tipo que parece que tá com aquele efeito embaixo dava e sugou assim.
+[21:37] Pra ficar como se tivesse no espaço assim, não precisando do computador da NASA,
+[21:42] aí passando assim no espaço com esse meloço.
+[21:46] Com impacto também, aí depois volta.
+[21:48] Se eu ouvir, se não ouvir isso aqui vai ficar bacana.
+[21:51] É porque você tem que ir imaginando as coisas aí passando.
+[21:54] Ficou um pouco parado umas partes também.
+[21:57] Por exemplo, essa parte da NASA ficou tipo a da NASA e parou.
+[22:03] Você tem que fazer o corte dos respiros.
+[22:07] Ou de ter esse respiro você tem que cortar pra ficar bem dinâmico.
+[22:10] O quadrado tem que entrar antes de eu falar esse quadrado aqui.
+[22:17] Então quando eu estiver falando esse quadrado aqui, o quadrado já tem que estar lá.
+[22:21] Como se tivesse entrando um pouquinho antes.
+[22:23] Essa parte aí que explode e depois reconstrui, eu gostei.
+[22:28] Porém as partículas têm que estar um pouco menores, sabe?
+[22:32] Tanto na explosão quanto nessa parte de voltar pra poder reconstruir.
+[22:35] E a parte de o que tu quiser quando reconstruiu ou não reconstruiu,
+[22:39] é exatamente com as partículas da explosão.
+[22:41] Aí esse quiser, tu pode até fazer uma mudança de,
+[22:47] sei lá, umas 7 fontes diferentes só nesse quiser.
+[22:50] Só na palavra quiser, sabe?
+[22:52] Porque aí vai ficar dinâmico.
+[22:54] Aí cada mudança de fonte tu coloca um efeito de clique.
+[22:57] Tipo como se a pessoa estivesse selecionando a fonte, sabe?
+[23:01] Porque aí vai dar uma ideia que a pessoa está escorrendo até um negócio ali.
+[23:05] Eu gostei também da parte que tu mostrou ali,
+[23:09] que a pessoa está pedindo o jeito genérico, conhece a gente genérico.
+[23:12] Só que está muito parado.
+[23:14] Tem que ter uma câmera 3D ali,
+[23:16] tipo indo de um lado pro outro, sabe?
+[23:20] Tem que ter uma câmera 3D.
+[23:22] Use a busa dessa câmera da 3D.
+[23:24] Pode utilizar bastante.
+[23:25] Essa parte de pedir um vídeo bom no cloud,
+[23:29] tu pode fazer uma simulação como se a pessoa estivesse indo lá,
+[23:34] no cloud pedindo,
+[23:35] faz um vídeo bonito aí, ele entrega aquele vídeo genérico.
+[23:38] Aqui é meio vídeo genérico também, sabe?
+[23:40] Essa parte de por que tu dá brinde hoje é de genérico ficou muito parada.
+[23:46] Muito parada mesmo.
+[23:48] A gente tem que deixar uma dinâmica maior aí.
+[23:50] Você tem que analisar o vídeo inteiro que você fez
+[23:53] e pensar melhor essa dinâmica, entendeu?
+[23:55] Essa parte ali de ter visibilizações,
+[23:57] tu pode fazer uma simulação como se a pessoa estivesse postado o vídeo.
+[24:01] Aí tipo assim, vai de zero visibilizações até chegar em 3.
+[24:07] Aí tem um comentário aí da tia, sabe?
+[24:09] E tem que ter impacto algumas coisas também.
+[24:12] Não estou vendo impacto em ledra nenhuma.
+[24:14] Tem que ter tipo um impacto e um, sabe?
+[24:17] Aquela parte do, principalmente se você está começando do zero,
+[24:21] também é bom que tipo já comece no número
+[24:24] e vá caindo o número até chegar em zero.
+[24:28] De forma geral, analise tudo que eu falei aqui pra você
+[24:34] e faça um ajuste geral no vídeo.
+[24:37] O vídeo precisa estar mais dinâmico, precisa estar com mais câmera 3D,
+[24:41] mais desses efeitos também de glow, de impacto e tudo mais.
+[24:45] Dá o apolir em tudo, deixar bem melhor.
+[24:48] Pronto, agora é só ir e esperar.
+[24:50] Só esperar mandar o vídeo agora.
+[24:52] Assim que ele terminar de gerar, eu já vou dar aqui no.
+[24:54] Acabou, devolou um tempo aqui pra eu fazer as operações que eu pedi,
+[24:59] mas ele já fez.
+[25:00] Ela teve uma vez aqui que ele parou, eu pedi pra ele continuar.
+[25:03] Aí mandou aqui alguns mares.
+[25:05] Eu gostei mares ali, que eu tenho que colocar aqui.
+[25:08] A gente só vai ver realmente o novo vídeo, né?
+[25:11] Como é que vai ficar?
+[25:12] Eu vou fazer para, como ver se ele fez as operações que eu pedi.
+[25:15] Tu é do?
+[25:16] Tu é do rapaz.
+[25:18] Tá de brincadeira comigo, né?
+[25:20] Não, pô, pera aí.
+[25:21] Sou o Guete Camelomio, o ato é nenhum amêrito pra fazer esse vídeo aqui.
+[25:25] E isso aqui é caldo, meu amigo.
+[25:28] É, rapaz.
+[25:29] Eu não escrevi nenhuma linha de código.
+[25:31] Eu fiz até de computador danado.
+[25:34] E tu pode pedir o que tu quiser.
+[25:36] Esse quadrado aqui, quero que ele vende 3D, sai a rolar, hein?
+[25:39] Boda.
+[25:40] Tu pode pedir o que tu quiser, rapaz.
+[25:43] Só decide tu pedir um jeito genérico,
+[25:45] tu vai receber de um jeito genérico também.
+[25:47] Agora, por que que se tu pedir pro Claudio um vídeo bom igual esse,
+[25:50] não vai sair?
+[25:51] Porque tu tá pedindo de um jeito genérico,
+[25:53] e se tu perde pra ir,
+[25:55] e um jeito genérico,
+[25:56] tu vai ter um jeito genérico também, entende pra onde?
+[25:58] Ela vai dar o resultado que ela dá pra todo mundo,
+[26:01] cara de a,
+[26:02] pra conseguir o vídeo descindível que precisa de duas coisas.
+[26:05] Pronte e repare isso.
+[26:07] Só que pra conseguir escrever o...
+[26:09] Pronte super complexo,
+[26:11] com tudo que precisa pra sair o vídeo igual esse aqui,
+[26:14] é difícil, principalmente se você tá começando do zero.
+[26:17] E isso tudo eu tenho sido no curso Mocho Cunha.
+[26:21] Ele tá por R$297,
+[26:23] mas só agora nesse criomde black,
+[26:25] ele tá saindo por aquela R$97.
+[26:28] Comenta Mocho, eu vou te enviar o lição do seu direto.
+[26:39] Caramba, tá vendo que quadrações que você dá.
+[26:43] Uda completamente o jeito que dá o resultado do vídeo, né?
+[26:48] Daí foi a aula,
+[26:49] parabéns que você cheguei até aqui.
+[26:51] Na próxima vou liberar um bonus aqui pra você,
+[26:54] que vai ser o esquio, que vai criar esse tipo de vídeo aqui.
+[26:58] Esse tipo de vídeo aqui em em específico.
+[27:00] Mas eu acabei de te ensinar aqui como você consegue analisar
+[27:04] outros tipos de vídeo pra fazer outras direções.
+[27:07] Sempre pensando em não fazer o copy e cola, né?
+[27:11] Vou liberar esse bonus aqui pra você, vou seguir.
+[27:13] Após alguns dias aqui já vai tá liberado pra você, tá?
+[27:17] Me marca quando você for postar o seu primeiro Mocho,
+[27:21] que eu quero ver, pode botar lá,
+[27:23] aintonsena.stg.
+[27:27] Me marca lá, falando que você conseguiu fazer,
+[27:29] que eu quero ver o seu Mocho,
+[27:31] e eu vou analisar ele.

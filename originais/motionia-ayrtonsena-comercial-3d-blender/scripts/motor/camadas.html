@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Camadas</title>
+<script src="cfg.js"></script>
+<script>
+  // fontes do projeto (Google Fonts), definidas em projeto.json
+  (function () {
+    const fx = (window.CFG.fontes || {});
+    const fams = [[fx.display || "Big Shoulders Stencil Display", "700;800;900"], [fx.texto || "Barlow Condensed", "600;700"]];
+    const url = "https://fonts.googleapis.com/css2?" + fams.map(([n, w]) => "family=" + n.replace(/ /g, "+") + ":wght@" + w).join("&") + "&display=swap";
+    document.write('<link href="' + url + '" rel="stylesheet">');
+  })();
+</script>
+<style>
+  html, body { margin: 0; background: transparent; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script src="assets/logo_contornos.js"></script>
+<script>
+// Fundos, palavras atras da lata, textos da frente e cartao final, desenhados por quadro (window.seek).
+// Camada "tras" fica embaixo da lata 3D; camada "frente" fica por cima (fundo transparente).
+const P = new URLSearchParams(location.search);
+const W = +(P.get("w") || 960), H = +(P.get("h") || 540);
+const CFG = window.CFG, TL = CFG.linha_do_tempo;
+const BPM = +CFG.bpm, FPS = 30;
+const QB = 60 / BPM * FPS;                      // quadros por batida
+const F = b => (b - 1) * QB;                    // quadro da batida b
+const cv = document.getElementById("c");
+cv.width = W; cv.height = H;
+const g = cv.getContext("2d");
+const logo = new Image();
+logo.src = "assets/logo.png";
+
+const FX = CFG.fontes || {};
+const FONTE = `"${FX.display || "Big Shoulders Stencil Display"}"`, PESO = FX.display_peso || 900;
+const TEXTO = `"${FX.texto || "Barlow Condensed"}"`;
+const COR_MARCA = CFG.cor_marca || "#ff2e93";
+const SABOR = CFG.sabores.map(s => ({ fundo: s.fundo || ["#333333", "#111111"], palavra: s.palavra || "", cor: s.cor_palavra || "#ffffff" }));
+// trocas de sabor nos giros (batida, indice do sabor): comeca no sabor 1, passa por todos e volta pro 1.
+// Palavra so onde tem (nao precisa forcar uma palavra por troca)
+const TROCAS = TL.trocas.map((b, k) => [b, (k + 1) % SABOR.length]);
+const B_CRUZ = TL.cruz, B_LOGO = TL.logo;
+
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const suave = t => { t = clamp(t); return t * t * t * (t * (t * 6 - 15) + 10); };
+
+function fundoRadial(c0, c1) {
+  const gr = g.createRadialGradient(W * 0.5, H * 0.48, H * 0.05, W * 0.5, H * 0.5, W * 0.62);
+  gr.addColorStop(0, c0); gr.addColorStop(1, c1);
+  g.fillStyle = gr; g.fillRect(0, 0, W, H);
+}
+
+function saborEm(f) {
+  let atual = null, ini = null, fim = null;
+  for (let i = 0; i < TROCAS.length; i++) {
+    const fq = F(TROCAS[i][0]);
+    if (f >= fq) { atual = TROCAS[i][1]; ini = fq; fim = i + 1 < TROCAS.length ? F(TROCAS[i + 1][0]) : F(B_CRUZ); }
+  }
+  return { atual, ini, fim };
+}
+
+// texto revelado por mascara de baixo pra cima (entra) e cortado de baixo pra cima (sai)
+function textoMascara(txt, x, y, tam, cor, fIn, fOut, f, alinhamento = "left", larguraMax = null, espaco = 0, fonte = `${PESO} {T}px ${FONTE}`) {
+  if (f < fIn || f > fOut) return;
+  const entra = suave((f - fIn) / 6), sai = suave((f - (fOut - 5)) / 5);
+  g.save();
+  g.font = fonte.replace("{T}", tam);
+  g.letterSpacing = `${espaco}px`;
+  g.textAlign = alinhamento; g.textBaseline = "alphabetic";
+  let escala = 1;
+  if (larguraMax) escala = Math.min(1, larguraMax / g.measureText(txt).width);
+  const alt = tam * 0.78 * escala;
+  const topo = y - alt, base = y + tam * 0.06;
+  const visTopo = base - (base - topo) * entra;     // a mascara sobe ate o topo
+  const visBase = base - (base - topo) * sai;       // e depois sobe cortando por baixo
+  g.beginPath(); g.rect(0, visTopo - 2, W, Math.max(0, visBase - visTopo + 2)); g.clip();
+  const desloc = (1 - entra) * alt * 0.35 - sai * alt * 0.35;
+  g.translate(x, y + desloc); g.scale(escala, escala);
+  g.fillStyle = cor;
+  g.fillText(txt, 0, 0);
+  g.restore();
+}
+
+function palavraAtras(f) {
+  const { atual, ini, fim } = saborEm(f);
+  if (atual === null) return;
+  const s = SABOR[atual];
+  if (!s.palavra) return;
+  const rapida = fim - ini < QB * 0.75;          // aceleracao: palavra entra seca
+  const fIn = rapida ? ini : ini + 2, fOut = rapida ? fim : fim - 2;
+  const zoom = 1 + 0.05 * clamp((f - ini) / (fim - ini));
+  const tam = H * 0.62 * zoom;
+  if (rapida) {
+    g.save(); g.font = `${PESO} ${tam}px ${FONTE}`; g.textAlign = "center"; g.letterSpacing = `${H * 0.01}px`;
+    const esc = Math.min(1, W * 0.9 / g.measureText(s.palavra).width);
+    g.translate(W / 2, H * 0.72); g.scale(esc, esc); g.fillStyle = s.cor; g.fillText(s.palavra, 0, 0); g.restore();
+    return;
+  }
+  textoMascara(s.palavra, W / 2, H * 0.72, tam, s.cor, fIn, fOut, f, "center", W * 0.9, H * 0.01);
+}
+
+// cartao final: o contorno das letras se desenha (trim path, como o stroke do After), o logo preenche por dentro,
+// o traco some, entram os textos; depois so o @ (fica bem mais tempo)
+const B_ARROBA = TL.arroba, B_FIM = TL.fim;
+let contornos = null;
+function caminhosLogo() {
+  if (contornos || !window.LOGO_CONTORNOS) return contornos;
+  contornos = window.LOGO_CONTORNOS.map(pts => {
+    const p = new Path2D();
+    let comp = 0;
+    pts.forEach(([x, y], i) => {
+      if (i) comp += Math.hypot(x - pts[i - 1][0], y - pts[i - 1][1]);
+      i ? p.lineTo(x, y) : p.moveTo(x, y);
+    });
+    comp += Math.hypot(pts[0][0] - pts[pts.length - 1][0], pts[0][1] - pts[pts.length - 1][1]);
+    p.closePath();
+    return { p, comp };
+  });
+  return contornos;
+}
+
+function logoAnimado(f, f0, alfa) {
+  const cs = caminhosLogo();
+  if (!cs || !(logo.complete && logo.naturalWidth)) return;
+  const lado = H * 0.62, x = W / 2 - lado / 2, y = H * 0.36 - lado / 2, k = lado / 500;
+  const assenta = 1 + 0.035 * (1 - suave((f - f0) / (QB * 2.2)));      // chega levemente maior e assenta
+  const enche = suave((f - (f0 + QB * 1.15)) / (QB * 0.6));            // preenchimento depois do traco
+  const traco = 1 - suave((f - (f0 + QB * 1.6)) / (QB * 0.5));         // o traco some quando ja encheu
+  g.save();
+  g.globalAlpha = alfa;
+  g.translate(W / 2, H * 0.36); g.scale(assenta, assenta); g.translate(-W / 2, -H * 0.36);
+  if (enche > 0) {                                                    // logo com a textura, entrando de baixo pra cima
+    g.save();
+    g.beginPath(); g.rect(0, y + lado * (1 - enche) - 2, W, lado * enche + 4); g.clip();
+    g.globalAlpha = alfa * (0.35 + 0.65 * enche);
+    g.drawImage(logo, x, y, lado, lado);
+    g.restore();
+  }
+  if (traco > 0) {
+    g.translate(x, y); g.scale(k, k);
+    g.lineJoin = "round"; g.lineCap = "round";
+    g.lineWidth = H * 0.0045 / k;
+    g.strokeStyle = "#ffffff";
+    g.shadowColor = COR_MARCA; g.shadowBlur = H * 0.012;
+    cs.forEach((c, i) => {
+      const t = suave((f - (f0 + 2 + i * 2.2)) / (QB * 0.95));         // cada letra comeca um pouco depois da anterior
+      if (t <= 0) return;
+      g.globalAlpha = alfa * traco;
+      g.setLineDash([c.comp * t, c.comp]);
+      g.lineDashOffset = 0;
+      g.stroke(c.p);
+    });
+  }
+  g.restore();
+}
+
+function cartaoFinal(f) {
+  const f0 = F(B_LOGO), fArroba = F(B_ARROBA), fimTudo = F(B_FIM);
+  if (f < f0) return;
+  const corte = suave((f - fimTudo) / 5);       // fecha no preto no finzinho
+  const saiLogo = suave((f - (fArroba - 4)) / 4); // logo e textos saem pro @ entrar sozinho
+  if (saiLogo < 1) logoAnimado(f, f0, 1 - saiLogo);
+  if (f < fArroba) {
+    const fin = CFG.final || {};
+    if (fin.linha) textoMascara(fin.linha, W / 2, H * 0.78, H * 0.075, "#ffffff", F(B_LOGO + 1.4), fArroba, f, "center", W * 0.6, H * 0.012, `700 {T}px ${TEXTO}`);
+    if (fin.aviso && f >= F(B_LOGO + 0.6)) {   // aviso de comercial nao oficial, legivel por uns 2 s
+      const e = suave((f - F(B_LOGO + 0.6)) / 5);
+      g.save();
+      g.globalAlpha = e * (1 - saiLogo);
+      g.font = `600 ${Math.round(H * 0.04)}px ${TEXTO}`;
+      g.textAlign = "center"; g.fillStyle = "#d9d9d9"; g.letterSpacing = `${H * 0.004}px`;
+      g.fillText(fin.aviso, W / 2, H * 0.9);
+      g.restore();
+    }
+  }
+  // no fim, so o @
+  g.save(); g.globalAlpha = 1 - corte;
+  if (CFG.assinatura) textoMascara(CFG.assinatura, W / 2, H * 0.56, H * 0.15, "#ffffff", fArroba, F(B_FIM + 5), f, "center", W * 0.8, H * 0.01, `700 {T}px ${TEXTO}`);
+  g.restore();
+}
+
+window.seek = function (f, camada) {
+  g.clearRect(0, 0, W, H);
+  if (camada === "tras") {
+    if (f < F(TROCAS[0][0])) {
+      const fa = CFG.fundo_abertura || ["#2a1020", "#080306"];
+      fundoRadial(fa[0], fa[1]);
+    }
+    else if (f < F(B_CRUZ)) { const s = SABOR[saborEm(f).atual]; fundoRadial(s.fundo[0], s.fundo[1]); palavraAtras(f); }
+    else { g.fillStyle = "#000"; g.fillRect(0, 0, W, H); }
+  } else {
+    cartaoFinal(f);
+  }
+};
+window.pronto = Promise.all([
+  document.fonts.load(`${PESO} 80px ${FONTE}`, "ABC ÇÚÃ"),
+  document.fonts.load(`700 40px ${TEXTO}`, "ABC ÇÚÃ @"),
+  document.fonts.load(`600 40px ${TEXTO}`, "ABC ÇÚÃ"),
+  new Promise(r => (logo.complete ? r() : (logo.onload = logo.onerror = r))),   // sem logo ainda: segue sem ele
+]).then(() => document.fonts.ready);
+</script>
+</body>
+</html>

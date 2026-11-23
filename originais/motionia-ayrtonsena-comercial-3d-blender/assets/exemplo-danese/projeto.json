@@ -1,0 +1,39 @@
+{
+  "marca": "Dane-se",
+  "produto": "energético e água em lata",
+  "nao_oficial": true,
+  "assinatura": "@AYRTONSENA.STG",
+  "cor_marca": "#ff2e93",
+  "fontes": {"display": "Big Shoulders Stencil Display", "display_peso": 900, "texto": "Barlow Condensed"},
+  "lata": {"tamanho": "350 ml fina", "altura_mm": 146, "diametro_mm": 58, "foco_rotulo": 0.46},
+  "fundo_abertura": ["#3c1029", "#0a0306"],
+  "fundo_cruz": "#e60a52",
+  "sabores": [
+    {"nome": "melancia", "modelo": "dane-se melancia", "cor": "#ff0f6b", "fundo": ["#ff3a95", "#b8004f"],
+     "palavra": "DANE-SE", "cor_palavra": "#ffffff", "qtd": 12,
+     "pecas": [["pc_melancia_fatia", 0.6, 1.9], ["pc_melancia_fatia_fina", 0.4, 2.0]]},
+    {"nome": "limão", "modelo": "dane-se limao", "cor": "#8cff1f", "fundo": ["#ffffff", "#d9d6cf"],
+     "palavra": "CORAGEM", "cor_palavra": "#1c9a49", "qtd": 12,
+     "pecas": [["pc_limao_rodela", 0.65, 1.35], ["pc_limao_inteiro", 0.35, 1.35]]},
+    {"nome": "manga", "modelo": "dane-se manga tropical", "cor": "#ff6b0a", "fundo": ["#ffa245", "#e0600c"],
+     "palavra": "ATITUDE", "cor_palavra": "#ffffff", "qtd": 11,
+     "pecas": [["pc_manga_fatia", 0.5, 1.7], ["pc_manga_inteira", 0.32, 1.75], ["pc_manga_metade", 0.18, 1.55]]},
+    {"nome": "água sem gás", "modelo": "dane-se agua sem gas", "cor": "#ff0f6b", "fundo": ["#2a2a2a", "#050505"],
+     "palavra": "REAL", "cor_palavra": "#ff2e93", "respingo": true}
+  ],
+  "pecas": {
+    "pc_limao_rodela": {"arquivo": "09-limao-rodela", "sss": 0.35, "verniz": 0.25, "clarear": [1.5, 1.3], "face_corte": [0, 0, -1]},
+    "pc_limao_inteiro": {"arquivo": "10-limao-polyhaven", "clarear": [1.7, 1.12]},
+    "pc_manga_metade": {"arquivo": "05-manga-metade", "so": "Half", "sss": 0.35, "face_corte": [0, 0, 1]},
+    "pc_manga_inteira": {"arquivo": "05-manga-metade", "excluir": "Half"},
+    "pc_manga_fatia": {"arquivo": "06-manga-fatia", "sss": 0.35, "face_corte": [0, -1, 0]},
+    "pc_respingo": {"arquivo": "12-respingo", "agua": true},
+    "pc_melancia_inteira": {"arquivo": "03-melancia", "so": "low"},
+    "pc_melancia_fatia": {"fatia_de": "pc_melancia_inteira", "angulos": [0, 50], "espessura": 0.13, "polpa": "#c81e28", "sementes": true, "face_corte": [0, 0, 1]},
+    "pc_melancia_fatia_fina": {"fatia_de": "pc_melancia_inteira", "angulos": [0, 180], "espessura": 0.07, "polpa": "#c81e28", "sementes": true, "face_corte": [0, 0, 1]}
+  },
+  "final": {"linha": "ENERGY DRINK · ZERO AÇÚCAR", "aviso": "COMERCIAL NÃO OFICIAL"},
+  "musica": {"arquivo": "musica/YTDown.com_YouTube_Media_QVqS3tB8OtE_Nonstop_009_128k.mp3", "inicio": 59.5797, "corte": [25, 45], "volume_db": -5},
+  "sfx": {"pasta": "", "arquivos": {}},
+  "blender": ""
+}

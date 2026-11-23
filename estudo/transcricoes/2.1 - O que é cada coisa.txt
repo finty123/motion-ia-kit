@@ -1,0 +1,82 @@
+# 2.1 - O que é cada coisa
+
+[00:00] Maravilha, antes de colocar a mão na massa, deixa eu só te explicar algumas palavras que vão aparecer durante o curso inteiro.
+[00:07] Aí ele explica aqui pra ficar mais fácil pra tu.
+[00:10] Eu vou te explicar como se fosse um restaurante.
+[00:12] Beleza?
+[00:13] Ó, o Cloud, ele é como se fosse o chefe.
+[00:16] Ele é a Iac que vai cozinhar um moço ali junto com você.
+[00:20] Só que esse chefe, ele pode trabalhar de dois jeitos.
+[00:22] Pode trabalhar no chat, que aí ele cozinha lá na cozinha dele lá no servidor da Tropic.
+[00:28] E o teu computador não vai fazer força nenhuma.
+[00:30] Por isso que ele funciona no celular, no notebook velho, no computador da Suxa.
+[00:36] Isso não é qualquer coisa, porque o chefe vai estar trabalhando lá na cozinha dele no servidor da Tropic.
+[00:42] Também tem o Cloud Code.
+[00:44] O Cloud Code é como se esse chefe, ele viesse cozinhar na tua casa.
+[00:48] Aí ele vai abrir tua geladeira, vai pegar os seus ingredientes,
+[00:51] aí tuas pastas, ter vinte, tuas narrações.
+[00:54] Mas aí ele vai usar o teu fogão, que aí é o teu computador também, né?
+[00:58] Por isso que o Cloud Code, ele pés um pouquinho mais,
+[01:01] porque ele economiza um pouquinho mais de Tolkien,
+[01:04] mas ele também pega um pouco da capacidade do teu computador na próxima aula.
+[01:09] Eu vou te mostrar, ele tem como é que consegue usar cada um, tá?
+[01:12] Agora, sobre o prompt.
+[01:13] O prompt é como se fosse o teu pedido, é o que tu vai falar lá pro chefe.
+[01:18] Aí, se tu chega e fala, ó, que era um hambúrguer,
+[01:20] aí o chefe vai pegar o negócio aí,
+[01:23] você vai fazer qualquer um burguer lá,
+[01:24] e quando chega lá pra tua, é um pão de forma, com um hambúrguer.
+[01:28] Tá de brincadeira comigo, rapaz, tu é doida, não.
+[01:32] Por isso que tu tem que fazer um prompt,
+[01:34] onde tu peça mais coisas.
+[01:35] Tem que explicar melhor pra ele como é que tu quer.
+[01:37] Então, no moço é a mesma coisa.
+[01:40] Tu fala, ó, faz um moço aí pra mim, vai vir qualquer coisa,
+[01:43] vai vir um hambúrguer com um pão de caixa.
+[01:45] Não vai vir um negócio bom.
+[01:47] Se agora se tu for pedir pra ele, ó,
+[01:49] eu quero um hambúrguer de pão brioche, com dirge de lim.
+[01:55] Aí tu coloca a picanha em hambúrguer.
+[01:58] Aí eu quero que tu adicione também molho barbequil,
+[02:00] e que não sei o quê.
+[02:01] Aí vem um negócio top, rapaz.
+[02:03] Nessa daí ele fareça de como é que tu pede o prompt,
+[02:06] tá entendendo?
+[02:06] E a esquio, rapaz, ó.
+[02:08] A esquio é a receita pronta do chefe.
+[02:12] Sabe aquele prato da casa,
+[02:14] que o chefe já testou umas mil vezes.
+[02:16] Aí tu fala, ó, me veio o número 3, aí chega aquele prato.
+[02:21] Mas tu é doda pra que eu me abonimar.
+[02:24] Isso daí é esquio,
+[02:25] porque a receita ela já toda montada.
+[02:28] E a esquio é isso daí.
+[02:30] Tu faz um pedido simples e sai um absurdo.
+[02:32] Porque ela já tá configurada lá dentro.
+[02:35] Já tem todo passo a passo ali da receita pro chefe só fazer.
+[02:39] Ferência é como se fosse a foto do prato.
+[02:42] Tu vai entregar pro chefe e vai falar,
+[02:44] ó, eu quero igual essa foto que tá aqui, ó.
+[02:46] Aí ele vai e consegue fazer a decoração bem parecida com a foto também, tá?
+[02:51] Aí pode ser de como é que o motion vai ficar sobre o design,
+[02:54] pode ser do que aquele se mexe, animação e tudo mais,
+[02:57] tudo vai depender.
+[02:58] Então, a gente consegue mandar referência de várias coisas.
+[03:02] Tu pode mandar referência só do design pra falar, ó,
+[03:06] eu quero o design desse jeito aqui com essa fonte,
+[03:10] com essas cores, etc.
+[03:12] Mas aí eu quero que tu anime desse jeito aqui com esses efeitos.
+[03:16] Aí tu vai mandar referência à animação.
+[03:19] Então, tem que mandar as duas referências, tá?
+[03:21] Tanto a referência do design pra saber como é que tu quer,
+[03:24] quanto a referência da animação também.
+[03:27] Último a prévia, né, o render.
+[03:30] A prévia é como se tu fosse provar a comida antes de servir.
+[03:33] Ele vai te montar uma prévia ali pra tu e tu vai falar,
+[03:36] coloca um pouquinho mais de sal.
+[03:38] Ah, justo isso aqui, não sei o que.
+[03:40] Ele vai montar o prato inteiro ali e já vai montar pra tu ali o vídeo final.
+[03:45] Pronto, pra postar.
+[03:46] Não tem mistério nenhum.
+[03:47] É só isso aí, rapaz.
+[03:48] Se embora agora.
