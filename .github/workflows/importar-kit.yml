@@ -1,0 +1,36 @@
+name: Importar kit verificado
+on:
+  push:
+    branches: [importar-motion-3ccd7de]
+    paths: ['.importacao/PRONTO']
+permissions:
+  contents: write
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Conferir pacote e publicar os arquivos
+        shell: bash
+        run: |
+          set -euo pipefail
+          pacote="$RUNNER_TEMP/motion.bundle"
+          cat .importacao/*.part > "$pacote"
+          echo "9d667c5ff1411feb74ddd6ba19cbd2b0bcbb334302c6fef5cd3ca5a6cf27abf2  $pacote" | sha256sum -c -
+          git bundle verify "$pacote"
+          git fetch "$pacote" refs/heads/main
+          kit=$(git rev-parse FETCH_HEAD)
+          test "$kit" = 3ccd7deb13d0e800c82dbb76def06f0c6c08175d
+          arvore=$(git rev-parse "$kit^{tree}")
+          test "$arvore" = b53d574d1699146e596ae1db0396845bf493c267
+          git fetch origin refs/heads/main
+          base=$(git rev-parse FETCH_HEAD)
+          test "$base" = 2be7aa4ae195a2cdd59173f2fac813985bc6949d
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          novo=$(git commit-tree "$arvore" -p "$base" -p "$kit" -m "Publica o Motion IA Kit completo para Claude Code e Codex")
+          git push origin "$novo:refs/heads/main"
+          git push --force-with-lease="refs/heads/importar-motion-3ccd7de:$GITHUB_SHA" origin :refs/heads/importar-motion-3ccd7de
